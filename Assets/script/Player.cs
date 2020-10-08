@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     [Header("水平推力")]
     [Range(0, 500)]
     public float xForce;
-
     //目前垂直速度
     float speedY;
 
@@ -31,42 +30,15 @@ public class Player : MonoBehaviour
     [Range(0, 0.5f)]
     public float distance;
 
-    //[Header("偵測地板的射線起點")]
-    //public Transform groundCheck;
-
     [Header("地面圖層")]
     public LayerMask groundLayer;
 
     public bool grounded;
-
-
-
-
-
     //加入動畫
     public Animator m_Animator;
-
-
-
-
-
-
-
-
-
-
     public GameObject ss;   //把手電筒包含trigger_flashlight引進來
     public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
-
-    
-
-
-
-  
-
-
-
-
+    bool Canmove = true;
 
     public void ControlSpeed()
     {
@@ -76,36 +48,16 @@ public class Player : MonoBehaviour
         playerRigidbody2D.velocity = new Vector2(newSpeedX, speedY);
     }
     public SpriteRenderer m_SpriteRenderer;
-    public bool JumpKey
+     public void StopMove()
     {
-        get
-        {
-            return Input.GetKeyDown(KeyCode.Space);
-        }
+        Canmove = false;
+        
     }
-
-    //void TryJump()
-    //{
-    //    if (IsGround && JumpKey)
-    //    {
-    //        playerRigidbody2D.AddForce(Vector2.up * yForce);
-    //    }
-    //}
-
-
-    //在玩家的底部射一條很短的射線 如果射線有打到地板圖層的話 代表正在踩著地板
-    //bool IsGround
-    //{
-    //    get
-    //    {
-    //        Vector2 start = groundCheck.position;
-    //        Vector2 end = new Vector2(start.x, start.y - distance);
-
-    //        Debug.DrawLine(start, end, Color.blue);
-    //        grounded = Physics2D.Linecast(start, end, groundLayer);
-    //        return grounded;
-    //    }
-    //}
+    public void ReStartMove()
+    {
+        Canmove = true;
+        
+    }
     void playwalk()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -166,11 +118,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(Canmove==true)
+        {
         MovementX();
-        ControlSpeed();
         playwalk();
-        //checklight();
-        //TryJump();
-        //speedX = playerRigidbody2D.velocity.x;
+        }
+        ControlSpeed();
+      
     }
 }
