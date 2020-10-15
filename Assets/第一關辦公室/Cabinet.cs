@@ -15,6 +15,7 @@ public class Cabinet : MonoBehaviour
     public windowaback bb;
     public mainBook Mb;
     BoxCollider2D bw;
+    SpriteRenderer w;
     void Start()
     {
         AA = AA.GetComponent<Player>();
@@ -28,10 +29,12 @@ public class Cabinet : MonoBehaviour
         bb = bb.GetComponent<windowaback>();
         Mb = Mb.GetComponent<mainBook>();
         bw = GetComponent<BoxCollider2D>();
+        w = GetComponent<SpriteRenderer>();
     }
     public void CloseBoxCollider()
     {
         bw.enabled = false;
+        w.enabled = false;
     }
     void OnMouseDown()
     {
