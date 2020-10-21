@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bookslot : MonoBehaviour
+public class pictureslot : MonoBehaviour
 {
     public int id = 0;
     bool bs_appear = false;
-    SpriteRenderer w;
     CircleCollider2D bw;
+    private bool isright = true;
     public void ConTrolAppearbs()
     {
         bs_appear = true;
@@ -15,23 +15,29 @@ public class bookslot : MonoBehaviour
     public void DisAppear()
     {
         bs_appear = false;
+        
+    }
+    public void D_Appear()
+    {
+        isright = false;
+        
     }
     void Appear()
     {
-        if (bs_appear == true)
+        if (bs_appear == true&&isright==true)
         {
-            w.enabled = true;
+            
             bw.enabled = true;
         }
         else
         {
-            w.enabled = false;
+            
             bw.enabled = false;
         }
     }
      void Start()
     {
-        w = GetComponent<SpriteRenderer>();
+       
         bw = GetComponent<CircleCollider2D>();
         
     }
@@ -39,6 +45,6 @@ public class bookslot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Appear();
+        Appear();
     }
 }

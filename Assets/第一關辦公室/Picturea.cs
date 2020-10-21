@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bookslot : MonoBehaviour
+public class Picturea : MonoBehaviour
 {
-    public int id = 0;
-    bool bs_appear = false;
+    bool p_appear = false;
     SpriteRenderer w;
-    CircleCollider2D bw;
-    public void ConTrolAppearbs()
+    BoxCollider2D bw;
+    public void ConTrolAppear()
     {
-        bs_appear = true;
+        p_appear = true;
     }
-    public void DisAppear()
+     public void DisAppear()
     {
-        bs_appear = false;
+        p_appear = false;
     }
-    void Appear()
+     void Appear()
     {
-        if (bs_appear == true)
+        if (p_appear == true)
         {
             w.enabled = true;
             bw.enabled = true;
@@ -29,16 +28,16 @@ public class bookslot : MonoBehaviour
             bw.enabled = false;
         }
     }
-     void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         w = GetComponent<SpriteRenderer>();
-        bw = GetComponent<CircleCollider2D>();
-        
+        bw = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Appear();
+        Appear();
     }
 }
