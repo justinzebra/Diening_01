@@ -40,6 +40,17 @@ public class Player : MonoBehaviour
     public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
     bool Canmove = true;
 
+
+public GameObject m_bag;
+public bool bagisopen;
+void badopen()
+
+{if(Input.GetKeyDown(KeyCode.B)){
+bagisopen=!bagisopen;
+m_bag.SetActive(bagisopen);
+}
+}
+
     public void ControlSpeed()
     {
         speedX = playerRigidbody2D.velocity.x;
@@ -124,6 +135,6 @@ public class Player : MonoBehaviour
         playwalk();
         }
         ControlSpeed();
-      
+      badopen();
     }
 }
