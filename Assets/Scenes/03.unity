@@ -5488,8 +5488,6 @@ MonoBehaviour:
   m_Animator: {fileID: 0}
   ss: {fileID: 1198088304}
   ww: {fileID: 0}
-  m_bag: {fileID: 0}
-  bagisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &112998142
 Rigidbody2D:
@@ -27362,7 +27360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655246167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.042749, y: 0.828182, z: -7.5299997}
+  m_LocalPosition: {x: 11.041863, y: 0.828182, z: -7.5299997}
   m_LocalScale: {x: 0.68600005, y: 0.68600005, z: 0.68600005}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38111,8 +38109,6 @@ MonoBehaviour:
   m_Animator: {fileID: 0}
   ss: {fileID: 1198088304}
   ww: {fileID: 0}
-  m_bag: {fileID: 0}
-  bagisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!61 &1029977811
 BoxCollider2D:

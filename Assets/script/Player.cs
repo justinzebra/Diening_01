@@ -41,15 +41,16 @@ public class Player : MonoBehaviour
     bool Canmove = true;
 
 
-public GameObject m_bag;
-public bool bagisopen;
-void badopen()
-
-{if(Input.GetKeyDown(KeyCode.B)){
-bagisopen=!bagisopen;
-m_bag.SetActive(bagisopen);
-}
-}
+    //public GameObject m_bag;
+    //public bool bagisopen;
+    /*void badopen()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            bagisopen = !bagisopen;
+            m_bag.SetActive(bagisopen);
+        }
+    }*/
 
     public void ControlSpeed()
     {
@@ -59,15 +60,15 @@ m_bag.SetActive(bagisopen);
         playerRigidbody2D.velocity = new Vector2(newSpeedX, speedY);
     }
     public SpriteRenderer m_SpriteRenderer;
-     public void StopMove()
+    public void StopMove()
     {
         Canmove = false;
-        
+
     }
     public void ReStartMove()
     {
         Canmove = true;
-        
+
     }
     void playwalk()
     {
@@ -91,12 +92,12 @@ m_bag.SetActive(bagisopen);
 
     void Start()
     {
-        
+
         playerRigidbody2D = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         ww = ss.GetComponent<E>();//用那個代名詞取得trigger_flashlight的所有變數
-        
+
     }
 
     /// <summary>水平移動</summary>
@@ -108,14 +109,14 @@ m_bag.SetActive(bagisopen);
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
-         
-          
+
+
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;
-            
+
         }
         else
         {
@@ -125,16 +126,16 @@ m_bag.SetActive(bagisopen);
 
 
     }
-  
+
 
     void Update()
     {
-        if(Canmove==true)
+        if (Canmove == true)
         {
-        MovementX();
-        playwalk();
+            MovementX();
+            playwalk();
         }
         ControlSpeed();
-      badopen();
+       // badopen();
     }
 }
