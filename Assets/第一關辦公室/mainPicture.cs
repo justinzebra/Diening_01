@@ -9,15 +9,15 @@ public class mainPicture : MonoBehaviour
     public Vector3[] picturePos;
     public picture[] allPicture = new picture[3];
     public Transform[] Picture;
-    // public opendoor AA;
-    public pictureslot BB0;
-    public pictureslot BB1;
-    public pictureslot BB2;
-    public picture bb0;
-    public picture bb1;
-    public picture bb2;
+    public picture2 pp0;
+    public picture2 pp1;
+    public picture2 pp2;
+    public heartpicture hp;
     bool ispicture;
     public GameObject picture;
+    public GameObject picture0;
+    public GameObject picture1;
+    public GameObject picture2;
     public void SavePosition()
     {
         picturePos = new Vector3[3];
@@ -41,13 +41,14 @@ public class mainPicture : MonoBehaviour
         {
            ispicture=true;
            Debug.Log("5555");
-        //    BB0.D_Appear();
-        //    BB1.D_Appear();
-        //    BB2.D_Appear();
-        //    bb0.D_Appear();
-        //    bb1.D_Appear();
-        //    bb2.D_Appear();
-           Destroy(picture);
+           picture.SetActive(false);
+           picture0.SetActive(false);
+           picture1.SetActive(false);
+           picture2.SetActive(false);
+           pp0.ConTrolAppear();
+           pp1.ConTrolAppear();
+           pp2.ConTrolAppear();
+           hp.ConTrolAppear();
         }
     }
 
@@ -55,12 +56,10 @@ public class mainPicture : MonoBehaviour
     void Start()
     {
         ispicture=false;
-        BB0 = BB0.GetComponent<pictureslot>();
-        BB1 = BB1.GetComponent<pictureslot>();
-        BB2 = BB2.GetComponent<pictureslot>();
-        bb0 = bb0.GetComponent<picture>();
-        bb1 = bb1.GetComponent<picture>();
-        bb2 = bb2.GetComponent<picture>();
+        pp0 = pp0.GetComponent<picture2>();
+        pp1 = pp1.GetComponent<picture2>();
+        pp2 = pp2.GetComponent<picture2>();
+        hp = hp.GetComponent<heartpicture>();
     }
 
     // Update is called once per frame

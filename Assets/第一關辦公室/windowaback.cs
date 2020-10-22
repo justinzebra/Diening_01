@@ -26,6 +26,10 @@ public class windowaback : MonoBehaviour
     public pictureslot pp1;
     public pictureslot pp2;
     public Picturea PA;
+    public picture2 P0;
+    public picture2 P1;
+    public picture2 P2;
+    public heartpicture hp;
     SpriteRenderer w;
     BoxCollider2D bw;
 
@@ -71,6 +75,10 @@ public class windowaback : MonoBehaviour
             pp0.DisAppear();
             pp1.DisAppear();
             pp2.DisAppear();
+            P0.DisAppear();
+            P1.DisAppear();
+            P2.DisAppear();
+            hp.DisAppear();
             b_appear = false;
             
         }
@@ -102,6 +110,10 @@ public class windowaback : MonoBehaviour
         pp1 = pp1.GetComponent<pictureslot>();
         pp2 = pp2.GetComponent<pictureslot>();
         PA = PA.GetComponent<Picturea>();
+        P0 = P0.GetComponent<picture2>();
+        P1 = P1.GetComponent<picture2>();
+        P2 = P2.GetComponent<picture2>();
+        hp = hp.GetComponent<heartpicture>();
 
         w = GetComponent<SpriteRenderer>();
         bw = GetComponent<BoxCollider2D>();

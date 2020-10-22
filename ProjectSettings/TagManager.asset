@@ -13,6 +13,9 @@ TagManager:
   - cabinet
   - windowaf
   - picture
+  - heart
+  - picture2
+  - knife
   layers:
   - Default
   - TransparentFX
