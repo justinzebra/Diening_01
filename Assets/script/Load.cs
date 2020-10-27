@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Load : MonoBehaviour
 {
+  int i=0;
+
     static Load instance;
     public bool loaddog;
     testdog testdog01;
@@ -43,9 +45,16 @@ public class Load : MonoBehaviour
 
         }
     }
+    void Addi(){
+        if(Input.GetKeyDown(KeyCode.Q)){
+            i++;
+        }
+    }
     // Update is called once per frame
     void update()
     {
         checkdoginbag();
+        Addi();
+        Debug.Log(i);
     }
 }
