@@ -48,13 +48,13 @@ public class picture : MonoBehaviour
         
     }
   
-    void OnMouseUp()
-    { 
-         if(isright==true)
-        {
-        transform.position = _pctrl.picturePos[id];
-        }
-    }
+    // void OnMouseUp()
+    // { 
+    //      if(isright==true)
+    //     {
+    //     transform.position = _pctrl.picturePos[id];
+    //     }
+    // }
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
         
@@ -65,7 +65,7 @@ public class picture : MonoBehaviour
                 temp = id;
                 id = p.id;
                 p.id = temp;
-                p.OnMouseUp();
+                // p.OnMouseUp();
             }
         }
       

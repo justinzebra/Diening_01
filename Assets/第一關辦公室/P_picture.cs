@@ -46,7 +46,7 @@ public class P_picture : MonoBehaviour
             CC1.ConTrolAppearbs();
             CC2.ConTrolAppearbs();
             bb.ConTrolAppearb();
-            Mb.SavePosition();
+            // Mb.SavePosition();
             Mb.SavePicture();
             
         }

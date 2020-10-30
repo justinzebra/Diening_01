@@ -72,19 +72,19 @@ public class Player : MonoBehaviour
     }
     void playwalk()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown("d"))
         {
             GetComponent<AudioSource>().Play();
         }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
+        else if (Input.GetKeyUp(KeyCode.RightArrow)||Input.GetKeyUp("d"))
         {
             GetComponent<AudioSource>().Stop();
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown("a"))
         {
             GetComponent<AudioSource>().Play();
         }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        else if (Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp("a"))
         {
             GetComponent<AudioSource>().Stop();
         }
@@ -105,14 +105,14 @@ public class Player : MonoBehaviour
     {
         horizontalDirection = Input.GetAxis(HORIZONTAL);
         playerRigidbody2D.AddForce(new Vector2(xForce * horizontalDirection, 0));
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)||Input.GetKey("d"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
 
 
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow)||Input.GetKey("a"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;

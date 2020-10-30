@@ -16,6 +16,10 @@ TagManager:
   - heart
   - picture2
   - knife
+  - magnet
+  - book
+  - wall
+  - computer
   layers:
   - Default
   - TransparentFX

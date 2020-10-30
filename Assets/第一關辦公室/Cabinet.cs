@@ -49,7 +49,7 @@ public class Cabinet : MonoBehaviour
             cc4.BConTrolAppear();
             CC.ConTrolAppearbs();
             bb.ConTrolAppearb();
-            Mb.SavePosition();
+            // Mb.SavePosition();
             Mb.SaveBook();
         }
 

@@ -57,10 +57,10 @@ public class book : MonoBehaviour
         b_appear = false;
         s_appear = false;
     }
-    void OnMouseUp()
-    { 
-        transform.position = _pctrl.bookPos[id];
-    }
+    // void OnMouseUp()
+    // { 
+    //     transform.position = _pctrl.bookPos[id];
+    // }
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
         if (other.gameObject.tag == "xray"&& gameObject.name=="F")
@@ -71,7 +71,7 @@ public class book : MonoBehaviour
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "xray"&& gameObject.name=="D")
+        else if(other.gameObject.tag == "book"&& gameObject.name=="D")
         {
             s_appear = true;
         }
@@ -90,7 +90,7 @@ public class book : MonoBehaviour
                 temp = id;
                 id = b.id;
                 b.id = temp;
-                b.OnMouseUp();
+                // b.OnMouseUp();
             }
         }
       

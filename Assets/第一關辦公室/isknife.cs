@@ -5,6 +5,7 @@ using UnityEngine;
 public class isknife : MonoBehaviour
 {
     public picture2 p;
+    public bookappear bookappear;
     public GameObject K;
     public AudioClip s;
     AudioSource audiosource;
@@ -13,6 +14,7 @@ public class isknife : MonoBehaviour
         if(other.gameObject.tag=="knife")
         {
             p.DisAppear();
+            bookappear.ConTrolAppear();
             audiosource.PlayOneShot(s);
             K.SetActive(false);
         }
@@ -21,6 +23,7 @@ public class isknife : MonoBehaviour
     void Start()
     {
         p = p.GetComponent<picture2>();
+        bookappear = bookappear.GetComponent<bookappear>();
         audiosource = GetComponent<AudioSource>();
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class mainPicture : MonoBehaviour
 {
@@ -41,7 +42,12 @@ public class mainPicture : MonoBehaviour
         {
            ispicture=true;
            Debug.Log("5555");
-           picture.SetActive(false);
+           Invoke("ConTrol",2);
+        }
+    }
+    void ConTrol()
+    {
+        picture.SetActive(false);
            picture0.SetActive(false);
            picture1.SetActive(false);
            picture2.SetActive(false);
@@ -49,7 +55,6 @@ public class mainPicture : MonoBehaviour
            pp1.ConTrolAppear();
            pp2.ConTrolAppear();
            hp.ConTrolAppear();
-        }
     }
 
     //Start is called before the first frame update
