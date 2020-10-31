@@ -8,12 +8,14 @@ public class Computer : MonoBehaviour
     BoxCollider2D bw;
     SpriteRenderer w;
     public GameObject game;
+    public windowaback cb;
     void Start()
     {
         AA = AA.GetComponent<Player>();
         bw = GetComponent<BoxCollider2D>();
         w = GetComponent<SpriteRenderer>();
         game.SetActive(false);
+        cb = cb.GetComponent<windowaback>();
     }
     public void CloseBoxCollider()
     {
@@ -26,6 +28,7 @@ public class Computer : MonoBehaviour
         {
             AA.StopMove();
             game.SetActive(true);
+            cb.ConTrolAppearb();
         }
 
     }

@@ -31,7 +31,6 @@ public class game : MonoBehaviour
     { 
         if(other.gameObject.tag == "wall")
         {
-            Debug.Log("56654");
             iswall=true;
             this.transform.position = start.transform.position;
             Invoke("ReMove",1);
@@ -57,7 +56,8 @@ public class game : MonoBehaviour
             iswall=true;
             this.transform.position = start.transform.position;
             Invoke("ReMove",1);
-            Debug.Log("6666");
+            third.SetActive(false);
+            first.SetActive(true);
         }
     }
     // Start is called before the first frame update
