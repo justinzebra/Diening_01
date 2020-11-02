@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class book : MonoBehaviour
 {
+    public GameObject bagbookoff;
     public int id = 0;
     int temp;
     public mainBook _pctrl;
@@ -63,9 +64,10 @@ public class book : MonoBehaviour
     // }
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
-        if (other.gameObject.tag == "xray"&& gameObject.name=="F")
+        if (other.gameObject.tag == "book"&& gameObject.name=="F")
         {
             s_appear = true;
+             bagbookoff.SetActive(false);
         }
         else if(other.gameObject.tag == "xray"&& gameObject.name=="L")
         {
@@ -74,6 +76,7 @@ public class book : MonoBehaviour
         else if(other.gameObject.tag == "book"&& gameObject.name=="D")
         {
             s_appear = true;
+            bagbookoff.SetActive(false);
         }
         else if(other.gameObject.tag == "xray"&& gameObject.name=="J")
         {
