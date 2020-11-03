@@ -1103,6 +1103,7 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1212,6 +1213,8 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &270034543
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
@@ -8317,6 +8320,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+<<<<<<< HEAD
+=======
   m_Name: 
   m_EditorClassIdentifier: 
   nodeRect:
@@ -8350,21 +8355,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   m_Name: 
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
+<<<<<<< HEAD
+    x: 63.33876
+    y: 140.57779
+=======
     x: 64.039764
     y: 192.85559
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
+<<<<<<< HEAD
+  itemId: 69
+  blockName: "\u80CC\u5305\u5200\u9EDE\u64CA"
+  description: 
+  eventHandler: {fileID: 971468194}
+  commandList:
+  - {fileID: 971468193}
+  - {fileID: 971468192}
+  - {fileID: 971468191}
+  - {fileID: 971468190}
+  - {fileID: 971468189}
+  - {fileID: 971468188}
+  - {fileID: 971468187}
+  - {fileID: 971468186}
+--- !u!114 &971468185
+=======
   itemId: 84
   blockName: "\u80CC\u5305D\u9EDE\u64CA"
   description: 
@@ -8379,8 +8401,6 @@ MonoBehaviour:
   - {fileID: 971468196}
   - {fileID: 971468195}
 --- !u!114 &971468186
-<<<<<<< HEAD
-=======
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8405,7 +8425,6 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &971468187
->>>>>>> parent of 9ec76d3... 20201103_wei_01
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8417,27 +8436,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  itemId: 65
-  indentLevel: 0
-  spriteRenderer: {fileID: 1039392868}
-=======
   itemId: 64
   indentLevel: 0
   spriteRenderer: {fileID: 2094250069}
->>>>>>> parent of 9ec76d3... 20201103_wei_01
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
   _targetColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 0}
-<<<<<<< HEAD
-  waitUntilFinished: 1
-  durationOLD: 0
-  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &971468187
-=======
   waitUntilFinished: 0
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
@@ -8451,14 +8458,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 971468124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 <<<<<<< HEAD
-  itemId: 64
-  indentLevel: 0
-  spriteRenderer: {fileID: 2094250069}
-=======
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   m_Name: 
@@ -8488,6 +8492,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
 =======
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
   spriteRenderer: {fileID: 728450533}
@@ -8592,7 +8599,6 @@ MonoBehaviour:
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   indentLevel: 0
   spriteRenderer: {fileID: 1039392868}
->>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   itemId: 64
   indentLevel: 0
@@ -8605,6 +8611,217 @@ MonoBehaviour:
     colorRef: {fileID: 0}
 <<<<<<< HEAD
     colorVal: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< HEAD
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468187
+=======
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468188
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468193
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 64
+  indentLevel: 0
+  spriteRenderer: {fileID: 2094250069}
+=======
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 64.039764
+    y: 192.85559
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 84
+  blockName: "\u80CC\u5305D\u9EDE\u64CA"
+  description: 
+  eventHandler: {fileID: 971468203}
+  commandList:
+  - {fileID: 971468202}
+  - {fileID: 971468201}
+  - {fileID: 971468200}
+  - {fileID: 971468199}
+  - {fileID: 971468198}
+  - {fileID: 971468197}
+  - {fileID: 971468196}
+  - {fileID: 971468195}
+--- !u!114 &971468186
+<<<<<<< HEAD
+=======
+=======
+  itemId: 63
+  indentLevel: 0
+  spriteRenderer: {fileID: 728450533}
+=======
+  itemId: 58
+  indentLevel: 0
+  spriteRenderer: {fileID: 2094250069}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+<<<<<<< HEAD
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468189
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &971468190
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  itemId: 65
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+=======
+  itemId: 61
+  indentLevel: 0
+  spriteRenderer: {fileID: 728450533}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
+--- !u!114 &971468187
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+--- !u!114 &971468191
+=======
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468194
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &971468192
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 971468184}
+  clickableObject: {fileID: 1702521065}
+  waitFrames: 2
+--- !u!114 &971468195
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 65
+=======
+  itemId: 59
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 64
+  indentLevel: 0
+  spriteRenderer: {fileID: 2094250069}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 79
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+<<<<<<< HEAD
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8679,6 +8896,12 @@ MonoBehaviour:
 =======
 --- !u!114 &971468194
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468196
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8689,15 +8912,25 @@ MonoBehaviour:
   m_EditorHideFlags: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 62
+  itemId: 78
   indentLevel: 0
+  spriteRenderer: {fileID: 521682198}
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 0
   durationOLD: 0
+<<<<<<< HEAD
 --- !u!114 &971468190
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8827,6 +9060,10 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &971468197
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468197
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8838,6 +9075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9289,6 +9527,84 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+--- !u!114 &971468202
+=======
+--- !u!114 &971468200
+=======
+--- !u!114 &971468198
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  itemId: 74
+=======
+  itemId: 76
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+<<<<<<< HEAD
+--- !u!114 &971468201
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+--- !u!114 &971468199
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 72
+  indentLevel: 0
+  spriteRenderer: {fileID: 521682198}
+=======
+  itemId: 73
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 75
+  indentLevel: 0
+  spriteRenderer: {fileID: 828816833}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 77
+  indentLevel: 0
+  spriteRenderer: {fileID: 828816833}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
 --- !u!114 &971468202
 =======
@@ -10762,7 +11078,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -20, y: -0.9200001, z: -1.9999998}
+=======
+  m_LocalPosition: {x: -20.21, y: -0.9200001, z: -1.9999998}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   m_LocalPosition: {x: -20.21, y: -0.9200001, z: -1.9999998}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
@@ -12618,7 +12938,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -20, y: 1.1500001, z: -12}
+=======
+  m_LocalPosition: {x: -20.21, y: 1.1500001, z: -12}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   m_LocalPosition: {x: -20.21, y: 1.1500001, z: -12}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
