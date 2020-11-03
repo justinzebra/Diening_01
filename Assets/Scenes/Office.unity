@@ -1101,6 +1101,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &237195691
 <<<<<<< HEAD
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1210,6 +1211,8 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &270034543
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
 GameObject:
@@ -8345,6 +8348,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: 
   m_EditorClassIdentifier: 
   nodeRect:
@@ -8408,6 +8412,8 @@ MonoBehaviour:
   indentLevel: 0
   spriteRenderer: {fileID: 2094250069}
 =======
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
   m_Name: 
   m_EditorClassIdentifier: 
   nodeRect:
@@ -8432,6 +8438,8 @@ MonoBehaviour:
   - {fileID: 971468196}
   - {fileID: 971468195}
 --- !u!114 &971468186
+<<<<<<< HEAD
+=======
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8446,6 +8454,37 @@ MonoBehaviour:
   itemId: 65
   indentLevel: 0
   spriteRenderer: {fileID: 1039392868}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &971468187
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  itemId: 65
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 64
+  indentLevel: 0
+  spriteRenderer: {fileID: 2094250069}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   _duration:
     floatRef: {fileID: 0}
@@ -8454,6 +8493,9 @@ MonoBehaviour:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
   waitUntilFinished: 0
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
@@ -8476,6 +8518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   itemId: 63
   indentLevel: 0
   spriteRenderer: {fileID: 728450533}
@@ -8483,6 +8526,11 @@ MonoBehaviour:
   itemId: 64
   indentLevel: 0
   spriteRenderer: {fileID: 2094250069}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 63
+  indentLevel: 0
+  spriteRenderer: {fileID: 728450533}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   _duration:
     floatRef: {fileID: 0}
@@ -8494,6 +8542,9 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 --- !u!114 &971468189
 =======
 --- !u!114 &971468188
@@ -8507,6 +8558,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &971468190
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -8559,6 +8628,7 @@ MonoBehaviour:
     floatVal: 1
   durationOLD: 0
 --- !u!114 &971468192
+<<<<<<< HEAD
 =======
   m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
@@ -8595,6 +8665,8 @@ MonoBehaviour:
     floatVal: 1
   durationOLD: 0
 --- !u!114 &971468190
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8607,6 +8679,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
   itemId: 59
   indentLevel: 0
   spriteRenderer: {fileID: 1039392868}
@@ -8625,9 +8700,13 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &971468193
 =======
 --- !u!114 &971468191
+=======
+--- !u!114 &971468193
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8658,6 +8737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
   itemId: 58
   indentLevel: 0
@@ -8819,6 +8899,108 @@ MonoBehaviour:
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
   indentLevel: 0
   spriteRenderer: {fileID: 521682198}
+=======
+  itemId: 58
+  indentLevel: 0
+  spriteRenderer: {fileID: 2094250069}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+<<<<<<< HEAD
+--- !u!114 &971468199
+=======
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
+--- !u!114 &971468197
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+--- !u!114 &971468194
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 971468184}
+  clickableObject: {fileID: 1702521065}
+  waitFrames: 2
+--- !u!114 &971468195
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 75
+=======
+  itemId: 77
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  indentLevel: 0
+  spriteRenderer: {fileID: 828816833}
+=======
+  itemId: 79
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+--- !u!114 &971468200
+=======
+--- !u!114 &971468198
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+--- !u!114 &971468196
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971468124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 74
+=======
+  itemId: 76
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+=======
+  itemId: 78
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
+  indentLevel: 0
+  spriteRenderer: {fileID: 521682198}
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -8828,7 +9010,11 @@ MonoBehaviour:
   waitUntilFinished: 0
   durationOLD: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+--- !u!114 &971468201
+=======
 --- !u!114 &971468199
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &971468197
@@ -8845,7 +9031,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 73
+=======
   itemId: 75
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   itemId: 77
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
@@ -8861,6 +9051,9 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+--- !u!114 &971468202
+=======
 --- !u!114 &971468200
 =======
 --- !u!114 &971468198
@@ -8888,6 +9081,7 @@ MonoBehaviour:
   durationOLD: 0
 <<<<<<< HEAD
 --- !u!114 &971468201
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
 --- !u!114 &971468199
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
@@ -8903,12 +9097,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
+  itemId: 72
+  indentLevel: 0
+  spriteRenderer: {fileID: 521682198}
+=======
   itemId: 73
+  indentLevel: 0
+  spriteRenderer: {fileID: 1039392868}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   itemId: 75
->>>>>>> parent of 9ec76d3... 20201103_wei_01
   indentLevel: 0
   spriteRenderer: {fileID: 828816833}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -8919,6 +9121,8 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 --- !u!114 &971468202
 =======
 --- !u!114 &971468200
@@ -8971,6 +9175,7 @@ MonoBehaviour:
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
 --- !u!114 &971468202
 MonoBehaviour:
@@ -10316,7 +10521,11 @@ Transform:
   m_GameObject: {fileID: 1303971058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -20, y: -0.9200001, z: -1.9999998}
+=======
+  m_LocalPosition: {x: -20.21, y: -0.9200001, z: -1.9999998}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   m_LocalPosition: {x: -20.21, y: -0.9200001, z: -1.9999998}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
@@ -12164,7 +12373,11 @@ Transform:
   m_GameObject: {fileID: 1595440248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -20, y: 1.1500001, z: -12}
+=======
+  m_LocalPosition: {x: -20.21, y: 1.1500001, z: -12}
+>>>>>>> parent of 9ec76d3... 20201103_wei_01
 =======
   m_LocalPosition: {x: -20.21, y: 1.1500001, z: -12}
 >>>>>>> parent of 9ec76d3... 20201103_wei_01
