@@ -47,7 +47,7 @@ public class mainPicture : MonoBehaviour
     }
     void ConTrol()
     {
-        picture.SetActive(false);
+           picture.SetActive(false);
            picture0.SetActive(false);
            picture1.SetActive(false);
            picture2.SetActive(false);

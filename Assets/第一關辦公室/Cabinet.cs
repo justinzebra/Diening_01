@@ -11,7 +11,11 @@ public class Cabinet : MonoBehaviour
     public book cc2;
     public book cc3;
     public book cc4;
-    public bookslot CC;
+    public bookslot CC1;
+    public bookslot CC2;
+    public bookslot CC3;
+    public bookslot CC4;
+    public bookslot CC5;
     public windowaback bb;
     public mainBook Mb;
     BoxCollider2D bw;
@@ -25,7 +29,11 @@ public class Cabinet : MonoBehaviour
         cc2 = cc2.GetComponent<book>();
         cc3 = cc3.GetComponent<book>();
         cc4 = cc4.GetComponent<book>();
-        CC = CC.GetComponent<bookslot>();
+        CC1 = CC1.GetComponent<bookslot>();
+        CC2 = CC2.GetComponent<bookslot>();
+        CC3 = CC3.GetComponent<bookslot>();
+        CC4 = CC4.GetComponent<bookslot>();
+        CC5 = CC5.GetComponent<bookslot>();
         bb = bb.GetComponent<windowaback>();
         Mb = Mb.GetComponent<mainBook>();
         bw = GetComponent<BoxCollider2D>();
@@ -47,7 +55,11 @@ public class Cabinet : MonoBehaviour
             cc2.BConTrolAppear();
             cc3.BConTrolAppear();
             cc4.BConTrolAppear();
-            CC.ConTrolAppearbs();
+            CC1.ConTrolAppearbs();
+            CC2.ConTrolAppearbs();
+            CC3.ConTrolAppearbs();
+            CC4.ConTrolAppearbs();
+            CC5.ConTrolAppearbs();
             bb.ConTrolAppearb();
             // Mb.SavePosition();
             Mb.SaveBook();

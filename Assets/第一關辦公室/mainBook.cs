@@ -37,11 +37,14 @@ public class mainBook : MonoBehaviour
            Book[4].GetComponent<book>().id == 4 && !doorOpen) 
         {
             doorOpen = true;
-            AA.MusicPlay();
-            CC.CloseBoxCollider();
+            Invoke("Opendoor",4);
         }
     }
-
+    public void Opendoor()
+    {
+         AA.MusicPlay();
+         CC.CloseBoxCollider();
+    }
     //Start is called before the first frame update
     void Start()
     {

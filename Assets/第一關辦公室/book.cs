@@ -63,11 +63,11 @@ public class book : MonoBehaviour
     // }
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
-        if (other.gameObject.tag == "xray"&& gameObject.name=="F")
+        if (other.gameObject.tag == "book"&& gameObject.name=="F")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "xray"&& gameObject.name=="L")
+        else if(other.gameObject.tag == "book"&& gameObject.name=="L")
         {
             s_appear = true;
         }
@@ -75,11 +75,11 @@ public class book : MonoBehaviour
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "xray"&& gameObject.name=="J")
+        else if(other.gameObject.tag == "book"&& gameObject.name=="J")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "xray"&& gameObject.name=="P")
+        else if(other.gameObject.tag == "book"&& gameObject.name=="P")
         {
             s_appear = true;
         }

@@ -10,6 +10,7 @@ public class game : MonoBehaviour
     public GameObject third;
     public GameObject start;
     public bool iswall=false;
+    public bookappear bookappear;
     void OnMouseDrag()
     {
         if(iswall==false)
@@ -58,6 +59,7 @@ public class game : MonoBehaviour
             Invoke("ReMove",1);
             third.SetActive(false);
             first.SetActive(true);
+            bookappear.ConTrolAppear();
         }
     }
     // Start is called before the first frame update
@@ -65,6 +67,7 @@ public class game : MonoBehaviour
     {
         second.SetActive(false);
         third.SetActive(false);
+        bookappear = bookappear.GetComponent<bookappear>();
     }
 
     // Update is called once per frame

@@ -6,6 +6,7 @@ public class isknife : MonoBehaviour
 {
     public picture2 p;
     public bookappear bookappear;
+    public heartpicture hp;
     public GameObject K;
     public AudioClip s;
     AudioSource audiosource;
@@ -14,9 +15,11 @@ public class isknife : MonoBehaviour
         if(other.gameObject.tag=="knife")
         {
             p.DisAppear();
+            hp.ConTrolAppear();
             bookappear.ConTrolAppear();
             audiosource.PlayOneShot(s);
             K.SetActive(false);
+            
         }
     }
     // Start is called before the first frame update
@@ -25,6 +28,7 @@ public class isknife : MonoBehaviour
         p = p.GetComponent<picture2>();
         bookappear = bookappear.GetComponent<bookappear>();
         audiosource = GetComponent<AudioSource>();
+        hp = hp.GetComponent<heartpicture>();
     }
 
     // Update is called once per frame
