@@ -10,8 +10,11 @@ public class Rope : MonoBehaviour
     private LineRenderer lineRenderer;
     private List<RopeSegment> ropeSegments = new List<RopeSegment>();
     private float ropeSegLen = 0.25f;
-    private int segmentLength = 35;
-    private float lineWidth = 0.1f;
+    private int segmentLength = 70;
+    private float lineWidth = 0.2f;
+    LineRenderer LineRenderer;
+    bool l_appear = true;
+
 
     // Use this for initialization
     void Start()
@@ -24,12 +27,30 @@ public class Rope : MonoBehaviour
             this.ropeSegments.Add(new RopeSegment(ropeStartPoint));
             ropeStartPoint.y -= ropeSegLen;
         }
+        LineRenderer = gameObject.GetComponent<LineRenderer>();
     }
-
+    public void ConTrolAppear()
+    {
+        l_appear = true;
+    }
+    void Appear()
+    {
+        if (l_appear == true)
+        {
+            LineRenderer.enabled = true;
+            
+        }
+        else
+        {
+            LineRenderer.enabled = false;
+            
+        }
+    }
     // Update is called once per frame
     void Update()
     {
         this.DrawRope();
+        Appear();
     }
 
     private void FixedUpdate()

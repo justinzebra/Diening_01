@@ -19,7 +19,7 @@ public class book : MonoBehaviour
     {
         Camera cam = Camera.main;      
         Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);  
-        this.transform.position = new Vector3(newPos.x, newPos.y, -8.9f);
+        this.transform.position = new Vector3(newPos.x, newPos.y, -0.1f);
         
     }
     void SAppear()

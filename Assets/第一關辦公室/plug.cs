@@ -4,34 +4,41 @@ using UnityEngine;
 
 public class plug : MonoBehaviour
 {
-    public GameObject plug1;
-    public GameObject plug2;
-    public AudioClip p;
-    AudioSource audiosource;
+    public GameObject Plug;
+    public GameObject dirty;
+    public GameObject clean;
+    public socket socket;
+    public inserted inserted;
+    public bookappear bookappear;
     void OnMouseDrag()
     {
         Camera cam = Camera.main;      
         Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);  
-        this.transform.position = new Vector3(newPos.x, newPos.y,0.1f);
+        this.transform.position = new Vector3(newPos.x, newPos.y,-0.1f);
         
     }
     void OnTriggerEnter2D(Collider2D other)
     {
        
-        if(other.gameObject.tag=="D")
+        if(other.gameObject.tag=="socket")
         {
-            audiosource.PlayOneShot(p);
-            
-            plug2.SetActive(true);
-            plug1.SetActive(false);
+            // plug2.SetActive(true);
+            Plug.SetActive(false);
+            socket.ConTrolAppear();
+            inserted.ConTrolAppear();
+            clean.SetActive(true);
+            dirty.SetActive(false);
+            bookappear.ConTrolAppear();
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        plug2.SetActive(false);
-        audiosource = GetComponent<AudioSource>();
+        socket = socket.GetComponent<socket>();
+        inserted = inserted.GetComponent<inserted>();
+        clean.SetActive(false);
+        bookappear = bookappear.GetComponent<bookappear>();
     }
 
     // Update is called once per frame

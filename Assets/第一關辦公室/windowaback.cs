@@ -31,6 +31,8 @@ public class windowaback : MonoBehaviour
     public picture2 P2;
     public heartpicture hp;
     public GameObject computer; 
+    public GameObject socket; 
+
     SpriteRenderer w;
     BoxCollider2D bw;
 
@@ -82,6 +84,7 @@ public class windowaback : MonoBehaviour
             hp.DisAppear();
             b_appear = false;
             computer.SetActive(false);
+            socket.SetActive(false);
         }
 
     }
