@@ -9,7 +9,7 @@ public class book : MonoBehaviour
     public int id = 0;
     int temp;
     public mainBook _pctrl;
-    bool b_appear = false;
+    bool b_appear = true;
     bool s_appear = false;
     SpriteRenderer w;
     BoxCollider2D bw;
@@ -57,49 +57,81 @@ public class book : MonoBehaviour
         b_appear = false;
         s_appear = false;
     }
-    // void OnMouseUp()
-    // { 
-    //     transform.position = _pctrl.bookPos[id];
-    // }
-    void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
+   
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "book"&& gameObject.name=="F")
+        //控制書出現
+        if (other.gameObject.name == "背包裡的F"&& gameObject.name=="F")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "book"&& gameObject.name=="L")
+        else if(other.gameObject.name == "背包裡的L"&& gameObject.name=="L")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "book"&& gameObject.name=="D")
+        else if(other.gameObject.name == "背包裡的D"&& gameObject.name=="D")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "book"&& gameObject.name=="J")
+        else if(other.gameObject.name == "背包裡的J"&& gameObject.name=="J")
         {
             s_appear = true;
         }
-        else if(other.gameObject.tag == "book"&& gameObject.name=="P")
+        else if(other.gameObject.name == "背包裡的P"&& gameObject.name=="P")
         {
             s_appear = true;
         }
-        foreach (book b in _pctrl.allBook)
+       
+        if(other.gameObject.name=="bb"&&this.gameObject.name=="D")
         {
-            if (b.id == other.GetComponent<bookslot>().id)
-            {
-                temp = id;
-                id = b.id;
-                b.id = temp;
-                // b.OnMouseUp();
-            }
+            _pctrl.isD();
+        }
+        else if(other.gameObject.name=="bd"&&this.gameObject.name=="F")
+        {
+            _pctrl.isF();
+        }
+        else if(other.gameObject.name=="ba"&&this.gameObject.name=="J")
+        {
+            _pctrl.isJ();
+        }
+        else if(other.gameObject.name=="bc"&&this.gameObject.name=="L")
+        {
+            _pctrl.isL();
+        }
+        else if(other.gameObject.name=="be"&&this.gameObject.name=="P")
+        {
+            _pctrl.isP();
         }
       
+    }
+    void OnTriggerExit2D(Collider2D other)
+    { 
+         if(other.gameObject.name=="bb"&&this.gameObject.name=="D")
+        {
+            _pctrl.notD();
+        }
+        else if(other.gameObject.name=="bd"&&this.gameObject.name=="F")
+        {
+            _pctrl.notF();
+        }
+        else if(other.gameObject.name=="ba"&&this.gameObject.name=="J")
+        {
+            _pctrl.notJ();
+        }
+        else if(other.gameObject.name=="bc"&&this.gameObject.name=="L")
+        {
+            _pctrl.notL();
+        }
+        else if(other.gameObject.name=="be"&&this.gameObject.name=="P")
+        {
+            _pctrl.notP();
+        }
     }
    
     // Start is called before the first frame update
     void Start()
     {
-        _pctrl = transform.parent.GetComponent<mainBook>();
+        _pctrl = _pctrl.GetComponent<mainBook>();
         w = GetComponent<SpriteRenderer>();
         bw = GetComponent<BoxCollider2D>();
     }

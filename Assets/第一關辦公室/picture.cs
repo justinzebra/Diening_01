@@ -48,33 +48,41 @@ public class picture : MonoBehaviour
         
     }
   
-    // void OnMouseUp()
-    // { 
-    //      if(isright==true)
-    //     {
-    //     transform.position = _pctrl.picturePos[id];
-    //     }
-    // }
-    void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
-    {
-        
-        foreach (picture p in _pctrl.allPicture)
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+        if(other.gameObject.name=="pa"&&this.gameObject.name=="腦")
         {
-            if (p.id == other.GetComponent<pictureslot>().id)
-            {
-                temp = id;
-                id = p.id;
-                p.id = temp;
-                // p.OnMouseUp();
-            }
+            _pctrl.isBrain();
         }
-      
+        else if(other.gameObject.name=="pb"&&this.gameObject.name=="心")
+        {
+            _pctrl.isHeart();
+        }
+        else if(other.gameObject.name=="pc"&&this.gameObject.name=="肺")
+        {
+            _pctrl.isLung();
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    { 
+        if(other.gameObject.name=="pa"&&this.gameObject.name=="腦")
+        {
+            _pctrl.notBrain();
+        }
+        else if(other.gameObject.name=="pb"&&this.gameObject.name=="心")
+        {
+            _pctrl.notHeart();
+        }
+        else if(other.gameObject.name=="pc"&&this.gameObject.name=="肺")
+        {
+            _pctrl.notLung();
+        }
     }
    
     // Start is called before the first frame update
     void Start()
     {
-        _pctrl = transform.parent.GetComponent<mainPicture>();
+        _pctrl = _pctrl.GetComponent<mainPicture>();
         w = GetComponent<SpriteRenderer>();
         bw = GetComponent<BoxCollider2D>();
     }

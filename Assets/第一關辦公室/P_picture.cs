@@ -13,7 +13,6 @@ public class P_picture : MonoBehaviour
     public pictureslot CC1;
     public pictureslot CC2;
     public windowaback bb;
-    public mainPicture Mb;
     BoxCollider2D bw;
     
     // Start is called before the first frame update
@@ -28,7 +27,6 @@ public class P_picture : MonoBehaviour
         CC1 = CC1.GetComponent<pictureslot>();
         CC2 = CC2.GetComponent<pictureslot>();
         bb = bb.GetComponent<windowaback>();
-        Mb = Mb.GetComponent<mainPicture>();
         bw = GetComponent<BoxCollider2D>();
         
     }
@@ -46,9 +44,6 @@ public class P_picture : MonoBehaviour
             CC1.ConTrolAppearbs();
             CC2.ConTrolAppearbs();
             bb.ConTrolAppearb();
-            // Mb.SavePosition();
-            Mb.SavePicture();
-            
         }
 
     }

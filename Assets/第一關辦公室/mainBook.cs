@@ -6,39 +6,63 @@ using UnityEngine;
 
 public class mainBook : MonoBehaviour
 {
-    public Vector3[] bookPos;
-    public book[] allBook = new book[5];
-    public Transform[] Book;
     public opendoor AA;
     public Cabinet CC;
     bool doorOpen;
+    bool D=false;
+    bool F=false;
+    bool J=false;
+    bool L=false;
+    bool P=false;
 
 
-    public void SavePosition()
-    {
-        bookPos = new Vector3[5];
-        for (int i = 0; i < transform.childCount; i++)
-        {
-
-            bookPos[i] = transform.GetChild(i).transform.position;
-
-        }
-    }
-    public void SaveBook()
-    {
-        allBook = GetComponentsInChildren<book>();
-    }
     void CheckDoor()
     {
-        if (Book[0].GetComponent<book>().id == 1 &&
-           Book[1].GetComponent<book>().id == 3 &&
-           Book[2].GetComponent<book>().id == 0 &&
-           Book[3].GetComponent<book>().id == 2 &&
-           Book[4].GetComponent<book>().id == 4 && !doorOpen) 
+         if (D==true&&F==true&&J==true&&L==true&&P==true&&!doorOpen) 
         {
-            doorOpen = true;
-            Invoke("Opendoor",4);
+           doorOpen=true;
+           Opendoor();
         }
+    }
+    public void isD()
+    {
+        D=true;
+    }
+    public void notD()
+    {
+        D=false;
+    }
+    public void isF()
+    {
+        F=true;
+    }
+    public void notF()
+    {
+        F=false;
+    }
+    public void isJ()
+    {
+        J=true;
+    }
+    public void notJ()
+    {
+        J=false;
+    }
+    public void isL()
+    {
+        L=true;
+    }
+    public void notL()
+    {
+        L=false;
+    }
+    public void isP()
+    {
+        P=true;
+    }
+    public void notP()
+    {
+        P=false;
     }
     public void Opendoor()
     {

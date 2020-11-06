@@ -17,9 +17,9 @@ public class Cabinet : MonoBehaviour
     public bookslot CC4;
     public bookslot CC5;
     public windowaback bb;
-    public mainBook Mb;
     BoxCollider2D bw;
     SpriteRenderer w;
+    public GameObject cabinet;
     void Start()
     {
         AA = AA.GetComponent<Player>();
@@ -35,9 +35,9 @@ public class Cabinet : MonoBehaviour
         CC4 = CC4.GetComponent<bookslot>();
         CC5 = CC5.GetComponent<bookslot>();
         bb = bb.GetComponent<windowaback>();
-        Mb = Mb.GetComponent<mainBook>();
         bw = GetComponent<BoxCollider2D>();
         w = GetComponent<SpriteRenderer>();
+        cabinet.SetActive(false);
     }
     public void CloseBoxCollider()
     {
@@ -61,8 +61,7 @@ public class Cabinet : MonoBehaviour
             CC4.ConTrolAppearbs();
             CC5.ConTrolAppearbs();
             bb.ConTrolAppearb();
-            // Mb.SavePosition();
-            Mb.SaveBook();
+            cabinet.SetActive(true);
         }
 
     }
