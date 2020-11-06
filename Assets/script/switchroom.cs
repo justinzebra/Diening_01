@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class switchroom : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class switchroom : MonoBehaviour
         if (other.name == "player"&&d_canuse==true)
         {
           E.SetActive(true);
+        }
+         if (other.name == "player"&&d_canuse==true&&Input.GetKey("e"))
+        {
+          // SceneManager.LoadScene("Ca");
         }
     }
 

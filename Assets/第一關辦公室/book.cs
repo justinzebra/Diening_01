@@ -64,22 +64,27 @@ public class book : MonoBehaviour
         if (other.gameObject.name == "背包裡的F"&& gameObject.name=="F")
         {
             s_appear = true;
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.name == "背包裡的L"&& gameObject.name=="L")
         {
             s_appear = true;
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.name == "背包裡的D"&& gameObject.name=="D")
         {
             s_appear = true;
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.name == "背包裡的J"&& gameObject.name=="J")
         {
             s_appear = true;
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.name == "背包裡的P"&& gameObject.name=="P")
         {
             s_appear = true;
+            Destroy(other.gameObject);
         }
        
         if(other.gameObject.name=="bb"&&this.gameObject.name=="D")

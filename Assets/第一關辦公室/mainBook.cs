@@ -14,6 +14,7 @@ public class mainBook : MonoBehaviour
     bool J=false;
     bool L=false;
     bool P=false;
+    public windowaback windowaback;
 
 
     void CheckDoor()
@@ -22,6 +23,7 @@ public class mainBook : MonoBehaviour
         {
            doorOpen=true;
            Opendoor();
+           Invoke("closeCabinet",3);
         }
     }
     public void isD()
@@ -69,11 +71,16 @@ public class mainBook : MonoBehaviour
          AA.MusicPlay();
          CC.CloseBoxCollider();
     }
+    void closeCabinet()
+    {
+        windowaback.OnMouseDown();
+    }
     //Start is called before the first frame update
     void Start()
     {
         AA = AA.GetComponent<opendoor>();
         CC = CC.GetComponent<Cabinet>();
+        windowaback = windowaback.GetComponent<windowaback>();
         doorOpen=false;
 
     }

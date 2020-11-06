@@ -10,10 +10,12 @@ public class maindog : MonoBehaviour
     public bool faceleft = true;
     private bool isPlayer;
     public float Speed = 5;
-    
+    bool iswalk=false;
     SpriteRenderer c;
+    Animator dogani;
     void Move()
     {
+        dogani.SetBool("walk",true);
         if(faceleft)
         {
             dog.velocity = new Vector2(-3,dog.velocity.y);
@@ -33,17 +35,17 @@ public class maindog : MonoBehaviour
             }
         }
     }
-    void DogState()
+    void Stop()
     {
-        if(Speed>0.0f)
-        {
-            c.color=new Color(0,20,255,255);
-        }
-        else if(Speed==0.0f)
-        {
-            c.color=new Color(255,0,0,255);
-        }
-       
+        dog.velocity = new Vector2(0,dog.velocity.y);
+        dogani.SetBool("walk",false);
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+      if(other.gameObject.tag=="Player")
+      {
+          iswalk=true;
+      }
     }
     // Start is called before the first frame update
     void Start()
@@ -54,12 +56,19 @@ public class maindog : MonoBehaviour
         Destroy(leftpoint.gameObject);
         Destroy(rightpoint.gameObject);
         c = GetComponent<SpriteRenderer>();
+        dogani = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        // DogState();
+        if(iswalk==true)
+        {
+            Move();
+        }
+        else
+        {
+            Stop();
+        }
     }
 }

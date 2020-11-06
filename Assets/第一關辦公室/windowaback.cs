@@ -44,7 +44,7 @@ public class windowaback : MonoBehaviour
             bw.enabled = false;
         }
     }
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         if (gameObject.tag == "windowl")
         {
