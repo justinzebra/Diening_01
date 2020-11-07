@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 462482485}
   m_Layer: 0
   m_Name: player
-  m_TagString: player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,8 +644,6 @@ MonoBehaviour:
   m_Animator: {fileID: 0}
   ss: {fileID: 0}
   ww: {fileID: 0}
-  m_bag: {fileID: 816219079}
-  bagisopen: 1
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &462482480
 Rigidbody2D:
@@ -1621,7 +1619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762467174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.074759, y: 0.8773141, z: -11.4}
+  m_LocalPosition: {x: 12.080676, y: 0.8773141, z: -11.4}
   m_LocalScale: {x: 0.68600005, y: 0.68600005, z: 0.68600005}
   m_Children:
   - {fileID: 816219080}
@@ -3588,7 +3586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c82c80a71bb184b922b82674446aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToTheScene: 03
+  goToTheScene: electricity
 --- !u!61 &2146836794
 BoxCollider2D:
   m_ObjectHideFlags: 0

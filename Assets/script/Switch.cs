@@ -10,7 +10,7 @@ public class Switch : MonoBehaviour
     public string goToTheScene;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("player"))
+        if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(goToTheScene);
         }
