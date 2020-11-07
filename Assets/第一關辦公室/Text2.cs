@@ -6,6 +6,7 @@ public class Text2 : MonoBehaviour
 {
     bool b_appear = false;
     SpriteRenderer w;
+    public Player AA;
     
 
     void OnCollisionEnter2D(Collision2D other)
@@ -40,7 +41,7 @@ public class Text2 : MonoBehaviour
     void Start()
     {
         w = GetComponent<SpriteRenderer>();
-       
+        AA = AA.GetComponent<Player>();
     }
 
     // Update is called once per frame
