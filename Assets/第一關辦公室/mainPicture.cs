@@ -62,7 +62,7 @@ public class mainPicture : MonoBehaviour
            pp0.ConTrolAppear();
            pp1.ConTrolAppear();
            pp2.ConTrolAppear();
-           hp.ConTrolAppear();
+        //    hp.ConTrolAppear();
     }
 
     //Start is called before the first frame update
