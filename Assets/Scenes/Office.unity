@@ -2724,7 +2724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   useEventSystem: 0
 --- !u!61 &382995215
 BoxCollider2D:
@@ -2982,7 +2982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405260172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 0.41, z: 7.47}
+  m_LocalPosition: {x: -0.05, y: 0.41, z: 4.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1702521061}
@@ -3891,7 +3891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!1 &475896412
@@ -5445,7 +5445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!61 &618765947
@@ -5645,7 +5645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: 84e077f19d7db7b478a8d67e3813dccb, type: 3}
   useEventSystem: 0
 --- !u!61 &628951961
 BoxCollider2D:
@@ -5923,7 +5923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 2800000, guid: b45e1bd196617084885705acb96f63fe, type: 3}
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   useEventSystem: 0
 --- !u!1 &682172222
 GameObject:
@@ -6679,7 +6679,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7713537, y: 0.2104299}
+  m_Offset: {x: -0.70039845, y: 0.18914294}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6690,7 +6690,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6955738, y: 0.8165302}
+  m_Size: {x: 1.0645428, y: 1.0577803}
   m_EdgeRadius: 0
 --- !u!212 &752520404
 SpriteRenderer:
@@ -6769,7 +6769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!1 &756957636
@@ -8099,7 +8099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   useEventSystem: 0
 --- !u!61 &887794550
 BoxCollider2D:
@@ -12078,7 +12078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   useEventSystem: 0
 --- !u!212 &990438661
 SpriteRenderer:
@@ -12739,6 +12739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E: {fileID: 450129374}
+  goToTheScene: gallery_before
 --- !u!61 &1100645229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13219,7 +13220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
   useEventSystem: 0
 --- !u!61 &1240495368
 BoxCollider2D:
@@ -14557,7 +14558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 84e077f19d7db7b478a8d67e3813dccb, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!1 &1404815862
@@ -18471,6 +18472,7 @@ GameObject:
   - component: {fileID: 2067198721}
   - component: {fileID: 2067198722}
   - component: {fileID: 2067198723}
+  - component: {fileID: 2067198724}
   m_Layer: 0
   m_Name: end
   m_TagString: Untagged
@@ -18608,6 +18610,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2067198724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067198718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickEnabled: 1
+  hoverCursor: {fileID: 2800000, guid: 96c0b71d7b5fef144b9493e9707c853e, type: 3}
+  useEventSystem: 0
 --- !u!1 &2069964387
 GameObject:
   m_ObjectHideFlags: 0
@@ -19080,7 +19097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!1 &2146291494

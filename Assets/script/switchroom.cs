@@ -7,24 +7,26 @@ public class switchroom : MonoBehaviour
 {
     public GameObject E;
     bool d_canuse = false;
-    
+    public string goToTheScene;
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "player"&&d_canuse==true)
+        if (other.name == "player" && d_canuse == true)
         {
-          E.SetActive(true);
+            E.SetActive(true);
         }
-         if (other.name == "player"&&d_canuse==true&&Input.GetKey("e"))
+        if (other.name == "player" && d_canuse == true && Input.GetKey("e"))
         {
-          // SceneManager.LoadScene("Ca");
+            // SceneManager.LoadScene("Ca");
+            SceneManager.LoadScene(goToTheScene);
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "player"&&d_canuse==true)
+        if (other.name == "player" && d_canuse == true)
         {
-          E.SetActive(false);
+            E.SetActive(false);
         }
     }
 
@@ -41,6 +43,10 @@ public class switchroom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+
+
+
 }

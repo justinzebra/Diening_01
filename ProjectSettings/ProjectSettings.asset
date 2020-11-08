@@ -14,8 +14,8 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: big weiwei
-  defaultCursor: {fileID: 2800000, guid: 50e8e0547e670eb41b55a434e697234b, type: 3}
-  cursorHotspot: {x: 30, y: 30}
+  defaultCursor: {fileID: 2800000, guid: b7cfdc5fc58be2e49874fa55d5a399ba, type: 3}
+  cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
