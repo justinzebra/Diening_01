@@ -5660,7 +5660,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.522804, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5671,7 +5671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.06, y: 4.72}
+  m_Size: {x: 4.335019, y: 4.72}
   m_EdgeRadius: 0
 --- !u!114 &628951962
 MonoBehaviour:
@@ -5923,7 +5923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEnabled: 1
-  hoverCursor: {fileID: 0}
+  hoverCursor: {fileID: 2800000, guid: b45e1bd196617084885705acb96f63fe, type: 3}
   useEventSystem: 0
 --- !u!1 &682172222
 GameObject:
@@ -13872,6 +13872,7 @@ GameObject:
   - component: {fileID: 1320839878}
   - component: {fileID: 1320839877}
   - component: {fileID: 1320839880}
+  - component: {fileID: 1320839881}
   m_Layer: 0
   m_Name: "\u95DC\u7A97_0"
   m_TagString: window
@@ -14117,6 +14118,21 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: 22eb050bacf8c401ca8503e24bff3570, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
+--- !u!114 &1320839881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320839873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickEnabled: 1
+  hoverCursor: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
+  useEventSystem: 0
 --- !u!1 &1355559771
 GameObject:
   m_ObjectHideFlags: 0
@@ -14266,7 +14282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84077ad04f39146bb422a00030c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 59fc464550372c1479e3a5f84d4b40c8, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   hotSpot: {x: 0, y: 0}
   cursorMode: 0
 --- !u!1 &1364548538
