@@ -27,7 +27,7 @@ public class Computer : MonoBehaviour
         if (gameObject.tag == "computer")
         {
             AA.StopMove();
-            game.SetActive(true);
+           // game.SetActive(true);
             cb.ConTrolAppearb();
         }
 

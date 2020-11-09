@@ -12,7 +12,7 @@ public class Socketa : MonoBehaviour
     {
         if (gameObject.tag == "socket")
         {
-           socket.SetActive(true);
+           //socket.SetActive(true);
            AA.StopMove();
            sb.ConTrolAppearb();
         }

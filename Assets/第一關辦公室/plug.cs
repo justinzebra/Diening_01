@@ -10,20 +10,23 @@ public class plug : MonoBehaviour
     public socket socket;
     public inserted inserted;
     public bookappear bookappear;
+    
     void OnMouseDrag()
     {
-        Camera cam = Camera.main;      
-        Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);  
-        this.transform.position = new Vector3(newPos.x, newPos.y,-0.1f);
-        
+        Camera cam = Camera.main;
+        Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);
+        this.transform.position = new Vector3(newPos.x, newPos.y, -0.1f);
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-       
-        if(other.gameObject.tag=="socket")
+
+        if (other.gameObject.tag == "socket")
         {
+
             // plug2.SetActive(true);
-            Plug.SetActive(false);
+           Plug.SetActive(false);
+            
             socket.ConTrolAppear();
             inserted.ConTrolAppear();
             clean.SetActive(true);
@@ -44,6 +47,6 @@ public class plug : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

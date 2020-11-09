@@ -7,7 +7,7 @@ public class switchroom : MonoBehaviour
 {
     public GameObject E;
     bool d_canuse = false;
-    public string goToTheScene;
+   
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,8 +17,8 @@ public class switchroom : MonoBehaviour
         }
         if (other.name == "player" && d_canuse == true && Input.GetKey("e"))
         {
-            // SceneManager.LoadScene("Ca");
-            SceneManager.LoadScene(goToTheScene);
+            SceneManager.LoadScene("Ca");
+            
         }
     }
 

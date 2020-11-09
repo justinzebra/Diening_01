@@ -61,7 +61,7 @@ public class Cabinet : MonoBehaviour
             CC4.ConTrolAppearbs();
             CC5.ConTrolAppearbs();
             bb.ConTrolAppearb();
-            cabinet.SetActive(true);
+          //  cabinet.SetActive(true);
         }
 
     }

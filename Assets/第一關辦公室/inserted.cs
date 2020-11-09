@@ -12,6 +12,7 @@ public class inserted : MonoBehaviour
     {
         s_appear = true;
         audiosource.PlayOneShot(p);
+        
     }
     void Appear()
     {
