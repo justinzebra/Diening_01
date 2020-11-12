@@ -10,7 +10,7 @@ public class plug : MonoBehaviour
     public socket socket;
     public inserted inserted;
     public bookappear bookappear;
-    
+
     void OnMouseDrag()
     {
         Camera cam = Camera.main;
@@ -25,8 +25,8 @@ public class plug : MonoBehaviour
         {
 
             // plug2.SetActive(true);
-           Plug.SetActive(false);
-            
+            Plug.SetActive(false);
+
             socket.ConTrolAppear();
             inserted.ConTrolAppear();
             clean.SetActive(true);
