@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Fungus;
 
 public class game : MonoBehaviour
 {
@@ -57,9 +58,10 @@ public class game : MonoBehaviour
             iswall=true;
             this.transform.position = start.transform.position;
             Invoke("ReMove",1);
-            third.SetActive(false);
-            first.SetActive(true);
+            third.SetActive(true);
+            //first.SetActive(true);
             bookappear.ConTrolAppear();
+            Flowchart.BroadcastFungusMessage ( "12345" );
         }
     }
     // Start is called before the first frame update
