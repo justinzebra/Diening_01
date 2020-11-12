@@ -1304,7 +1304,7 @@ SpriteRenderer:
   m_Size: {x: 32, y: 18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &205087517
@@ -1889,16 +1889,6 @@ MonoBehaviour:
   bb: {fileID: 757045382}
   AA: {fileID: 1754408753}
   CC: {fileID: 705090004}
-  cc0: {fileID: 1309031410}
-  cc1: {fileID: 1935666779}
-  cc2: {fileID: 408352471}
-  cc3: {fileID: 1756096606}
-  cc4: {fileID: 1803908488}
-  CC0: {fileID: 1337745974}
-  CC1: {fileID: 765218836}
-  CC2: {fileID: 641446757}
-  CC3: {fileID: 1231019526}
-  CC4: {fileID: 801134233}
   PP0: {fileID: 924926624}
   PP1: {fileID: 231480847}
   PP2: {fileID: 1474480456}
@@ -1911,6 +1901,8 @@ MonoBehaviour:
   P2: {fileID: 610853159}
   hp: {fileID: 2050438220}
   computer: {fileID: 1888113337}
+  socket: {fileID: 0}
+  cabinet: {fileID: 0}
 --- !u!212 &383152983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2040,7 +2032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393748315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.47, y: -4.4839997, z: -7.05}
+  m_LocalPosition: {x: 4.156, y: -4.39, z: -7.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1917053872}
@@ -2288,6 +2280,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   _pctrl: {fileID: 544280839}
+--- !u!1 &416209551
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416209553}
+  - component: {fileID: 416209552}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &416209552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416209551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
+--- !u!4 &416209553
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416209551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437497938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +2794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: {fileID: 507343990}
   bookappear: {fileID: 0}
+  hp: {fileID: 0}
   K: {fileID: 0}
   s: {fileID: 8300000, guid: 2d64dd2ffd83cd240bcc4ba31f730f92, type: 3}
 --- !u!50 &507343993
@@ -3291,21 +3328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b750b99f529fb4f98168bcfbe4bbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookPos: []
-  allBook:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Book:
-  - {fileID: 1935666774}
-  - {fileID: 1756096601}
-  - {fileID: 1309031405}
-  - {fileID: 408352466}
-  - {fileID: 1803908489}
   AA: {fileID: 0}
   CC: {fileID: 0}
+  windowaback: {fileID: 0}
 --- !u!4 &544280840
 Transform:
   m_ObjectHideFlags: 0
@@ -5193,7 +5218,7 @@ SpriteRenderer:
   m_Size: {x: 32, y: 18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &951526911
@@ -5286,16 +5311,6 @@ MonoBehaviour:
   bb: {fileID: 757045382}
   AA: {fileID: 1754408753}
   CC: {fileID: 705090004}
-  cc0: {fileID: 1309031410}
-  cc1: {fileID: 1935666779}
-  cc2: {fileID: 408352471}
-  cc3: {fileID: 1756096606}
-  cc4: {fileID: 1803908488}
-  CC0: {fileID: 1337745974}
-  CC1: {fileID: 765218836}
-  CC2: {fileID: 641446757}
-  CC3: {fileID: 1231019526}
-  CC4: {fileID: 801134233}
   PP0: {fileID: 924926624}
   PP1: {fileID: 231480847}
   PP2: {fileID: 1474480456}
@@ -5308,6 +5323,8 @@ MonoBehaviour:
   P2: {fileID: 610853159}
   hp: {fileID: 2050438220}
   computer: {fileID: 1888113337}
+  socket: {fileID: 0}
+  cabinet: {fileID: 0}
 --- !u!212 &965395311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5432,6 +5449,7 @@ MonoBehaviour:
   third: {fileID: 951526909}
   start: {fileID: 8576485}
   iswall: 0
+  bookappear: {fileID: 0}
 --- !u!114 &976708795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5862,16 +5880,6 @@ MonoBehaviour:
   bb: {fileID: 757045382}
   AA: {fileID: 1754408753}
   CC: {fileID: 705090004}
-  cc0: {fileID: 1935666779}
-  cc1: {fileID: 1756096606}
-  cc2: {fileID: 1309031410}
-  cc3: {fileID: 408352471}
-  cc4: {fileID: 1803908488}
-  CC0: {fileID: 1337745974}
-  CC1: {fileID: 765218836}
-  CC2: {fileID: 641446757}
-  CC3: {fileID: 1231019526}
-  CC4: {fileID: 801134233}
   PP0: {fileID: 924926624}
   PP1: {fileID: 231480847}
   PP2: {fileID: 1474480456}
@@ -5884,6 +5892,8 @@ MonoBehaviour:
   P2: {fileID: 610853159}
   hp: {fileID: 2050438220}
   computer: {fileID: 1888113337}
+  socket: {fileID: 0}
+  cabinet: {fileID: 0}
 --- !u!212 &1077155980
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6191,7 +6201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159869712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.47, y: -4.4839997, z: -7.05}
+  m_LocalPosition: {x: 4.156, y: -4.39, z: -7.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 187379106}
@@ -6275,7 +6285,7 @@ SpriteRenderer:
   m_Size: {x: 32, y: 18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1181100657
@@ -7424,15 +7434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b0570b923307c48a731963df1aed46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  picturePos: []
-  allPicture:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Picture:
-  - {fileID: 1474480457}
-  - {fileID: 231480846}
-  - {fileID: 924926623}
   pp0: {fileID: 507343990}
   pp1: {fileID: 29366908}
   pp2: {fileID: 610853159}
@@ -8987,8 +8988,6 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
-  ss: {fileID: 0}
-  ww: {fileID: 0}
   m_SpriteRenderer: {fileID: 0}
 --- !u!82 &1754408754
 AudioSource:
@@ -9211,8 +9210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754408752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.47, y: -6.554, z: 2.95}
-  m_LocalScale: {x: 0.66925204, y: 0.66925204, z: 0.66925204}
+  m_LocalPosition: {x: 4.156, y: -6.46, z: 2.95}
+  m_LocalScale: {x: 0.66404927, y: 0.66404927, z: 0.66404927}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -10433,16 +10432,6 @@ MonoBehaviour:
   bb: {fileID: 757045382}
   AA: {fileID: 1754408753}
   CC: {fileID: 705090004}
-  cc0: {fileID: 1935666779}
-  cc1: {fileID: 1756096606}
-  cc2: {fileID: 1309031410}
-  cc3: {fileID: 408352471}
-  cc4: {fileID: 1803908488}
-  CC0: {fileID: 1337745974}
-  CC1: {fileID: 765218836}
-  CC2: {fileID: 641446757}
-  CC3: {fileID: 1231019526}
-  CC4: {fileID: 801134233}
   PP0: {fileID: 924926624}
   PP1: {fileID: 231480847}
   PP2: {fileID: 1474480456}
@@ -10455,6 +10444,8 @@ MonoBehaviour:
   P2: {fileID: 610853159}
   hp: {fileID: 2050438220}
   computer: {fileID: 1888113337}
+  socket: {fileID: 0}
+  cabinet: {fileID: 0}
 --- !u!212 &1975783073
 SpriteRenderer:
   m_ObjectHideFlags: 0
