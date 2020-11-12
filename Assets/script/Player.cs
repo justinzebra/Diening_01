@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
     public bool grounded;
     //加入動畫
     public Animator m_Animator;
-    public GameObject ss;   //把手電筒包含trigger_flashlight引進來
-    public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
+    //public GameObject ss;   //把手電筒包含trigger_flashlight引進來
+    //public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
     bool Canmove = true;
 
 
@@ -72,19 +72,19 @@ public class Player : MonoBehaviour
     }
     void playwalk()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown("d"))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("d"))
         {
             GetComponent<AudioSource>().Play();
         }
-        else if (Input.GetKeyUp(KeyCode.RightArrow)||Input.GetKeyUp("d"))
+        else if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp("d"))
         {
             GetComponent<AudioSource>().Stop();
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown("a"))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown("a"))
         {
             GetComponent<AudioSource>().Play();
         }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp("a"))
+        else if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp("a"))
         {
             GetComponent<AudioSource>().Stop();
         }
@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
         playerRigidbody2D = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        ww = ss.GetComponent<E>();//用那個代名詞取得trigger_flashlight的所有變數
+        //ww = ss.GetComponent<E>();//用那個代名詞取得trigger_flashlight的所有變數
 
     }
 
@@ -105,14 +105,14 @@ public class Player : MonoBehaviour
     {
         horizontalDirection = Input.GetAxis(HORIZONTAL);
         playerRigidbody2D.AddForce(new Vector2(xForce * horizontalDirection, 0));
-        if (Input.GetKey(KeyCode.RightArrow)||Input.GetKey("d"))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey("d"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
 
 
         }
-        else if (Input.GetKey(KeyCode.LeftArrow)||Input.GetKey("a"))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey("a"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;
@@ -136,6 +136,6 @@ public class Player : MonoBehaviour
             playwalk();
         }
         ControlSpeed();
-       // badopen();
+        // badopen();
     }
 }
