@@ -9,6 +9,7 @@ public class magnet : MonoBehaviour
         if(other.gameObject.tag=="magnet")
         {
             this.transform.position = other.transform.position;
+            //
         }
     }
     // Start is called before the first frame update
