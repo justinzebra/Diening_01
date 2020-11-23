@@ -16,24 +16,27 @@ public class maindog : MonoBehaviour
     void Move()
     {
         dogani.SetBool("walk",true);
-        if(faceleft)
-        {
-            dog.velocity = new Vector2(-3,dog.velocity.y);
-            if(transform.position.x<leftx)
-            {
-                transform.localScale = new Vector3(-0.5f,0.5f,0.5f);
-                faceleft = false;
-            }
-        }
-        else
-        {
-            dog.velocity = new Vector2(3,dog.velocity.y);
-            if(transform.position.x>rightx)
-            {
-                transform.localScale = new Vector3(0.5f,0.5f,0.5f);
-                faceleft = true;
-            }
-        }
+        dog.velocity = new Vector2(5,dog.velocity.y);
+        transform.localScale = new Vector3(-0.5f,0.5f,0.5f);
+        
+        // if(faceleft)
+        // {
+        //     dog.velocity = new Vector2(-3,dog.velocity.y);
+        //     if(transform.position.x<leftx)
+        //     {
+        //         transform.localScale = new Vector3(-0.5f,0.5f,0.5f);
+        //         faceleft = false;
+        //     }
+        // }
+        // else
+        // {
+        //     dog.velocity = new Vector2(3,dog.velocity.y);
+        //     if(transform.position.x>rightx)
+        //     {
+        //         transform.localScale = new Vector3(0.5f,0.5f,0.5f);
+        //         faceleft = true;
+        //     }
+        // }
     }
     void Stop()
     {

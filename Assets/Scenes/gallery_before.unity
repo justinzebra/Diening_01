@@ -633,7 +633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedX: 0
   horizontalDirection: 0
-  xForce: 90
+  xForce: 30
   maxSpeedX: 1
   yForce: 500
   distance: 0.267
@@ -642,8 +642,6 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
-  ss: {fileID: 0}
-  ww: {fileID: 0}
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &462482480
 Rigidbody2D:
@@ -1619,7 +1617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762467174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.080676, y: 0.8773141, z: -11.4}
+  m_LocalPosition: {x: 12.068708, y: 0.8773141, z: -11.4}
   m_LocalScale: {x: 0.68600005, y: 0.68600005, z: 0.68600005}
   m_Children:
   - {fileID: 816219080}
