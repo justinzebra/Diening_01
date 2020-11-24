@@ -9,14 +9,14 @@ public class maindog : MonoBehaviour
     private float leftx,rightx;
     public bool faceleft = true;
     private bool isPlayer;
-    public float Speed = 5;
+    public float Speed;
     bool iswalk=false;
     SpriteRenderer c;
     Animator dogani;
     void Move()
     {
         dogani.SetBool("walk",true);
-        dog.velocity = new Vector2(5,dog.velocity.y);
+        dog.velocity = new Vector2(Speed,dog.velocity.y);
         transform.localScale = new Vector3(-0.5f,0.5f,0.5f);
         
         // if(faceleft)
