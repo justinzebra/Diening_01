@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class Xrayequipment : MonoBehaviour
 {
-   public GameObject monitor;
+    public GameObject monitor;
     public Player AA;
+    bool m_appear = true;
+    BoxCollider2D bw;
     void OnMouseDown()
     {
         if(gameObject.name=="X光螢幕")
         {
             monitor.SetActive(true);
             AA.StopMove();
+            CloseBoxCollider();
         }
+    }
+    void Appear()
+    {
+        if (m_appear == true)
+        {
+            bw.enabled = true;
+        }
+        else
+        {
+            bw.enabled = false;
+        }
+    }
+    public void CloseBoxCollider()
+    {
+       m_appear = false;
+    }
+    public void OpenBoxCollider()
+    {
+       m_appear = true;
     }
     void CloseMonitor()
     {
@@ -27,11 +49,13 @@ public class Xrayequipment : MonoBehaviour
     {
         monitor.SetActive(false);
         AA = AA.GetComponent<Player>();
+        bw = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         CloseMonitor();
+        Appear();
     }
 }

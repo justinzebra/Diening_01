@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bodyBack : MonoBehaviour
+public class cipherback : MonoBehaviour
 {
-    public GameObject monitor;
+    public GameObject cipher;
     public Player AA;
-    public Xrayequipment Xray;
+    public Ciphermachine ciphermachine;
     public void OnMouseDown()
     {
         if (gameObject.name == "backbutton")
         {
-            monitor.SetActive(false);
+            cipher.SetActive(false);
             AA.ReStartMove();
-            Xray.OpenBoxCollider();
+            ciphermachine.OpenBoxCollider();
         }
 
     }
@@ -21,7 +21,7 @@ public class bodyBack : MonoBehaviour
     void Start()
     {
         AA = AA.GetComponent<Player>();
-        Xray = Xray.GetComponent<Xrayequipment>();
+        ciphermachine = ciphermachine.GetComponent<Ciphermachine>();
     }
 
     // Update is called once per frame
