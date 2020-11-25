@@ -16,6 +16,7 @@ public class mainCode : MonoBehaviour
     bool doorOpen;
     public AudioClip p;
     AudioSource audiosource;
+    public opendoor opendoor;
 
     public void CheckDoor()
     {
@@ -24,6 +25,7 @@ public class mainCode : MonoBehaviour
         {
             doorOpen = true;
             Debug.Log("對了");
+            opendoor.MusicPlay();
             code1.Cantchange();
             code2.Cantchange();
             code3.Cantchange();
@@ -59,6 +61,7 @@ public class mainCode : MonoBehaviour
         code3 = code3.GetComponent<code3>();
         code4 = code4.GetComponent<code4>();
         audiosource = GetComponent<AudioSource>();
+        opendoor = opendoor.GetComponent<opendoor>();
     }
 
     // Update is called once per frame
