@@ -38,6 +38,18 @@ public class mainCode : MonoBehaviour
         }
         audiosource.PlayOneShot(p);
     }
+    public void Clearnumber()
+    {
+        code1.Canchange();
+        code2.Cantchange();
+        code3.Cantchange();
+        code4.Cantchange();
+        code1.Number0();
+        code2.Number0();
+        code3.Number0();
+        code4.Number0();
+        audiosource.PlayOneShot(p);
+    }
     // Start is called before the first frame update
     void Start()
     {

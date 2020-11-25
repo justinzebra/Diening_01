@@ -10,6 +10,7 @@ public class code2 : MonoBehaviour
     public bool C2=false;
     public AudioClip p;
     AudioSource audiosource;
+    public code3 code3;
     public void Canchange()
     {
         C2=true;
@@ -18,6 +19,14 @@ public class code2 : MonoBehaviour
     {
         C2=false;
     }
+    void Code3()
+    {
+        code3.Canchange();
+    }
+    public void Number0()
+    {
+        num.text=" ";
+    }
     public void Inputnumber1()
     {
         if(C2==true)
@@ -25,6 +34,8 @@ public class code2 : MonoBehaviour
         number = 1;
         num.text=number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber2()
@@ -34,6 +45,8 @@ public class code2 : MonoBehaviour
         number = 2;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber3()
@@ -43,6 +56,8 @@ public class code2 : MonoBehaviour
         number = 3;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber4()
@@ -52,6 +67,8 @@ public class code2 : MonoBehaviour
         number = 4;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber5()
@@ -61,6 +78,8 @@ public class code2 : MonoBehaviour
         number = 5;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber6()
@@ -70,6 +89,8 @@ public class code2 : MonoBehaviour
         number = 6;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber7()
@@ -79,6 +100,8 @@ public class code2 : MonoBehaviour
         number = 7;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber8()
@@ -88,6 +111,8 @@ public class code2 : MonoBehaviour
         number = 8;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber9()
@@ -97,6 +122,8 @@ public class code2 : MonoBehaviour
         number = 9;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     public void Inputnumber0()
@@ -106,12 +133,15 @@ public class code2 : MonoBehaviour
         number = 0;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
+        Invoke("Code3",0.1f);
         }
     }
     // Start is called before the first frame update
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
+        code3 = code3.GetComponent<code3>();
     }
 
     // Update is called once per frame

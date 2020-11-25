@@ -24,7 +24,7 @@ public class KnifeDrag : MonoBehaviour
     {
         if(other.gameObject.tag=="heart")
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             Debug.Log("5566");
         }
       

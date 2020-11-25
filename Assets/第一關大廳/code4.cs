@@ -18,6 +18,10 @@ public class code4 : MonoBehaviour
     {
         C4=false;
     }
+    public void Number0()
+    {
+        num.text=" ";
+    }
     public void Inputnumber1()
     {
         if(C4==true)
@@ -25,6 +29,7 @@ public class code4 : MonoBehaviour
         number = 1;
         num.text=number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber2()
@@ -34,6 +39,7 @@ public class code4 : MonoBehaviour
         number = 2;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber3()
@@ -43,6 +49,7 @@ public class code4 : MonoBehaviour
         number = 3;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber4()
@@ -52,6 +59,7 @@ public class code4 : MonoBehaviour
         number = 4;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber5()
@@ -61,6 +69,7 @@ public class code4 : MonoBehaviour
         number = 5;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber6()
@@ -70,6 +79,7 @@ public class code4 : MonoBehaviour
         number = 6;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber7()
@@ -79,6 +89,7 @@ public class code4 : MonoBehaviour
         number = 7;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber8()
@@ -88,6 +99,7 @@ public class code4 : MonoBehaviour
         number = 8;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber9()
@@ -97,6 +109,7 @@ public class code4 : MonoBehaviour
         number = 9;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     public void Inputnumber0()
@@ -106,6 +119,7 @@ public class code4 : MonoBehaviour
         number = 0;
         num.text = number.ToString();
         audiosource.PlayOneShot(p);
+        Cantchange();
         }
     }
     // Start is called before the first frame update
