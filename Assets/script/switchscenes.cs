@@ -7,7 +7,7 @@ public class switchscenes : MonoBehaviour
 {
     public GameObject E;
     public string goToTheScene;
-    public GameObject DontObj;
+    public GameObject[] DontObj;
    
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,7 +22,9 @@ public class switchscenes : MonoBehaviour
          if (other.name == "player"&& Input.GetKey("e"))
         {
             SceneManager.LoadScene(goToTheScene);
-            DontDestroyOnLoad(DontObj);
+            DontDestroyOnLoad(DontObj[0]);
+            DontDestroyOnLoad(DontObj[1]);
+            DontDestroyOnLoad(DontObj[2]);
         }
     }
 
