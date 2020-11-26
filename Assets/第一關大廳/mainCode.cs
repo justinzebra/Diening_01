@@ -16,7 +16,7 @@ public class mainCode : MonoBehaviour
     bool doorOpen;
     public AudioClip p;
     AudioSource audiosource;
-    public opendoor opendoor;
+    public L_opendoor opendoor;
 
     public void CheckDoor()
     {
@@ -37,8 +37,21 @@ public class mainCode : MonoBehaviour
         }else
         {
             Debug.Log("錯了");
+            opendoor.rongMusic();
+            Invoke("Clearallnumber",1f);
         }
-        audiosource.PlayOneShot(p);
+        // audiosource.PlayOneShot(p);
+    }
+    public void Clearallnumber()
+    {
+        code1.Canchange();
+        code2.Cantchange();
+        code3.Cantchange();
+        code4.Cantchange();
+        code1.Number0();
+        code2.Number0();
+        code3.Number0();
+        code4.Number0();
     }
     public void Clearnumber()
     {
@@ -61,7 +74,7 @@ public class mainCode : MonoBehaviour
         code3 = code3.GetComponent<code3>();
         code4 = code4.GetComponent<code4>();
         audiosource = GetComponent<AudioSource>();
-        opendoor = opendoor.GetComponent<opendoor>();
+        opendoor = opendoor.GetComponent<L_opendoor>();
     }
 
     // Update is called once per frame
