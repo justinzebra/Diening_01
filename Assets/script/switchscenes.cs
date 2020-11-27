@@ -7,8 +7,7 @@ public class switchscenes : MonoBehaviour
 {
     public GameObject E;
     public string goToTheScene;
-    public GameObject[] DontObj;
-   
+    GameManager gameManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,9 +21,14 @@ public class switchscenes : MonoBehaviour
          if (other.name == "player"&& Input.GetKey("e"))
         {
             SceneManager.LoadScene(goToTheScene);
-            DontDestroyOnLoad(DontObj[0]);
-            DontDestroyOnLoad(DontObj[1]);
-            DontDestroyOnLoad(DontObj[2]);
+            changecurrentS();
+        }
+    }
+    void changecurrentS()
+    {
+        if(goToTheScene=="Lobby")
+        {
+            gameManager.currents=currentS.BtoA;
         }
     }
 
@@ -39,6 +43,7 @@ public class switchscenes : MonoBehaviour
     void Start()
     {
         E.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
