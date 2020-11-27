@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class switchroom : MonoBehaviour
 {
+    public GameObject[] Objs;
+
+
     public GameObject E;
     bool d_canuse = false;
     public string goToTheScene;
-   
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,9 +22,11 @@ public class switchroom : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D other)
     {
-         if (other.name == "player" && d_canuse == true && Input.GetKey("e"))
+        if (other.name == "player" && d_canuse == true && Input.GetKey("e"))
         {
             SceneManager.LoadScene(goToTheScene);
+            DontDestroyOnLoad(Objs[0]);
+            DontDestroyOnLoad(Objs[1]);
         }
     }
 

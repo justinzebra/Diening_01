@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class plug : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class plug : MonoBehaviour
             clean.SetActive(true);
             dirty.SetActive(false);
             bookappear.ConTrolAppear();
+            Flowchart.BroadcastFungusMessage ( "789" );
         }
     }
 
