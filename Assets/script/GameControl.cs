@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Fungus;
 
 
 
@@ -105,7 +105,7 @@ public class GameControl : MonoBehaviour
             lightout.SetActive(false);//閃爍光
             place.SetActive(false);//黑白發電室
             afterlight.SetActive(true);//通電後燈開
-          
+           Flowchart.BroadcastFungusMessage ( "0000" );
 
         }
     }
