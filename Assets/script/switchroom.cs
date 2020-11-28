@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Fungus;
 public class switchroom : MonoBehaviour
 {
     public GameObject[] Objs;
 
-
+    public bool opendoor;
     public GameObject E;
     bool d_canuse = false;
     public string goToTheScene;
@@ -24,12 +24,23 @@ public class switchroom : MonoBehaviour
     {
         if (other.name == "player" && d_canuse == true && Input.GetKey("e"))
         {
+            opendoor = true;
+        }
+    }
+
+
+
+    IEnumerator WaitBeforeShow()
+    {
+        if (opendoor == true)
+        {
+            Flowchart.BroadcastFungusMessage("0857");
+            yield return new WaitForSeconds(5);
             SceneManager.LoadScene(goToTheScene);
             DontDestroyOnLoad(Objs[0]);
             DontDestroyOnLoad(Objs[1]);
         }
     }
-
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "player" && d_canuse == true)
@@ -51,7 +62,7 @@ public class switchroom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        StartCoroutine(WaitBeforeShow());
     }
 
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Fungus;
 public class switchscenes : MonoBehaviour
 {
     public GameObject E;
@@ -24,6 +24,7 @@ public class switchscenes : MonoBehaviour
             changecurrentS();
         }
     }
+    
     void changecurrentS()
     {
         if(goToTheScene=="Lobby")
