@@ -8,6 +8,7 @@ public class switchscenes : MonoBehaviour
     public GameObject E;
     public string goToTheScene;
     GameManager gameManager;
+    private string sceneName;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,15 +22,56 @@ public class switchscenes : MonoBehaviour
          if (other.name == "player"&& Input.GetKey("e"))
         {
             SceneManager.LoadScene(goToTheScene);
-            changecurrentS();
+             if(sceneName=="Securityroom")
+            {
+                S_changecurrentS();
+            }
+            else if(sceneName=="Lobby")
+            {
+                L_changecurrentS();
+            }
+            else if(sceneName=="gallery_after")
+            {
+                L_changecurrentS();
+            }
+            else if(sceneName=="surgery")
+            {
+                A_changecurrentS();
+            }
         }
     }
     
-    void changecurrentS()
+     void S_changecurrentS()
     {
-        if(goToTheScene=="Lobby")
+        if(goToTheScene=="Lobby"&&gameManager.currents==currentS.LtoSR)
         {
-            gameManager.currents=currentS.BtoA;
+            gameManager.currents=currentS.SRtoL;
+        }
+    }
+    void L_changecurrentS()
+    {
+        if(goToTheScene=="gallery_after")
+        {
+            gameManager.currents=currentS.LtoA;
+        }
+        else if(goToTheScene=="Lobby")
+        {
+            gameManager.currents=currentS.AtoL;
+        }
+        else if(goToTheScene=="Securityroom")
+        {
+            gameManager.currents=currentS.LtoSR;
+        }
+        else if(goToTheScene=="surgery")
+        {
+            gameManager.currents=currentS.AtoS;
+        }
+    }
+    void A_changecurrentS()
+    {
+        if(goToTheScene=="gallery_after"&&gameManager.currents==currentS.AtoS)
+        {
+            gameManager.currents=currentS.StoA;
         }
     }
 
@@ -45,6 +87,7 @@ public class switchscenes : MonoBehaviour
     {
         E.SetActive(false);
         gameManager = FindObjectOfType<GameManager>();
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
