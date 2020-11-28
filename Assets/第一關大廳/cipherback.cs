@@ -6,14 +6,12 @@ public class cipherback : MonoBehaviour
 {
     public GameObject cipher;
     public Player AA;
-    public Ciphermachine ciphermachine;
     public void OnMouseDown()
     {
         if (gameObject.name == "backbutton")
         {
             cipher.SetActive(false);
             AA.ReStartMove();
-            ciphermachine.OpenBoxCollider();
         }
 
     }
@@ -21,7 +19,6 @@ public class cipherback : MonoBehaviour
     void Start()
     {
         AA = AA.GetComponent<Player>();
-        ciphermachine = ciphermachine.GetComponent<Ciphermachine>();
     }
 
     // Update is called once per frame

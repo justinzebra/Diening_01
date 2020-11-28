@@ -13,6 +13,7 @@ public class mainCode : MonoBehaviour
     public GameObject c2;
     public GameObject c3;
     public GameObject c4;
+    public GameObject cipher;
     bool doorOpen;
     public AudioClip p;
     AudioSource audiosource;
@@ -34,6 +35,8 @@ public class mainCode : MonoBehaviour
             Destroy(c2);
             Destroy(c3);
             Destroy(c4);
+            Destroy(cipher);
+
         }else
         {
             Debug.Log("錯了");

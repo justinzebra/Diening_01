@@ -43,7 +43,7 @@ public class switchscenes : MonoBehaviour
     
      void S_changecurrentS()
     {
-        if(goToTheScene=="Lobby"&&gameManager.currents==currentS.LtoSR)
+        if(goToTheScene=="Lobby")
         {
             gameManager.currents=currentS.SRtoL;
         }
