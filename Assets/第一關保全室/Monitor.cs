@@ -8,7 +8,7 @@ public class Monitor : MonoBehaviour
     public Player AA;
     void OnMouseDown()
     {
-        if(gameObject.name=="電腦")
+        if(gameObject.name=="Monitor")
         {
             monitor.SetActive(true);
             AA.StopMove();
