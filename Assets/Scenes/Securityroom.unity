@@ -520,7 +520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 528a9dcab3e5a6144a1850cd51d34088, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -566,7 +566,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -881,7 +881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415384081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.24968, y: 0.17346975, z: -11.1}
+  m_LocalPosition: {x: 27.24617, y: 0.17352125, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 248876577}
@@ -944,7 +944,7 @@ MonoBehaviour:
   button_Pre: {fileID: 0}
   button_Next: {fileID: 0}
   videoClips:
-  - {fileID: 32900000, guid: 98dc47bd0b96ae548b9f3fce1be26436, type: 3}
+  - {fileID: 32900000, guid: 5029dc679aca62444ab81c9627eac45a, type: 3}
 --- !u!328 &484988450
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -953,7 +953,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484988447}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 98dc47bd0b96ae548b9f3fce1be26436, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5029dc679aca62444ab81c9627eac45a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -976,7 +976,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: da402d029a698ef4dbe607749816c902, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1691,7 +1691,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -1786,7 +1786,7 @@ MonoBehaviour:
   button_Pre: {fileID: 0}
   button_Next: {fileID: 0}
   videoClips:
-  - {fileID: 32900000, guid: 98dc47bd0b96ae548b9f3fce1be26436, type: 3}
+  - {fileID: 32900000, guid: f998707974fc0e248b82cdd75a8d2a79, type: 3}
 --- !u!328 &993299478
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1795,7 +1795,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993299475}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 98dc47bd0b96ae548b9f3fce1be26436, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: f998707974fc0e248b82cdd75a8d2a79, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1818,7 +1818,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 336ff6d6c0267034a96b48a3b639a8f9, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
