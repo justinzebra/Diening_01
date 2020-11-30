@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
  public enum currentS
     {
-        AtoB,
-        BtoA
+        AtoL,
+        SRtoL,
+        LtoSR,
+        LtoA,
+        EtoA,
+        StoA,
+        AtoS
     }
 
 public class GameManager : MonoBehaviour
@@ -24,17 +29,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }       
     }
-    void State()
-    {
-        if(currents==currentS.AtoB)
-        {
-
-        }
-        else if(currents==currentS.BtoA)
-        {
-
-        }
-    }
+  
     // Start is called before the first frame update
     void Start()
     {
