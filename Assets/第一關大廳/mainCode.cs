@@ -9,19 +9,17 @@ public class mainCode : MonoBehaviour
     public code2 code2;
     public code3 code3;
     public code4 code4;
-    public GameObject c1;
-    public GameObject c2;
-    public GameObject c3;
-    public GameObject c4;
+    public GameObject cipher;
     bool doorOpen;
     public AudioClip p;
     AudioSource audiosource;
     public L_opendoor opendoor;
+    public Ciphermachine ciphermachine;
 
     public void CheckDoor()
     {
         if (code[0].GetComponent<code1>().number==7&&code[1].GetComponent<code2>().number==2&&
-        code[2].GetComponent<code3>().number==5&&code[3].GetComponent<code4>().number==3 &&!doorOpen) 
+        code[2].GetComponent<code3>().number==5&&code[3].GetComponent<code4>().number==4 &&!doorOpen) 
         {
             doorOpen = true;
             Debug.Log("對了");
@@ -30,10 +28,8 @@ public class mainCode : MonoBehaviour
             code2.Cantchange();
             code3.Cantchange();
             code4.Cantchange();
-            Destroy(c1);
-            Destroy(c2);
-            Destroy(c3);
-            Destroy(c4);
+            Destroy(cipher);
+            Invoke("Closecipher",2f);
         }else
         {
             Debug.Log("錯了");
@@ -41,6 +37,10 @@ public class mainCode : MonoBehaviour
             Invoke("Clearallnumber",1f);
         }
         // audiosource.PlayOneShot(p);
+    }
+    void Closecipher()
+    {
+        ciphermachine.closecipher();
     }
     public void Clearallnumber()
     {
@@ -75,6 +75,7 @@ public class mainCode : MonoBehaviour
         code4 = code4.GetComponent<code4>();
         audiosource = GetComponent<AudioSource>();
         opendoor = opendoor.GetComponent<L_opendoor>();
+        ciphermachine = ciphermachine.GetComponent<Ciphermachine>();
     }
 
     // Update is called once per frame

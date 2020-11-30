@@ -49,6 +49,10 @@ public class maindog : MonoBehaviour
       {
           iswalk=true;
       }
+      else if(other.gameObject.name=="dogdestroy")
+      {
+          Destroy(this.gameObject);
+      }
     }
     // Start is called before the first frame update
     void Start()
