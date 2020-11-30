@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Xrayequipment : MonoBehaviour
 {
+    public GameObject closeboby;
     public GameObject monitor;
     public Player AA;
     bool m_appear = true;
@@ -15,6 +16,7 @@ public class Xrayequipment : MonoBehaviour
             monitor.SetActive(true);
             AA.StopMove();
             CloseBoxCollider();
+            closeboby.SetActive(false);
         }
     }
     void Appear()
