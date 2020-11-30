@@ -14,6 +14,7 @@ public class mainCode : MonoBehaviour
     public AudioClip p;
     AudioSource audiosource;
     public L_opendoor opendoor;
+    public Ciphermachine ciphermachine;
 
     public void CheckDoor()
     {
@@ -28,7 +29,7 @@ public class mainCode : MonoBehaviour
             code3.Cantchange();
             code4.Cantchange();
             Destroy(cipher);
-
+            Invoke("Closecipher",2f);
         }else
         {
             Debug.Log("錯了");
@@ -36,6 +37,10 @@ public class mainCode : MonoBehaviour
             Invoke("Clearallnumber",1f);
         }
         // audiosource.PlayOneShot(p);
+    }
+    void Closecipher()
+    {
+        ciphermachine.closecipher();
     }
     public void Clearallnumber()
     {
@@ -70,6 +75,7 @@ public class mainCode : MonoBehaviour
         code4 = code4.GetComponent<code4>();
         audiosource = GetComponent<AudioSource>();
         opendoor = opendoor.GetComponent<L_opendoor>();
+        ciphermachine = ciphermachine.GetComponent<Ciphermachine>();
     }
 
     // Update is called once per frame

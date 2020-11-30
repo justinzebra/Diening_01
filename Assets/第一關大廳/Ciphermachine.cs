@@ -21,6 +21,11 @@ public class Ciphermachine : MonoBehaviour
         }
 
     }
+    public void closecipher()
+    {
+        cipher.SetActive(false);
+        AA.ReStartMove();
+    }
     // Update is called once per frame
     void Update()
     {
