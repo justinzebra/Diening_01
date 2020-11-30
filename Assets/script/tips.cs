@@ -58,27 +58,7 @@ public class tips : MonoBehaviour
         }
     }
  
-    void Finddoor()
-    {
-        if (isdoor)
-        {
-
-
-            if (Input.GetKey(KeyCode.E))
-            {
-                door.SetActive(true);
-            }
-
-
-
-            else if (Input.GetKey(KeyCode.B))
-            {
-                doorB.SetActive(true);
-            }
-
-
-        }
-    }
+    
     void GG()
     {
         if (isdoor && !ww.lightup)
@@ -102,7 +82,7 @@ public class tips : MonoBehaviour
     {
         //OnTriggerEnter2D(other);
         //OnTriggerExit2D(other);
-        Finddoor();
+     
         GG();
     }
 

@@ -1733,8 +1733,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 555541074}
-  selectedCommands:
-  - {fileID: 555541092}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2686,7 +2685,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -2816,7 +2815,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1016302340
 Camera:
   m_ObjectHideFlags: 0
