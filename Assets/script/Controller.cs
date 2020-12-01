@@ -56,7 +56,7 @@ public class Controller : MonoBehaviour
         {
         if(gameManager.currents==currentS.AtoS)
         {
-            player.gameObject.transform.position = new Vector3(26.93f,-4.64f,-2.37f);
+            player.gameObject.transform.position = new Vector3(26.93f,-4.64f,-1.5f);
         }
         }
     }
