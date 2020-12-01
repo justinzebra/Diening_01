@@ -21,6 +21,8 @@ TagManager:
   - computer
   - destination
   - socket
+  - book
+  - Knifegone
   layers:
   - Default
   - TransparentFX
