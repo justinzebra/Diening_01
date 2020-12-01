@@ -1069,7 +1069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d12b34e253fc945a69ebbecfcd49d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currents: 3
+  currents: 4
+  doorisopen: 0
 --- !u!4 &466026592
 Transform:
   m_ObjectHideFlags: 0
