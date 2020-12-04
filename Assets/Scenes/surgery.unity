@@ -4234,6 +4234,8 @@ GameObject:
   - component: {fileID: 623043467}
   - component: {fileID: 623043466}
   - component: {fileID: 623043465}
+  - component: {fileID: 623043701}
+  - component: {fileID: 623043700}
   m_Layer: 0
   m_Name: "\u4EFB\u4F55\u7269\u4EF6\u7684\u63A7\u5236"
   m_TagString: Untagged
@@ -4738,6 +4740,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 623043474}
   commandList:
+  - {fileID: 623043701}
+  - {fileID: 623043700}
   - {fileID: 623043485}
   - {fileID: 623043484}
   - {fileID: 623043483}
@@ -9891,7 +9895,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 623043486}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 623043700}
   variables:
   - {fileID: 623043677}
   - {fileID: 623043674}
@@ -9910,6 +9915,48 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &623043700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623043463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81be3d7e84da460788dccea95a3313a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 291
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 2089871124}
+  destroyInXSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &623043701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623043463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 290
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 689265114}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &626058889
 GameObject:
   m_ObjectHideFlags: 0
@@ -15589,7 +15636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159869712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3294706, y: -3.6832693, z: -16.05}
+  m_LocalPosition: {x: 5.329467, y: -3.6832693, z: -16.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1219160798}
@@ -16159,7 +16206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180659139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3294706, y: -3.6832693, z: -16.05}
+  m_LocalPosition: {x: 5.329467, y: -3.6832693, z: -16.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 638707740}
