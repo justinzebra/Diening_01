@@ -28,7 +28,7 @@ public class Controller : MonoBehaviour
         {
         if(gameManager.currents==currentS.LtoSR)
         {
-            player.gameObject.transform.position = new Vector3(29.26f,-0.15f,-1.1f);
+            player.gameObject.transform.position = new Vector3(27.56f,-1.069f,-1.1f);
         }
         }
     }
