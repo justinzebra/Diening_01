@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 
 public class switchscenes : MonoBehaviour
 {
     public GameObject E;
     public string goToTheScene;
     GameManager gameManager;
+    public bool opendoor=false;
     
     private string sceneName;
 
@@ -22,10 +24,23 @@ public class switchscenes : MonoBehaviour
     {
          if (other.name == "player"&& Input.GetKey("e"))
         {
+            opendoor=true;
+           
+        }
+    }
+
+     IEnumerator WaitBeforeShow()
+    {
+        if (opendoor == true)
+        {
+            Flowchart.BroadcastFungusMessage("other");
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
+           
             if(sceneName=="Securityroom")
             {
                 S_changecurrentS();
+
             }
             else if(sceneName=="Lobby")
             {
@@ -41,6 +56,7 @@ public class switchscenes : MonoBehaviour
             }
         }
     }
+
     void S_changecurrentS()
     {
         if(goToTheScene=="Lobby")
@@ -91,8 +107,8 @@ public class switchscenes : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+      void Update()
     {
-
+        StartCoroutine(WaitBeforeShow());
     }
 }

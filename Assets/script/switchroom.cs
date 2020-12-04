@@ -35,7 +35,7 @@ public class switchroom : MonoBehaviour
         if (opendoor == true)
         {
             Flowchart.BroadcastFungusMessage("0857");
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
             DontDestroyOnLoad(Objs[0]);
             DontDestroyOnLoad(Objs[1]);
