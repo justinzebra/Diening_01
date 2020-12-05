@@ -7,8 +7,10 @@ public class Cutbody : MonoBehaviour
 {
     // Start is called before the first frame update
 
-        private Vector3 screenPoint;
+    private Vector3 screenPoint;
     private Vector3 offset;
+    GameManager gameManager;
+    
   void OnMouseDown()
     {
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
@@ -27,9 +29,14 @@ public class Cutbody : MonoBehaviour
         if(other.gameObject.name=="刀子終點標記")
         {
             Destroy(this.gameObject);
-             Flowchart.BroadcastFungusMessage ( "刀子切完" );
+            Flowchart.BroadcastFungusMessage ( "刀子切完" );
             Debug.Log("5566");
+            gameManager.bodyisnokey=true;
         }
       
+    }
+    void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bodyBack : MonoBehaviour
 {
-    public GameObject bodyback;
+    // public GameObject bodyback;
     public GameObject monitor;
     public Player AA;
     public Xrayequipment Xray;
@@ -15,7 +15,7 @@ public class bodyBack : MonoBehaviour
             monitor.SetActive(false);
             AA.ReStartMove();
             Xray.OpenBoxCollider();
-            bodyback.SetActive(true);
+            // bodyback.SetActive(true);
         }
 
     }

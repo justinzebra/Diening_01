@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Xrayequipment : MonoBehaviour
 {
-    public GameObject closeboby;
     public GameObject monitor;
+    public GameObject bonenokey;
+    public GameObject bone;
+    public GameObject body;
     public Player AA;
     bool m_appear = true;
     BoxCollider2D bw;
+    GameManager gameManager;
     void OnMouseDown()
     {
         if(gameObject.name=="X光螢幕")
@@ -16,7 +19,6 @@ public class Xrayequipment : MonoBehaviour
             monitor.SetActive(true);
             AA.StopMove();
             CloseBoxCollider();
-            closeboby.SetActive(false);
         }
     }
     void Appear()
@@ -46,12 +48,29 @@ public class Xrayequipment : MonoBehaviour
             monitor.SetActive(false);
         }
     }
+    void checkbody()
+    {
+        if(Input.GetKey("up"))
+        {
+            gameManager.bodyisnokey=true;
+        }
+    }
+    void bodyisnokey()
+    {
+        if(gameManager.bodyisnokey==true)
+        {
+            bone.SetActive(false);
+            bonenokey.SetActive(true);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         monitor.SetActive(false);
         AA = AA.GetComponent<Player>();
         bw = GetComponent<BoxCollider2D>();
+        bonenokey.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -59,5 +78,7 @@ public class Xrayequipment : MonoBehaviour
     {
         CloseMonitor();
         Appear();
+        checkbody();
+        bodyisnokey();
     }
 }

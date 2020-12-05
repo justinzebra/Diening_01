@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &15488638
 Transform:
   m_ObjectHideFlags: 0
@@ -924,6 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currents: 0
   doorisopen: 0
+  bodyisnokey: 0
 --- !u!4 &217193580
 Transform:
   m_ObjectHideFlags: 0
@@ -10169,11 +10170,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 422.89328, y: 36.65798}
+  scrollPos: {x: 364.86447, y: -28.640293}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6700003
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -10181,8 +10182,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1151889451}
-  selectedCommands: []
+  - {fileID: 1151889456}
+  selectedCommands:
+  - {fileID: 1151889472}
   variables:
   - {fileID: 1151889430}
   description: 
@@ -10683,7 +10685,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.42857
     y: 281.57797
-    width: 121.641754
+    width: 122.32874
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13464,6 +13466,7 @@ GameObject:
   - component: {fileID: 1672151779}
   - component: {fileID: 1672151778}
   - component: {fileID: 1672151780}
+  - component: {fileID: 1672151781}
   m_Layer: 0
   m_Name: "X\u5149\u87A2\u5E55"
   m_TagString: Untagged
@@ -13548,8 +13551,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1fd2de2d946ba4ca7205151c64b0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeboby: {fileID: 24010818}
   monitor: {fileID: 319548962}
+  bonenokey: {fileID: 15488637}
+  bone: {fileID: 1603652626}
+  body: {fileID: 0}
   AA: {fileID: 1754408753}
 --- !u!61 &1672151779
 BoxCollider2D:
@@ -13592,6 +13597,20 @@ MonoBehaviour:
   clickEnabled: 1
   hoverCursor: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   useEventSystem: 0
+--- !u!114 &1672151781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672151775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc80a69b611394b4b9e3c03086f2dceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 807022209}
+  bodyisopen: {fileID: 2142921939}
 --- !u!1 &1673331290
 GameObject:
   m_ObjectHideFlags: 0
@@ -15288,7 +15307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61280f48316a064c99a065dfe56b9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyback: {fileID: 24010818}
   monitor: {fileID: 319548962}
   AA: {fileID: 1754408753}
   Xray: {fileID: 1672151778}

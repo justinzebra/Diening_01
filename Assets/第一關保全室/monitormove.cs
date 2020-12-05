@@ -13,24 +13,41 @@ public class monitormove : MonoBehaviour
 {
     RectTransform Rect;
     public monitor monitor;
-    void Move()
+    public float m_pos;
+    // void Move()
+    // {
+    //     if(monitor==monitor.m1)
+    //     {
+    //         Rect.anchoredPosition=new Vector2(0,0);
+    //     }
+    //     else if(monitor==monitor.m2)
+    //     {
+    //         Rect.anchoredPosition=new Vector2(-480,0);
+    //     }
+    //     else if(monitor==monitor.m3)
+    //     {
+    //         Rect.anchoredPosition=new Vector2(-950,0);
+    //     }
+    //     else if(monitor==monitor.m4)
+    //     {
+    //         Rect.anchoredPosition=new Vector2(-1430,0);
+    //     }
+    // }
+    public void Moveright()
     {
-        if(monitor==monitor.m1)
+        if(m_pos>-1430)
         {
-            Rect.anchoredPosition=new Vector2(0,0);
+            m_pos=m_pos-480;
         }
-        else if(monitor==monitor.m2)
+        Rect.anchoredPosition=new Vector2(m_pos,0);
+    }
+    public void Moveleft()
+    {
+        if(m_pos<0)
         {
-            Rect.anchoredPosition=new Vector2(-480,0);
+            m_pos=m_pos+480;
         }
-        else if(monitor==monitor.m3)
-        {
-            Rect.anchoredPosition=new Vector2(-950,0);
-        }
-        else if(monitor==monitor.m4)
-        {
-            Rect.anchoredPosition=new Vector2(-1430,0);
-        }
+        Rect.anchoredPosition=new Vector2(m_pos,0);
     }
     void Changemonitor()
     {
@@ -55,13 +72,14 @@ public class monitormove : MonoBehaviour
     void Start()
     {
         Rect=GetComponent<RectTransform>();
-        monitor=monitor.m1;
+        // monitor=monitor.m1;
+        m_pos=0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Changemonitor();
+        // Changemonitor();
+        // Move();
     }
 }

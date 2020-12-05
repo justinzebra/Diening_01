@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     static GameManager instance;
     public currentS currents;
     public bool doorisopen=false;
+    public bool bodyisnokey=false;
     void Awake () 
     {
         if (instance==null)
