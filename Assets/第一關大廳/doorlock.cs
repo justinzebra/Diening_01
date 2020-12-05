@@ -10,10 +10,11 @@ public class doorlock : MonoBehaviour
     BoxCollider2D bw;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name=="鑰匙")
+        if(other.gameObject.name=="背包裡的鑰匙")
         {
             gameManager.doorisopen=true;
             audiosource.Play();
+            Destroy(other.gameObject);
         }
     }
     void doorappear()

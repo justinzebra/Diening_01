@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bone
+  m_Name: bonenokey
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3965483936207188038, guid: 02020d3c33b48174d953b27d7d970fad,
+      value: {fileID: 7553835203902197830, guid: 02020d3c33b48174d953b27d7d970fad,
         type: 3}
     - time: 0.1
       value: {fileID: -3965483936207188038, guid: 02020d3c33b48174d953b27d7d970fad,
@@ -53,7 +53,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3965483936207188038, guid: 02020d3c33b48174d953b27d7d970fad, type: 3}
+    - {fileID: 7553835203902197830, guid: 02020d3c33b48174d953b27d7d970fad, type: 3}
     - {fileID: -3965483936207188038, guid: 02020d3c33b48174d953b27d7d970fad, type: 3}
     - {fileID: 5992227170825251195, guid: 02020d3c33b48174d953b27d7d970fad, type: 3}
     - {fileID: -3965483936207188038, guid: 02020d3c33b48174d953b27d7d970fad, type: 3}

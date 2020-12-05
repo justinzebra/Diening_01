@@ -2564,12 +2564,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837648154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.01, y: 13.85, z: -1.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.34, y: -0.14, z: 9.900001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1016302341}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004582223
 GameObject:
@@ -2603,6 +2603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   E: {fileID: 406744126}
   goToTheScene: electricity
+  opendoor: 0
 --- !u!61 &1004582225
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2642,7 +2643,7 @@ Transform:
   m_Children:
   - {fileID: 406744128}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1016302335
 GameObject:
@@ -2672,7 +2673,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa449c02523ca954eb89604715ef91e8, type: 3}
   m_Name: 
@@ -2685,7 +2686,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -2815,7 +2816,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1016302340
 Camera:
   m_ObjectHideFlags: 0
@@ -2873,6 +2874,7 @@ Transform:
   - {fileID: 816219080}
   - {fileID: 470618768}
   - {fileID: 1534710873}
+  - {fileID: 837648156}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
