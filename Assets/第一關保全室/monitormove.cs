@@ -51,19 +51,19 @@ public class monitormove : MonoBehaviour
     }
     void Changemonitor()
     {
-        if (Input.GetKey("c"))
+        if (m_pos==0)
         {
             monitor=monitor.m1;
         }
-        else if(Input.GetKey("v"))
+        else if(m_pos==-480)
         {
             monitor=monitor.m2;
         }
-        else if(Input.GetKey("b"))
+        else if(m_pos==-960)
         {
             monitor=monitor.m3;
         }
-        else if(Input.GetKey("n"))
+        else if(m_pos==-1440)
         {
             monitor=monitor.m4;
         }
@@ -79,7 +79,7 @@ public class monitormove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Changemonitor();
+        Changemonitor();
         // Move();
     }
 }

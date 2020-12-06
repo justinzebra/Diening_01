@@ -8,6 +8,7 @@ public class Xrayequipment : MonoBehaviour
     public GameObject bonenokey;
     public GameObject bone;
     public GameObject body;
+    public GameObject bodynokey;
     public Player AA;
     bool m_appear = true;
     BoxCollider2D bw;
@@ -61,6 +62,8 @@ public class Xrayequipment : MonoBehaviour
         {
             bone.SetActive(false);
             bonenokey.SetActive(true);
+            body.SetActive(false);
+            bodynokey.SetActive(true);
         }
     }
     // Start is called before the first frame update
@@ -70,6 +73,7 @@ public class Xrayequipment : MonoBehaviour
         AA = AA.GetComponent<Player>();
         bw = GetComponent<BoxCollider2D>();
         bonenokey.SetActive(false);
+        bodynokey.SetActive(false);
         gameManager = FindObjectOfType<GameManager>();
     }
 

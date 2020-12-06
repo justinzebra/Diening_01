@@ -45,7 +45,6 @@ void Update ()
     }
     //渲染视频到UGUI上
     rawImage.texture = videoPlayer.texture;
-    
 }
 private void OnPlayOrPauseVideo()
 {
@@ -54,6 +53,7 @@ private void OnPlayOrPauseVideo()
     {
         videoPlayer.Pause();
         text_PlayOrPause.text = "播放";
+        videoPlayer.playOnAwake=true;
     }
     else
     {
