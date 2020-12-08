@@ -19,7 +19,7 @@ public class isknife : MonoBehaviour
             bookappear.ConTrolAppear();
             audiosource.PlayOneShot(s);
             K.SetActive(false);
-            
+            Destroy(other.gameObject);
         }
     }
     // Start is called before the first frame update

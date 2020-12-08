@@ -53,13 +53,15 @@ private void OnPlayOrPauseVideo()
     {
         videoPlayer.Pause();
         text_PlayOrPause.text = "播放";
-        videoPlayer.playOnAwake=true;
+        
     }
     else
     {
         videoPlayer.Play();
         text_PlayOrPause.text = "暂停";
+        
     }
+    videoPlayer.playOnAwake=true;
 }
 // private void OnPreVideo()
 // {

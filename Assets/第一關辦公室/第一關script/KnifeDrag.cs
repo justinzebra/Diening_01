@@ -20,13 +20,4 @@ public class KnifeDrag : MonoBehaviour
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
     }
-   void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.tag=="heart")
-        {
-            Destroy(this.gameObject);
-            Debug.Log("5566");
-        }
-      
-    }
 }
