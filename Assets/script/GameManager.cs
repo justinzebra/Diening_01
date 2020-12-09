@@ -9,7 +9,8 @@ using UnityEngine;
         LtoA,
         EtoA,
         StoA,
-        AtoS
+        AtoS,
+        EtoB
     }
 
 public class GameManager : MonoBehaviour
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public currentS currents;
     public bool doorisopen=false;
     public bool bodyisnokey=false;
+    public bool dogisgoout=false;
     void Awake () 
     {
         if (instance==null)

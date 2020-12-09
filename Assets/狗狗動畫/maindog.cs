@@ -13,6 +13,7 @@ public class maindog : MonoBehaviour
     bool iswalk=false;
     SpriteRenderer c;
     Animator dogani;
+    GameManager gameManager;
     void Move()
     {
         dogani.SetBool("walk",true);
@@ -64,6 +65,11 @@ public class maindog : MonoBehaviour
         Destroy(rightpoint.gameObject);
         c = GetComponent<SpriteRenderer>();
         dogani = GetComponent<Animator>();
+        gameManager = FindObjectOfType<GameManager>();
+        if(gameManager.dogisgoout==true)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // Update is called once per frame

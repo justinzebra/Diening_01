@@ -60,6 +60,17 @@ public class Controller : MonoBehaviour
         }
         }
     }
+    void gallery_before()
+    {
+        if(sceneName=="gallery_before")
+        {
+        if(gameManager.currents==currentS.EtoB)
+        {
+            player.gameObject.transform.position = new Vector3(35.47649f,8.130759f,-1.1f);
+            gameManager.dogisgoout=true;
+        }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +80,7 @@ public class Controller : MonoBehaviour
         Securityroom();
         gallery_after();
         surgery();
+        gallery_before();
     }
 
     // Update is called once per frame

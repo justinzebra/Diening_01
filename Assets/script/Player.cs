@@ -97,7 +97,6 @@ public class Player : MonoBehaviour
         m_Animator = GetComponent<Animator>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         //ww = ss.GetComponent<E>();//用那個代名詞取得trigger_flashlight的所有變數
-
     }
 
     /// <summary>水平移動</summary>
@@ -126,8 +125,6 @@ public class Player : MonoBehaviour
 
 
     }
-
-
     void Update()
     {
         if (Canmove == true)

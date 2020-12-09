@@ -13612,6 +13612,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 807022209}
   bodyisopen: {fileID: 2142921939}
+  b1: {fileID: 475427835}
+  b2: {fileID: 1053272111}
+  b3: {fileID: 160750188}
+  b4: {fileID: 796036737}
+  b5: {fileID: 567439793}
+  b6: {fileID: 1233014796}
+  b7: {fileID: 1766308790}
+  b8: {fileID: 689265114}
+  b9: {fileID: 2089871124}
 --- !u!1 &1673331290
 GameObject:
   m_ObjectHideFlags: 0

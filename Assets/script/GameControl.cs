@@ -17,7 +17,7 @@ public class GameControl : MonoBehaviour
     
     
    
-    public GameObject winText;
+ 
 
     public bool youwin;
     public GameObject showlight;
@@ -51,7 +51,7 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         lightup = false;
-        winText.SetActive(false);
+       
         youwin = false;
         ww = ss.GetComponent<ItemDrag>();//用那個代名詞取得trigger_flashlight的所有變數
         elestart.SetActive(false);
@@ -96,7 +96,7 @@ public class GameControl : MonoBehaviour
                 pictures[1].transform.eulerAngles.z == 0)
         {
             youwin = true;
-            //winText.SetActive(true);
+           
             showlight.SetActive(true);//雙電流
             showlight2.SetActive(true);//雙電流
             lightup = true;
