@@ -38,6 +38,10 @@ public class Switch : MonoBehaviour
         {
             gameManager.currents=currentS.EtoB;
         }
+        else if(goToTheScene=="gallery_after")
+        {
+            gameManager.currents=currentS.EtoA;
+        }
     }
 
     void Update()
