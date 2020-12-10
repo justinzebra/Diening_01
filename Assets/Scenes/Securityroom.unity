@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3560991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.845, y: -0.78900003, z: -11.1}
+  m_LocalPosition: {x: 9.512193, y: -0.78900003, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1081082411}
@@ -1419,7 +1419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415384081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.844269, y: -0.4200921, z: -11.1}
+  m_LocalPosition: {x: 9.511468, y: -0.42276907, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 198520392}
@@ -2477,6 +2477,7 @@ MonoBehaviour:
   currents: 2
   doorisopen: 0
   bodyisnokey: 0
+  dogisgoout: 0
 --- !u!4 &844091629
 Transform:
   m_ObjectHideFlags: 0
@@ -2973,7 +2974,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.55
   m_ScreenY: 0.638
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
@@ -3140,7 +3141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedX: 0
   horizontalDirection: 0
-  xForce: 30
+  xForce: 50
   maxSpeedX: 1
   yForce: 500
   distance: 0.267

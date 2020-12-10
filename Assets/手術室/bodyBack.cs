@@ -16,6 +16,7 @@ public class bodyBack : MonoBehaviour
             AA.ReStartMove();
             Xray.OpenBoxCollider();
             // bodyback.SetActive(true);
+            Debug.Log("59595959");
         }
 
     }

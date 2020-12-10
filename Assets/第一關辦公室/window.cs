@@ -19,7 +19,7 @@ public class window : MonoBehaviour
         CC = CC.GetComponent<windowaback>();
         rain = GetComponent<AudioSource>();
         rain.loop = true; 
-        rain.volume = 0.5f;
+        rain.volume = 0.3f;
         rain.clip = Rainmusic;
         rain.Play(); 
     }
