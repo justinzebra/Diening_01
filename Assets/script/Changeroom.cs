@@ -55,7 +55,7 @@ public class Changeroom : MonoBehaviour
             gameManager.currents=currentS.LtoSR;
         }
     }
-    void EroomChange()
+    public void EroomChange()
     {
         if(Input.GetKey(KeyCode.Keypad1))
         {
