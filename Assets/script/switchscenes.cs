@@ -10,7 +10,6 @@ public class switchscenes : MonoBehaviour
     public string goToTheScene;
     GameManager gameManager;
     public bool opendoor=false;
-    
     private string sceneName;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -28,7 +27,6 @@ public class switchscenes : MonoBehaviour
            
         }
     }
-
      IEnumerator WaitBeforeShow()
     {
         if (opendoor == true)

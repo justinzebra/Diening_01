@@ -6,17 +6,29 @@ public class NeverD : MonoBehaviour
 {
     public static NeverD Instance;
     // Start is called before the first frame update
-    void Start()
+    // void Start()
+    // {
+    //     if (Instance != null)
+    //     {
+    //         Destroy(this.gameObject);
+    //         return;
+    //     }
+    //     GameObject.DontDestroyOnLoad(this.gameObject);
+
+    // }
+    void Awake () 
     {
-        if (Instance != null)
+        if (Instance==null)
         {
-            Destroy(this.gameObject);
-            return;
+            Instance = this;
+            DontDestroyOnLoad(this);
+            
         }
-        GameObject.DontDestroyOnLoad(this.gameObject);
-
+        else if (this!=Instance)
+        {
+            Destroy(gameObject);
+        }       
     }
-
     // Update is called once per frame
     void Update()
     {
