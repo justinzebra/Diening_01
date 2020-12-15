@@ -534,7 +534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217888248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.103798, y: 8.349999, z: -11.1}
+  m_LocalPosition: {x: -62.101784, y: 8.349999, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1880701874}
@@ -1116,11 +1116,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 38.89628, y: 110.15013}
+  scrollPos: {x: 214.17421, y: 814.2946}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.94000006
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1395,7 +1395,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283.47485
     y: 59.04392
-    width: 133.40425
+    width: 139.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2182,7 +2182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.768913, y: 8.522126, z: -11.1}
+  m_LocalPosition: {x: -53.789093, y: 8.521658, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 816219080}

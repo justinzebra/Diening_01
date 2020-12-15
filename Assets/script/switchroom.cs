@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using Fungus;
 public class switchroom : MonoBehaviour
 {
-    public GameObject[] Objs;
+   
 
     public bool opendoor;
     public GameObject E;
@@ -37,8 +37,7 @@ public class switchroom : MonoBehaviour
             Flowchart.BroadcastFungusMessage("0857");
             yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
-            DontDestroyOnLoad(Objs[0]);
-            DontDestroyOnLoad(Objs[1]);
+         
         }
     }
     void OnTriggerExit2D(Collider2D other)
