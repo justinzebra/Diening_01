@@ -1467,8 +1467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opendoor: 0
-  menu: {fileID: 1976873803}
-  chapter: {fileID: 301755585}
+  menu: {fileID: 1976873806}
+  chapter: {fileID: 301755589}
 --- !u!114 &301755587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12402,8 +12402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opendoor: 0
-  menu: {fileID: 1976873803}
-  chapter: {fileID: 301755585}
+  menu: {fileID: 1976873806}
+  chapter: {fileID: 301755589}
 --- !u!1 &2010278081
 GameObject:
   m_ObjectHideFlags: 0

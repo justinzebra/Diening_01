@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
 
-public class mainMenu : MonoBehaviour
+public class gameMenu : MonoBehaviour
 {
     string goToTheScene;
     GameManager gameManager;
     private string sceneName;
     public bool opendoor=false;
+    public GameObject mainmenu;
     public Canvas menu;
     public Canvas chapter;
+    public Player player;
+
     IEnumerator WaitBeforeShow()
     {
         if (opendoor == true&&sceneName=="Office")
@@ -52,6 +55,19 @@ public class mainMenu : MonoBehaviour
         opendoor = true;
         goToTheScene="Securityroom";
     }
+    public void menuAppear()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            mainmenu.SetActive(true);
+            player.StopMove();
+        }
+    }
+    public void menudisAppear()
+    {
+        mainmenu.SetActive(false);
+        player.ReStartMove();
+    }
     public void gameQuit()
     {
         Application.Quit();
@@ -74,12 +90,16 @@ public class mainMenu : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         sceneName = SceneManager.GetActiveScene().name;
+        mainmenu.SetActive(false);
         chapter.enabled=false;
+        player = player.GetComponent<Player>();
     }
 
     // Update is called once per frame
       void Update()
     {
         StartCoroutine(WaitBeforeShow());
+        menuAppear();
     }
+
 }
