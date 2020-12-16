@@ -10,6 +10,8 @@ public class mainMenu : MonoBehaviour
     GameManager gameManager;
     private string sceneName;
     public bool opendoor=false;
+    public GameObject menu;
+    public GameObject chapter;
 
     IEnumerator WaitBeforeShow()
     {
@@ -51,12 +53,28 @@ public class mainMenu : MonoBehaviour
         opendoor = true;
         goToTheScene="Securityroom";
     }
+    public void gameQuit()
+    {
+        Application.Quit();
+        Debug.Log("quit");
+    }
+    public void Chapter()
+    {
+        menu.SetActive(false);
+        chapter.SetActive(true);
+    }
+    public void backtoMainMenu()
+    {
+        menu.SetActive(true);
+        chapter.SetActive(false);
+    }
     
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         sceneName = SceneManager.GetActiveScene().name;
+        chapter.SetActive(false);
     }
 
     // Update is called once per frame
