@@ -9,9 +9,12 @@ public class ButtonHover : MonoBehaviour
     public Sprite inimage;
     public Sprite hoverimage;
     private bool ishover=false;
+    public AudioClip p;
+    AudioSource audiosource;
     public void buttonHover()
     {
        ishover=true;
+       audiosource.PlayOneShot(p,0.1f);
     }
     public void buttonExit()
     {
@@ -32,6 +35,7 @@ public class ButtonHover : MonoBehaviour
     void Start()
     {
         image = GetComponent<Image>();
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

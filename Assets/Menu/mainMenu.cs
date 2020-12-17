@@ -12,6 +12,8 @@ public class mainMenu : MonoBehaviour
     public bool opendoor=false;
     public Canvas menu;
     public Canvas chapter;
+    public AudioClip p;
+    AudioSource audiosource;
     IEnumerator WaitBeforeShow()
     {
         if (opendoor == true&&sceneName=="Office")
@@ -31,6 +33,7 @@ public class mainMenu : MonoBehaviour
     {
         opendoor = true;
         goToTheScene="Office";
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void EroomChange()
     {
@@ -61,12 +64,13 @@ public class mainMenu : MonoBehaviour
     {
         menu.enabled=false;
         chapter.enabled=true;
-        Debug.Log("666666");
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void backtoMainMenu()
     {
         menu.enabled=true;
         chapter.enabled=false;
+        audiosource.PlayOneShot(p,0.5f);
     }
     
     // Start is called before the first frame update
@@ -75,6 +79,7 @@ public class mainMenu : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         sceneName = SceneManager.GetActiveScene().name;
         chapter.enabled=false;
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

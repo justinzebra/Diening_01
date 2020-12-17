@@ -14,6 +14,8 @@ public class gameMenu : MonoBehaviour
     public Canvas menu;
     public Canvas chapter;
     public Player player;
+    public AudioClip p;
+    AudioSource audiosource;
 
     IEnumerator WaitBeforeShow()
     {
@@ -34,6 +36,7 @@ public class gameMenu : MonoBehaviour
     {
         opendoor = true;
         goToTheScene="Office";
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void EroomChange()
     {
@@ -67,22 +70,25 @@ public class gameMenu : MonoBehaviour
     {
         mainmenu.SetActive(false);
         player.ReStartMove();
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void gameQuit()
     {
         Application.Quit();
         Debug.Log("quit");
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void Chapter()
     {
         menu.enabled=false;
         chapter.enabled=true;
-        Debug.Log("666666");
+        audiosource.PlayOneShot(p,0.5f);
     }
     public void backtoMainMenu()
     {
         menu.enabled=true;
         chapter.enabled=false;
+        audiosource.PlayOneShot(p,0.5f);
     }
     
     // Start is called before the first frame update
@@ -93,6 +99,7 @@ public class gameMenu : MonoBehaviour
         mainmenu.SetActive(false);
         chapter.enabled=false;
         player = player.GetComponent<Player>();
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
