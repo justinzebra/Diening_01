@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     //public GameObject ss;   //把手電筒包含trigger_flashlight引進來
     //public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
     bool Canmove = true;
-
+    bool menuisopen = false;
 
     //public GameObject m_bag;
     //public bool bagisopen;
@@ -63,12 +63,18 @@ public class Player : MonoBehaviour
     public void StopMove()
     {
         Canmove = false;
-
     }
     public void ReStartMove()
     {
         Canmove = true;
-
+    }
+    public void MenuisOpen()
+    {
+        menuisopen = true;
+    }
+    public void MenuisClose()
+    {
+        menuisopen = false;
     }
     void playwalk()
     {
@@ -127,7 +133,7 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        if (Canmove == true)
+        if (Canmove == true&&menuisopen == false)
         {
             MovementX();
             playwalk();

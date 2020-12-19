@@ -63,13 +63,13 @@ public class gameMenu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             mainmenu.SetActive(true);
-            player.StopMove();
+            player.MenuisOpen();
         }
     }
     public void menudisAppear()
     {
         mainmenu.SetActive(false);
-        player.ReStartMove();
+        player.MenuisClose();
         audiosource.PlayOneShot(p,0.5f);
     }
     public void gameQuit()
