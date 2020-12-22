@@ -51,17 +51,17 @@ public class monitormove : MonoBehaviour
     }
     void Changemonitor()
     {
-        if (m_pos==0)
+        if (monitor==monitor.m1)
         {
-            monitor=monitor.m1;
+            m_pos=0;
         }
-        else if(m_pos==-480)
+        else if(monitor==monitor.m2)
         {
-            monitor=monitor.m2;
+            m_pos=-480;
         }
-        else if(m_pos==-960)
+        else if(monitor==monitor.m3)
         {
-            monitor=monitor.m3;
+            m_pos=-960;
         }
         else if(m_pos==-1440)
         {
@@ -79,7 +79,7 @@ public class monitormove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Changemonitor();
+        // Changemonitor();
         // Move();
     }
 }
