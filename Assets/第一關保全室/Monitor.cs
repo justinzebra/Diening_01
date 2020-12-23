@@ -6,32 +6,32 @@ public class Monitor : MonoBehaviour
 {
     public GameObject monitor;
     public Player AA;
-    monitormove monitormove;
+    public monitormove monitormove;
     void OnMouseDown()
     {
         if(gameObject.name=="Monitor7")
         {
             monitor.SetActive(true);
             AA.StopMove();
-            // monitormove.monitor=monitor.m1;
+            monitormove.monitor=monitoR.m1;
         }
         else if(gameObject.name=="Monitor2")
         {
             monitor.SetActive(true);
             AA.StopMove();
-            // monitormove.monitor=monitor.m2;
+            monitormove.monitor=monitoR.m2;
         }
         else if(gameObject.name=="Monitor5")
         {
             monitor.SetActive(true);
             AA.StopMove();
-            // monitormove.monitor=monitor.m3;
+            monitormove.monitor=monitoR.m3;
         }
         else if(gameObject.name=="Monitor4")
         {
             monitor.SetActive(true);
             AA.StopMove();
-            // monitormove.monitor=monitor.m4;
+            monitormove.monitor=monitoR.m4;
         }
     }
     void CloseMonitor()
@@ -47,7 +47,8 @@ public class Monitor : MonoBehaviour
     {
         monitor.SetActive(false);
         AA = AA.GetComponent<Player>();
-        monitormove = FindObjectOfType<monitormove>();
+        monitormove = monitormove.GetComponent<monitormove>();
+        // monitormove = FindObjectOfType<monitormove>();
     }
 
     // Update is called once per frame

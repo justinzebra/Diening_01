@@ -1548,6 +1548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monitor: {fileID: 248876576}
   AA: {fileID: 1095728350}
+  monitormove: {fileID: 194246493}
 --- !u!61 &374145592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6168,6 +6169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monitor: {fileID: 248876576}
   AA: {fileID: 1095728350}
+  monitormove: {fileID: 194246493}
 --- !u!61 &1300377586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7054,6 +7056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monitor: {fileID: 248876576}
   AA: {fileID: 1095728350}
+  monitormove: {fileID: 194246493}
 --- !u!61 &1482738624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8807,6 +8810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monitor: {fileID: 248876576}
   AA: {fileID: 1095728350}
+  monitormove: {fileID: 194246493}
 --- !u!61 &1919570602
 BoxCollider2D:
   m_ObjectHideFlags: 0

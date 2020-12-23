@@ -138,6 +138,11 @@ public class Player : MonoBehaviour
             MovementX();
             playwalk();
         }
+        else//玩家在移動時點擊解謎走路聲停止一切動作
+        {
+            GetComponent<AudioSource>().Stop();
+            m_Animator.SetFloat("movespeed", 0);
+        }
         ControlSpeed();
         // badopen();
     }
