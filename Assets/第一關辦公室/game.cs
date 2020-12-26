@@ -61,7 +61,7 @@ public class game : MonoBehaviour
             third.SetActive(true);
             //first.SetActive(true);
             bookappear.ConTrolAppear();
-            Flowchart.BroadcastFungusMessage ( "12345" );
+            Flowchart.BroadcastFungusMessage ( "123456" );
         }
     }
     // Start is called before the first frame update
