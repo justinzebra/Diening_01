@@ -13,6 +13,7 @@ public class gameMenu : MonoBehaviour
     public GameObject mainmenu;
     public Canvas menu;
     public Canvas chapter;
+    public Canvas playteaching;
     public Player player;
     public AudioClip p;
     AudioSource audiosource;
@@ -84,10 +85,17 @@ public class gameMenu : MonoBehaviour
         chapter.enabled=true;
         audiosource.PlayOneShot(p,0.5f);
     }
+    public void Playteaching()
+    {
+        menu.enabled=false;
+        playteaching.enabled=true;
+        audiosource.PlayOneShot(p,0.5f);
+    }
     public void backtoMainMenu()
     {
         menu.enabled=true;
         chapter.enabled=false;
+        playteaching.enabled=false;
         audiosource.PlayOneShot(p,0.5f);
     }
     
@@ -98,6 +106,7 @@ public class gameMenu : MonoBehaviour
         sceneName = SceneManager.GetActiveScene().name;
         mainmenu.SetActive(false);
         chapter.enabled=false;
+        playteaching.enabled=false;
         player = player.GetComponent<Player>();
         audiosource = GetComponent<AudioSource>();
     }

@@ -12,6 +12,7 @@ public class mainMenu : MonoBehaviour
     public bool opendoor=false;
     public Canvas menu;
     public Canvas chapter;
+    public Canvas playteaching;
     public AudioClip p;
     AudioSource audiosource;
     IEnumerator WaitBeforeShow()
@@ -66,10 +67,17 @@ public class mainMenu : MonoBehaviour
         chapter.enabled=true;
         audiosource.PlayOneShot(p,0.5f);
     }
+    public void Playteaching()
+    {
+        menu.enabled=false;
+        playteaching.enabled=true;
+        audiosource.PlayOneShot(p,0.5f);
+    }
     public void backtoMainMenu()
     {
         menu.enabled=true;
         chapter.enabled=false;
+        playteaching.enabled=false;
         audiosource.PlayOneShot(p,0.5f);
     }
     
@@ -79,6 +87,7 @@ public class mainMenu : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         sceneName = SceneManager.GetActiveScene().name;
         chapter.enabled=false;
+        playteaching.enabled=false;
         audiosource = GetComponent<AudioSource>();
     }
 
