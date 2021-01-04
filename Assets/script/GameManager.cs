@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public bool doorisopen=false;
     public bool bodyisnokey=false;
     public bool dogisgoout=false;
+    public bool rollingdoor=false;
     void Awake () 
     {
         if (instance==null)

@@ -9,11 +9,17 @@ public class Ironrollingdoor : MonoBehaviour
     public Sprite switchon;
     public Sprite switchoff;
     SpriteRenderer spriteRenderer;
+    public GameObject L_door;
+    public AudioClip p;
+    AudioSource audiosource;
+    GameManager gameManager;
+    public GameObject E;
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag=="Player")
         {
             isplayer=true;
+            E.SetActive(true);
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -21,6 +27,7 @@ public class Ironrollingdoor : MonoBehaviour
         if(other.gameObject.tag=="Player")
         {
             isplayer=false;
+            E.SetActive(false);
         }
     }
     void Buttonswitch()
@@ -28,10 +35,14 @@ public class Ironrollingdoor : MonoBehaviour
         if(Input.GetKeyDown("e")&&doorisopen==false&&isplayer==true)
         {
             doorisopen=true;
+            audiosource.PlayOneShot(p);
+            gameManager.rollingdoor=true;
         }
         else if(Input.GetKeyDown("e")&&doorisopen==true&&isplayer==true)
         {
             doorisopen=false;
+            audiosource.PlayOneShot(p);
+            gameManager.rollingdoor=false;
         }
     }
     void Switch()
@@ -39,10 +50,12 @@ public class Ironrollingdoor : MonoBehaviour
         if(doorisopen==true)
         {
             spriteRenderer.sprite=switchon;
+            L_door.SetActive(true);
         }
         else if(doorisopen==false)
         {
             spriteRenderer.sprite=switchoff;
+            L_door.SetActive(false);
         }
     }
     // Start is called before the first frame update
@@ -51,6 +64,18 @@ public class Ironrollingdoor : MonoBehaviour
         spriteRenderer=GetComponent<SpriteRenderer>();
         doorisopen= false;
         isplayer=false;
+        L_door.SetActive(false);
+        audiosource = GetComponent<AudioSource>();
+        gameManager = FindObjectOfType<GameManager>();
+        E.SetActive(false);
+        if(gameManager.rollingdoor==true)
+        {
+            doorisopen=true;
+        }
+        else
+        {
+            doorisopen=false;
+        }
     }
 
     // Update is called once per frame
