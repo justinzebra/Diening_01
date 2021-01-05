@@ -9,7 +9,7 @@ public class Ironrollingdoor : MonoBehaviour
     public Sprite switchon;
     public Sprite switchoff;
     SpriteRenderer spriteRenderer;
-    public GameObject L_door;
+    public GameObject Ldoor;
     public AudioClip p;
     AudioSource audiosource;
     GameManager gameManager;
@@ -50,12 +50,12 @@ public class Ironrollingdoor : MonoBehaviour
         if(doorisopen==true)
         {
             spriteRenderer.sprite=switchon;
-            L_door.SetActive(true);
+            Ldoor.SetActive(true);
         }
         else if(doorisopen==false)
         {
             spriteRenderer.sprite=switchoff;
-            L_door.SetActive(false);
+            Ldoor.SetActive(false);
         }
     }
     // Start is called before the first frame update
@@ -64,7 +64,7 @@ public class Ironrollingdoor : MonoBehaviour
         spriteRenderer=GetComponent<SpriteRenderer>();
         doorisopen= false;
         isplayer=false;
-        L_door.SetActive(false);
+        Ldoor.SetActive(false);
         audiosource = GetComponent<AudioSource>();
         gameManager = FindObjectOfType<GameManager>();
         E.SetActive(false);
