@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     const string HORIZONTAL = "Horizontal";
 
     [Header("水平推力")]
-    [Range(0, 500)]
+    [Range(0, 1000)]
     public float xForce;
     //目前垂直速度
     float speedY;
@@ -114,14 +114,14 @@ public class Player : MonoBehaviour
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
-
+            xForce = 40;
 
         }
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey("a"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;
-
+            xForce = 40;
         }
         else
         {
@@ -131,9 +131,29 @@ public class Player : MonoBehaviour
 
 
     }
+    void playsprite()
+    {
+        horizontalDirection = Input.GetAxis(HORIZONTAL);
+        playerRigidbody2D.AddForce(new Vector2(xForce * horizontalDirection, 0));
+
+
+        if (Input.GetKey("d") && Input.GetKey(KeyCode.LeftShift))
+        {
+            Debug.Log("sad");
+            m_Animator.SetFloat("movespeed", 1);
+            m_SpriteRenderer.flipX = false;
+            xForce = 500;
+        }
+        else if (Input.GetKey("a") && Input.GetKey(KeyCode.LeftShift))
+        {
+            m_Animator.SetFloat("movespeed", 1);
+            m_SpriteRenderer.flipX = true;
+            xForce = 500;
+        }
+    }
     void Update()
     {
-        if (Canmove == true&&menuisopen == false)
+        if (Canmove == true && menuisopen == false)
         {
             MovementX();
             playwalk();
@@ -144,6 +164,7 @@ public class Player : MonoBehaviour
             m_Animator.SetFloat("movespeed", 0);
         }
         ControlSpeed();
+        playsprite();
         // badopen();
     }
 }
