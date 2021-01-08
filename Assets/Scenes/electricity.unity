@@ -12134,7 +12134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361247247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.482271, y: 0.48857683, z: -7.5299997}
+  m_LocalPosition: {x: 16.481958, y: 0.48857683, z: -7.5299997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 842063584}
@@ -28312,7 +28312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655246167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.034798, y: 0.8281819, z: -7.5299997}
+  m_LocalPosition: {x: 11.031683, y: 0.8281819, z: -7.5299997}
   m_LocalScale: {x: 0.68600005, y: 0.68600005, z: 0.68600005}
   m_Children:
   - {fileID: 821767277}
@@ -40018,6 +40018,9 @@ MonoBehaviour:
   elestart: {fileID: 239092601}
   ss: {fileID: 1391069651}
   ww: {fileID: 0}
+  wire1_3: 0
+  wire3_3: 0
+  wire2_2: 0
 --- !u!1 &1082823363
 GameObject:
   m_ObjectHideFlags: 0
@@ -61435,7 +61438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1850132049
 Transform:
   m_ObjectHideFlags: 0
@@ -61722,6 +61725,7 @@ MonoBehaviour:
   doorisopen: 0
   bodyisnokey: 0
   dogisgoout: 0
+  rollingdoor: 0
 --- !u!4 &2041756351
 Transform:
   m_ObjectHideFlags: 0

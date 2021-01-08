@@ -142,13 +142,13 @@ public class Player : MonoBehaviour
             Debug.Log("sad");
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
-            xForce = 500;
+            xForce =200;
         }
         else if (Input.GetKey("a") && Input.GetKey(KeyCode.LeftShift))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;
-            xForce = 500;
+            xForce = 200;
         }
     }
     void Update()
