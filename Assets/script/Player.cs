@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     [Header("水平推力")]
     [Range(0, 1000)]
     public float xForce;
+    public float xNum;
     //目前垂直速度
     float speedY;
 
@@ -114,14 +115,14 @@ public class Player : MonoBehaviour
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = false;
-            xForce = 40;
+            xForce = xNum;
 
         }
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey("a"))
         {
             m_Animator.SetFloat("movespeed", 1);
             m_SpriteRenderer.flipX = true;
-            xForce = 40;
+            xForce = xNum;
         }
         else
         {
