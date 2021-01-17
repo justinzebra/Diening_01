@@ -158,6 +158,7 @@ public class Player : MonoBehaviour
         {
             MovementX();
             playwalk();
+            playsprite();
         }
         else//玩家在移動時點擊解謎走路聲停止一切動作
         {
@@ -165,7 +166,7 @@ public class Player : MonoBehaviour
             m_Animator.SetFloat("movespeed", 0);
         }
         ControlSpeed();
-        playsprite();
+        // playsprite();
         // badopen();
     }
 }
