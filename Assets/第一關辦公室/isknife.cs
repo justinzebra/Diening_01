@@ -10,6 +10,7 @@ public class isknife : MonoBehaviour
     public GameObject K;
     public AudioClip s;
     AudioSource audiosource;
+    
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
         if(other.gameObject.tag=="knife")
@@ -20,6 +21,7 @@ public class isknife : MonoBehaviour
             audiosource.PlayOneShot(s);
             K.SetActive(false);
             Destroy(other.gameObject);
+            
         }
     }
     // Start is called before the first frame update
