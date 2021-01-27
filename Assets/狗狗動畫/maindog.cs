@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class maindog : MonoBehaviour
 {
-   private Rigidbody2D dog;
+    private Rigidbody2D dog;
     public Transform leftpoint,rightpoint;
     private float leftx,rightx;
     public bool faceleft = true;
