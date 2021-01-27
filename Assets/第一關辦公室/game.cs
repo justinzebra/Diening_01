@@ -52,6 +52,7 @@ public class game : MonoBehaviour
             Invoke("ReMove",1);
             second.SetActive(false);
             third.SetActive(true);
+             Flowchart.BroadcastFungusMessage ( "1234567" );
         }
         if(other.gameObject.name == "destination3")
         {

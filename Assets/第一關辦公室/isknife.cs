@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class isknife : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class isknife : MonoBehaviour
     public GameObject K;
     public AudioClip s;
     AudioSource audiosource;
-    
+
     void OnTriggerEnter2D(Collider2D other)//碰撞後交換位置
     {
-        if(other.gameObject.tag=="knife")
+        if (other.gameObject.tag == "knife")
         {
             p.DisAppear();
             hp.ConTrolAppear();
@@ -21,7 +22,7 @@ public class isknife : MonoBehaviour
             audiosource.PlayOneShot(s);
             K.SetActive(false);
             Destroy(other.gameObject);
-            
+            Flowchart.BroadcastFungusMessage("789456");
         }
     }
     // Start is called before the first frame update
@@ -36,6 +37,6 @@ public class isknife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
