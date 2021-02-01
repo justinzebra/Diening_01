@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using Fungus;
+using UnityEngine.Assertions;
+
 
 public class Player : MonoBehaviour
 {
@@ -18,6 +22,7 @@ public class Player : MonoBehaviour
     [Range(0, 1000)]
     public float xForce;
     public float xNum;
+    public float xstopNum;
     //目前垂直速度
     float speedY;
 
@@ -39,8 +44,22 @@ public class Player : MonoBehaviour
     public Animator m_Animator;
     //public GameObject ss;   //把手電筒包含trigger_flashlight引進來
     //public E ww; //新增一個trigger_flashlight的代名詞去取得其他腳本的變數
-    bool Canmove = true;
-    bool menuisopen = false;
+    public Flowchart flowchart;
+     public Flowchart flowchart2;
+    string CanmoveName = "控制走動";
+    public bool Canmove
+    {
+        get
+        {
+            return flowchart.GetBooleanVariable(CanmoveName);
+        }
+        set
+        {
+            flowchart.SetBooleanVariable(CanmoveName, value);
+        }
+    }
+
+    public bool menuisopen = false;
 
     //public GameObject m_bag;
     //public bool bagisopen;
@@ -143,15 +162,16 @@ public class Player : MonoBehaviour
             Debug.Log("sad");
             m_Animator.SetFloat("movespeed", 2);
             m_SpriteRenderer.flipX = false;
-            xForce =3*xForce;
+            xForce = 3 * xForce;
         }
         else if (Input.GetKey("a") && Input.GetKey(KeyCode.LeftShift))
         {
             m_Animator.SetFloat("movespeed", 2);
             m_SpriteRenderer.flipX = true;
-            xForce =3*xForce;
+            xForce = 3 * xForce;
         }
     }
+
     void Update()
     {
         if (Canmove == true && menuisopen == false)
@@ -162,9 +182,12 @@ public class Player : MonoBehaviour
         }
         else//玩家在移動時點擊解謎走路聲停止一切動作
         {
+
             GetComponent<AudioSource>().Stop();
             m_Animator.SetFloat("movespeed", 0);
         }
+
+
         ControlSpeed();
         // playsprite();
         // badopen();
