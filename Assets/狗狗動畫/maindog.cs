@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Fungus;
 public class maindog : MonoBehaviour
 {
     private Rigidbody2D dog;
@@ -49,6 +49,7 @@ public class maindog : MonoBehaviour
       if(other.gameObject.tag=="Player")
       {
           iswalk=true;
+          Flowchart.BroadcastFungusMessage("遇到狗");
       }
       else if(other.gameObject.name=="dogdestroy")
       {
