@@ -3823,7 +3823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393748315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.996832, y: -2.966, z: -16.05}
+  m_LocalPosition: {x: 3.9972343, y: -2.966, z: -16.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1917053872}
@@ -16242,9 +16242,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1151889482}
+  - {fileID: 1151889451}
   selectedCommands:
-  - {fileID: 1151889477}
+  - {fileID: 1151889452}
   variables:
   - {fileID: 1151889430}
   description: 
@@ -16743,7 +16743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67.42857
+    x: 68.74436
     y: 281.57797
     width: 120
     height: 40
@@ -17751,7 +17751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159869712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9979773, y: -3.6489096, z: -16.05}
+  m_LocalPosition: {x: 3.9983797, y: -3.6489022, z: -16.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1219160798}
@@ -24947,6 +24947,7 @@ MonoBehaviour:
   horizontalDirection: 0
   xForce: 50
   xNum: 50
+  xstopNum: 0
   maxSpeedX: 1
   yForce: 500
   distance: 0.267
@@ -24955,6 +24956,9 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
+  flowchart: {fileID: 0}
+  flowchart2: {fileID: 0}
+  menuisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!82 &1754408754
 AudioSource:

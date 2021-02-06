@@ -718,6 +718,7 @@ MonoBehaviour:
   horizontalDirection: 0
   xForce: 40
   xNum: 40
+  xstopNum: 0
   maxSpeedX: 1
   yForce: 500
   distance: 0.267
@@ -726,6 +727,9 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
+  flowchart: {fileID: 1065934540}
+  flowchart2: {fileID: 0}
+  menuisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &206526493
 Rigidbody2D:
@@ -3917,7 +3921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848124976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.392876, y: 8.349999, z: -11.1}
+  m_LocalPosition: {x: -8.392765, y: 8.349999, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 474485577}
@@ -5212,6 +5216,8 @@ GameObject:
   - component: {fileID: 1065934574}
   - component: {fileID: 1065934573}
   - component: {fileID: 1065934576}
+  - component: {fileID: 1065934577}
+  - component: {fileID: 1065934578}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5284,8 +5290,10 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1065934575}
-  selectedCommands: []
-  variables: []
+  selectedCommands:
+  - {fileID: 1065934578}
+  variables:
+  - {fileID: 1065934577}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -6041,7 +6049,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 622.1426
-    y: -23.714355
+    y: -25.714355
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6053,9 +6061,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 1065934576}
   - {fileID: 1065934573}
+  - {fileID: 1065934578}
 --- !u!114 &1065934576
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6071,6 +6080,85 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &1065934577
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065934537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: "\u63A7\u5236\u8D70\u52D5"
+  value: 0
+--- !u!114 &1065934578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065934537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  variable: {fileID: 1065934577}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1 &1086395056
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,7 +9801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956968377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.392876, y: 8.349999, z: -11.1}
+  m_LocalPosition: {x: -8.392765, y: 8.349999, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1275449246}
