@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,10 +27,6 @@ public class rollingdoor : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         ironrollingdoor = ironrollingdoor.GetComponent<Ironrollingdoor>();
         door_animator = GetComponent<Animator>();
-        // if(gameManager.rollingdoor==true)
-        // {
-
-        // }
     }
 
     // Update is called once per frame
