@@ -3787,6 +3787,7 @@ MonoBehaviour:
   horizontalDirection: 0
   xForce: 40
   xNum: 40
+  xstopNum: 0
   maxSpeedX: 1
   yForce: 500
   distance: 0.267
@@ -3795,6 +3796,9 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
+  flowchart: {fileID: 921887497}
+  flowchart2: {fileID: 0}
+  menuisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &467779825
 Rigidbody2D:
@@ -6368,6 +6372,7 @@ GameObject:
   - component: {fileID: 921887507}
   - component: {fileID: 921887506}
   - component: {fileID: 921887505}
+  - component: {fileID: 921887527}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6437,7 +6442,8 @@ MonoBehaviour:
   - {fileID: 921887518}
   - {fileID: 921887526}
   selectedCommands: []
-  variables: []
+  variables:
+  - {fileID: 921887527}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -7073,6 +7079,21 @@ MonoBehaviour:
   - {fileID: 921887522}
   - {fileID: 921887521}
   - {fileID: 921887520}
+--- !u!114 &921887527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921887494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: "\u63A7\u5236\u8D70\u52D5"
+  value: 1
 --- !u!1 &929919785
 GameObject:
   m_ObjectHideFlags: 0
