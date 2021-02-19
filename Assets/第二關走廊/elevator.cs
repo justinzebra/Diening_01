@@ -12,9 +12,11 @@ public class elevator : MonoBehaviour
 {
     public string sceneName;
     public Elevator elevatoR;
+    public GameObject Edoor;
     Animator door_animator; 
     public AudioClip p1;
     public AudioClip p2;
+    public AudioClip p3;
     AudioSource audiosource;
     public elevatorbutton elevatorbutton;
     public void elevatorfloor()
@@ -49,12 +51,15 @@ public class elevator : MonoBehaviour
         door_animator.SetBool("elevatorClose",false);
         Invoke("elevatorClose",7f);
         audiosource.PlayOneShot(p1,1f);
+        Edoor.SetActive(true);
     }
     void elevatorClose()
     {
         door_animator.SetBool("elevatorOpen",false);
         door_animator.SetBool("elevatorClose",true);
         elevatorbutton.elevatoriswork=false;
+        audiosource.PlayOneShot(p3,1f);
+        Edoor.SetActive(false);
     }
     // Start is called before the first frame update
     void Start()
@@ -63,6 +68,7 @@ public class elevator : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         sceneName = SceneManager.GetActiveScene().name;
         elevatorbutton = elevatorbutton.GetComponent<elevatorbutton>();
+        Edoor.SetActive(false);
     }
 
     // Update is called once per frame
