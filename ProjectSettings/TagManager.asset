@@ -23,6 +23,7 @@ TagManager:
   - socket
   - book
   - Knifegone
+  - Puzzle
   layers:
   - Default
   - TransparentFX
