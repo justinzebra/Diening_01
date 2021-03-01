@@ -10,7 +10,8 @@ using UnityEngine;
         EtoA,
         StoA,
         AtoS,
-        EtoB
+        EtoB,
+        eGtoP
     }
 
 public class GameManager : MonoBehaviour

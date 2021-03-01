@@ -71,6 +71,16 @@ public class Controller : MonoBehaviour
         }
         }
     }
+    void Pharmacyroom()
+    {
+        if(sceneName=="Pharmacyroom")
+        {
+        if(gameManager.currents==currentS.eGtoP)
+        {
+            player.gameObject.transform.position = new Vector3(15f,3.01721f,-1.1f);
+        }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +91,7 @@ public class Controller : MonoBehaviour
         gallery_after();
         surgery();
         gallery_before();
+        Pharmacyroom();
     }
 
     // Update is called once per frame
