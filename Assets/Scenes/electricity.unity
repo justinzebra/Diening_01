@@ -40466,7 +40466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: "\u4E3B\u89D2\u5C0D\u8A71"
+  nameText: "\u6587\u68EE\u7279"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -46371,8 +46371,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1110298629}
+  selectedCommands:
+  - {fileID: 1110298657}
   variables:
   - {fileID: 1110298635}
   - {fileID: 1110298631}
@@ -48193,7 +48195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133211308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.63, y: -0.41, z: 2.359}
+  m_LocalPosition: {x: -4.96, y: -0.41, z: 2.359}
   m_LocalScale: {x: 0.2656472, y: 0.2656472, z: 0.2656472}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49777,7 +49779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: "\u8001\u4EBA"
+  nameText: "\u5B89\u5FB7\u9B6F"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -58585,7 +58587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708543147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.04, y: -0.46, z: 2.121}
+  m_LocalPosition: {x: -5.37, y: -0.46, z: 2.121}
   m_LocalScale: {x: 0.261499, y: 0.261499, z: 0.261499}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65387,7 +65389,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.049604, y: 0.06213379}
+  m_Offset: {x: 5.052137, y: 0.06213379}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -65398,7 +65400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.166557, y: 24.125732}
+  m_Size: {x: 17.17162, y: 24.125732}
   m_EdgeRadius: 0
 --- !u!95 &1926414533
 Animator:
@@ -65479,7 +65481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926414530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51, y: -0.36, z: 2.832}
+  m_LocalPosition: {x: -4.84, y: -0.36, z: 2.832}
   m_LocalScale: {x: 0.2475292, y: 0.2475292, z: 0.2475292}
   m_Children: []
   m_Father: {fileID: 0}

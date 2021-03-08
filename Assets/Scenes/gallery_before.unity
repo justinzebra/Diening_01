@@ -8944,7 +8944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 555541073}
+  selectedFlowchart: {fileID: 1698763942}
 --- !u!4 &1492321648
 Transform:
   m_ObjectHideFlags: 1
@@ -10186,8 +10186,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1698763941}
-  selectedCommands: []
+  - {fileID: 1698763954}
+  selectedCommands:
+  - {fileID: 1698763948}
   variables:
   - {fileID: 1698763947}
   description: 
@@ -10352,7 +10353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: "\u600E\u9EBC\u6703\u5728\u91AB\u9662\u88E1\u9592\u6643?"
+  storyText: "\u96E3\u9053\u662F\u6211\u773C\u82B1\u4E86\u55CE?"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10379,7 +10380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: "\u90A3\u4E0D\u662F\u840A\u897F\u55CE?"
+  storyText: "\u5947\u602A...\u600E\u9EBC\u6703\u6709\u96BB\u72D7\u5728\u91AB\u9662\u9592\u6643?"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
