@@ -40,53 +40,53 @@ public class Pharmacyblending : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "黃"&&colors==ColorS.colorLess)
+        if (other.gameObject.name == "黃色"&&colors==ColorS.colorLess)
         {
             colors=ColorS.colorYellow;
         }
-        else if(other.gameObject.name == "黃"&&colors==ColorS.colorRed)
+        else if(other.gameObject.name == "黃色"&&colors==ColorS.colorRed)
         {
            colors=ColorS.colorOrage;
            Invoke("canMove",2f);
         }
-        else if(other.gameObject.name == "黃"&&colors!=ColorS.colorLess&&colors!=ColorS.colorYellow)
+        else if(other.gameObject.name == "黃色"&&colors!=ColorS.colorLess&&colors!=ColorS.colorYellow)
         {
             colors=ColorS.colorBlack;
         }
-        else if(other.gameObject.name == "藍"&&colors==ColorS.colorLess)
+        else if(other.gameObject.name == "藍色"&&colors==ColorS.colorLess)
         {
             colors=ColorS.colorBlue;
         }
-        else if(other.gameObject.name == "藍"&&colors!=ColorS.colorLess&&colors!=ColorS.colorBlue)
+        else if(other.gameObject.name == "藍色"&&colors!=ColorS.colorLess&&colors!=ColorS.colorBlue)
         {
             colors=ColorS.colorBlack;
         }
-        else if(other.gameObject.name == "白"&&colors==ColorS.colorLess)
+        else if(other.gameObject.name == "白色"&&colors==ColorS.colorLess)
         {
             colors=ColorS.colorWhite;
         }
-        else if(other.gameObject.name == "白"&&colors!=ColorS.colorLess&&colors!=ColorS.colorWhite)
+        else if(other.gameObject.name == "白色"&&colors!=ColorS.colorLess&&colors!=ColorS.colorWhite)
         {
             colors=ColorS.colorBlack;
         }
-        else if(other.gameObject.name == "紅"&&colors==ColorS.colorLess)
+        else if(other.gameObject.name == "紅色"&&colors==ColorS.colorLess)
         {
             colors=ColorS.colorRed;
         }
-        else if(other.gameObject.name == "紅"&&colors==ColorS.colorYellow)
+        else if(other.gameObject.name == "紅色"&&colors==ColorS.colorYellow)
         {
             colors=ColorS.colorOrage;
             Invoke("canMove",2f);
         }
-        else if(other.gameObject.name == "紅"&&colors!=ColorS.colorLess&&colors!=ColorS.colorRed)
+        else if(other.gameObject.name == "紅色"&&colors!=ColorS.colorLess&&colors!=ColorS.colorRed)
         {
             colors=ColorS.colorBlack;
         }
-         else if(other.gameObject.name == "綠"&&colors==ColorS.colorLess)
+         else if(other.gameObject.name == "綠色"&&colors==ColorS.colorLess)
         {
             colors=ColorS.colorGreen;
         }
-        else if(other.gameObject.name == "綠"&&colors!=ColorS.colorLess&&colors!=ColorS.colorGreen)
+        else if(other.gameObject.name == "綠色"&&colors!=ColorS.colorLess&&colors!=ColorS.colorGreen)
         {
             colors=ColorS.colorBlack;
         }

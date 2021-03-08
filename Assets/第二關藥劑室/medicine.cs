@@ -17,12 +17,13 @@ public class medicine : MonoBehaviour
     float f;
     public AudioClip p;
     AudioSource audioSource;
+    Animator medicine_animator;
     
     void OnMouseDrag()
     {
         Camera cam = Camera.main;      
         Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);  
-        this.transform.position = new Vector3(newPos.x, newPos.y,-4.2f);//this.transform.position.z
+        this.transform.position = new Vector3(newPos.x, newPos.y,-4.5f);//this.transform.position.z
         medicinereturn.returnbutton=false;
     }
     void OnMouseUp()
@@ -36,12 +37,15 @@ public class medicine : MonoBehaviour
             fadeout=true;
             audioSource.PlayOneShot(p);
             boxCollider2D.enabled=false;
-            // Invoke("Destroy",2f);
+            medicine_animator.SetBool("ispour",true);
+            // medicine_animator.Play("ispour", 0, 0);
+            Invoke("Destroy",0.7f);
         }
     }
     public void Destroy()
     {
-        Destroy(color);
+        // Destroy(color);
+        medicine_animator.SetBool("ispour",false);
     }
     void FadeInandOut()
     {
@@ -104,6 +108,7 @@ public class medicine : MonoBehaviour
         fadein=false;
         fadeout=false;
         audioSource=GetComponent<AudioSource>();
+        medicine_animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
