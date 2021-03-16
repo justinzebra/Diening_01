@@ -182,7 +182,7 @@ public class Pharmacyblending : MonoBehaviour
     {
         if (Cantake == true)
             Flowchart.BroadcastFungusMessage("得到藥水");
-
+            Destroy(this.gameObject);
         Debug.Log("0000");
 
     }
