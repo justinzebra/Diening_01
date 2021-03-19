@@ -12174,7 +12174,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1735193499}
   selectedCommands: []
   variables:
   - {fileID: 1735193171}
@@ -20848,7 +20849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1735193499}
-  message: "\u5F97\u5230\u85E5\u6C34"
+  message: "\u5F97\u5230\u78C1\u5361"
 --- !u!114 &1735193488
 MonoBehaviour:
   m_ObjectHideFlags: 2
