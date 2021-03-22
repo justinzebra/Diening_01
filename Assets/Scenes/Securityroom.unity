@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3560991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.4123125, y: -0.63443995, z: -11.1}
+  m_LocalPosition: {x: 9.411937, y: -0.63443995, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1081082411}
@@ -835,6 +835,7 @@ GameObject:
   - component: {fileID: 230553124}
   - component: {fileID: 230553123}
   - component: {fileID: 230553122}
+  - component: {fileID: 230553133}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1108,7 +1109,8 @@ MonoBehaviour:
   - {fileID: 230553132}
   selectedCommands:
   - {fileID: 230553131}
-  variables: []
+  variables:
+  - {fileID: 230553133}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1371,6 +1373,21 @@ MonoBehaviour:
   eventHandler: {fileID: 230553130}
   commandList:
   - {fileID: 230553131}
+--- !u!114 &230553133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230553108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: "\u63A7\u5236\u8D70\u52D5"
+  value: 1
 --- !u!1 &248876576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,7 +2397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415384081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.412451, y: -0.25895548, z: -11.1}
+  m_LocalPosition: {x: 9.412078, y: -0.25895357, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 198520392}
@@ -5974,6 +5991,7 @@ MonoBehaviour:
   horizontalDirection: 0
   xForce: 40
   xNum: 40
+  xstopNum: 0
   maxSpeedX: 1
   yForce: 500
   distance: 0.267
@@ -5982,6 +6000,9 @@ MonoBehaviour:
     m_Bits: 0
   grounded: 0
   m_Animator: {fileID: 0}
+  flowchart: {fileID: 230553120}
+  flowchart2: {fileID: 0}
+  menuisopen: 0
   m_SpriteRenderer: {fileID: 0}
 --- !u!50 &1095728351
 Rigidbody2D:

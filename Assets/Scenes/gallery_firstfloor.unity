@@ -4536,7 +4536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E: {fileID: 1858680861}
-  goToTheScene: Lobby
+  goToTheScene: Pharmacyroom
   opendoor: 0
 --- !u!61 &1670211103
 BoxCollider2D:
@@ -4572,7 +4572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670211101}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.61, y: 12.7, z: 0}
+  m_LocalPosition: {x: -48.69, y: 12.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1858680863}
@@ -6677,7 +6677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E: {fileID: 2061852349}
-  goToTheScene: Lobby
+  goToTheScene: gallery_B1
   opendoor: 0
 --- !u!61 &1896668852
 BoxCollider2D:

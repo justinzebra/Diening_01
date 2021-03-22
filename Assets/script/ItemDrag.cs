@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 
 public class ItemDrag : MonoBehaviour
@@ -15,10 +16,10 @@ public class ItemDrag : MonoBehaviour
 
     //}
     public GameObject showdead;
-   
-    
-    public bool isdog=false;
-    
+
+
+    public bool isdog = false;
+
 
     void OnMouseDown()
     {
@@ -41,9 +42,9 @@ public class ItemDrag : MonoBehaviour
             this.gameObject.SetActive(false);
             //Destroy(this.gameObject);
             showdead.SetActive(true);
-           
-     
+
             
+
             isdog = true;
         }
     }
@@ -53,7 +54,7 @@ public class ItemDrag : MonoBehaviour
     //    {
     //        this.gameObject.SetActive(false);
     //        //Destroy(this.gameObject);
-           
+
     //        showlight.SetActive(true);
 
     //        lightout.SetActive(false);

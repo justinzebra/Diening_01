@@ -29,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Securityroom.unity
     guid: 63ec317e33287f3489f30225fa8d72fc
+  - enabled: 1
+    path: Assets/Scenes/gallery_firstfloor.unity
+    guid: bac330c37e6cd6948abbe23c28c52469
+  - enabled: 1
+    path: Assets/Scenes/gallery_B1.unity
+    guid: b33e626e352586943a05d394f4caef68
+  - enabled: 1
+    path: Assets/Scenes/Pharmacyroom.unity
+    guid: 738ad7e9b418cd24d8c69b5ef7bed4a1
+  - enabled: 1
+    path: Assets/Scenes/incineration.unity
+    guid: 5b8704c467be9cc4388b2330b465d97d
   m_configObjects: {}
