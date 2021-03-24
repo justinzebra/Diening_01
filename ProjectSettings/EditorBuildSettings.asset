@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/incineration.unity
     guid: 5b8704c467be9cc4388b2330b465d97d
+  - enabled: 1
+    path: Assets/Scenes/Elevator.unity
+    guid: 9fe45a0c7f6c41d4da988bffda0e79cb
   m_configObjects: {}

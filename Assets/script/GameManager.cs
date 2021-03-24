@@ -17,13 +17,20 @@ using UnityEngine;
         b1GtoeG,
         b1GtoI,
         Itob1G,
-        LtoeG
+        LtoeG,
+        inEtoeG
     }
+public enum Elevator
+{
+    firstfloor,
+    secondfloor
+}
 
 public class GameManager : MonoBehaviour
 {
     static GameManager instance;
     public currentS currents;
+    public Elevator elevatoR;
     public bool doorisopen=false;
     public bool bodyisnokey=false;
     public bool dogisgoout=false;

@@ -97,6 +97,10 @@ public class Controller : MonoBehaviour
             {
                 player.gameObject.transform.position = new Vector3(-92.3f,8.81f,-1f);
             }
+            else if(gameManager.currents==currentS.inEtoeG)
+            {
+                player.gameObject.transform.position = new Vector3(-25.78f,8.81f,-1f);
+            }
         }
     }
     void gallery_B1()

@@ -2,16 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public enum Elevator
-{
-    firstfloor,
-    secondfloor
-}
-
 public class elevator : MonoBehaviour
 {
+    GameManager gameManager;
     public string sceneName;
-    public Elevator elevatoR;
     public GameObject Edoor;
     Animator door_animator; 
     public AudioClip p1;
@@ -21,21 +15,21 @@ public class elevator : MonoBehaviour
     public elevatorbutton elevatorbutton;
     public void elevatorfloor()
     {
-        if(sceneName=="gallery_firstfloor"&&elevatoR==Elevator.firstfloor)
+        if(sceneName=="gallery_firstfloor"&&gameManager.elevatoR==Elevator.firstfloor)
         {
             elevatorarrival();
         }
-        else if(sceneName=="gallery_firstfloor"&&elevatoR==Elevator.secondfloor)
+        else if(sceneName=="gallery_firstfloor"&&gameManager.elevatoR==Elevator.secondfloor)
         {
             Invoke("elevatorarrival",3f);
-            elevatoR=Elevator.firstfloor;
+            gameManager.elevatoR=Elevator.firstfloor;
         }
-        else if(sceneName=="2"&&elevatoR==Elevator.secondfloor)
+        else if(sceneName=="2"&&gameManager.elevatoR==Elevator.firstfloor)
         {
             Invoke("elevatorarrival",3f);
-            elevatoR=Elevator.firstfloor;
+            gameManager.elevatoR=Elevator.firstfloor;
         }
-        else if(sceneName=="2"&&elevatoR==Elevator.secondfloor)
+        else if(sceneName=="2"&&gameManager.elevatoR==Elevator.firstfloor)
         {
             elevatorarrival();
         }
@@ -64,6 +58,7 @@ public class elevator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         door_animator = GetComponent<Animator>();
         audiosource = GetComponent<AudioSource>();
         sceneName = SceneManager.GetActiveScene().name;
