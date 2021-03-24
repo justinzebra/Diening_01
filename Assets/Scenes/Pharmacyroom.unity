@@ -3988,7 +3988,7 @@ GameObject:
   - component: {fileID: 265254986}
   - component: {fileID: 265254987}
   - component: {fileID: 265254988}
-  - component: {fileID: 265254989}
+  - component: {fileID: 265254990}
   m_Layer: 0
   m_Name: "\u85E5\u5291\u53F01"
   m_TagString: Puzzle
@@ -4102,7 +4102,7 @@ MonoBehaviour:
   clickEnabled: 1
   hoverCursor: {fileID: 2800000, guid: 9bc792ad6e6c1d14586ecb4d7e98cb24, type: 3}
   useEventSystem: 0
---- !u!114 &265254989
+--- !u!114 &265254990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4111,7 +4111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 265254984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cab7555973c4dd144abdd335d18f0c04, type: 3}
+  m_Script: {fileID: 11500000, guid: 4eff282c4265e274385e4d8ea66fab94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AA: {fileID: 1404278811}
@@ -24316,6 +24316,7 @@ MonoBehaviour:
   dogisgoout: 0
   rollingdoor: 0
   medicineisright: 0
+  cipherisopen: 0
 --- !u!4 &1207016199
 Transform:
   m_ObjectHideFlags: 0

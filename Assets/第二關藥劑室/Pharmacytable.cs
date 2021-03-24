@@ -2,28 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ciphermachine : MonoBehaviour
+public class Pharmacytable : MonoBehaviour
 {
+   GameManager gameManager;
     public Player AA;
-    public GameObject cipher;
-    GameManager gameManager;
+    public GameObject puzzle;
     BoxCollider2D bw;
-    public GameObject fdoor;
-    
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         AA = AA.GetComponent<Player>();
-        cipher.SetActive(false);
+        puzzle.SetActive(false);
         bw = GetComponent<BoxCollider2D>();
-        fdoor.SetActive(false);
     }
-    void cipherappear()
+    void tableappear()
     {
-        if(gameManager.cipherisopen==true)
+        if(gameManager.medicineisright==true)
         {
             bw.enabled=false;
-            fdoor.SetActive(true);
         }
         else
         {
@@ -32,21 +28,20 @@ public class Ciphermachine : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (gameObject.name == "cipher")
+        if (this.gameObject.tag == "Puzzle")
         {
             AA.StopMove();
-            cipher.SetActive(true);
+            puzzle.SetActive(true);
         }
-
     }
-    public void closecipher()
+    public void closepuzzle()
     {
-        cipher.SetActive(false);
+        puzzle.SetActive(false);
         AA.ReStartMove();
     }
     // Update is called once per frame
     void Update()
     {
-        cipherappear();
+        tableappear();
     }
 }

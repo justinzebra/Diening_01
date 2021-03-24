@@ -15,10 +15,6 @@ public enum ColorS
     colorOrage,
     colorBlack
 }
-
-
-
-
 public class Pharmacyblending : MonoBehaviour
 {
     GameManager gameManager;
@@ -67,6 +63,7 @@ public class Pharmacyblending : MonoBehaviour
         }
         else if (other.gameObject.name == "黃色" && colors == ColorS.colorRed)
         {
+            gameManager.medicineisright=true;
             colors = ColorS.colorOrage;
             Invoke("canMove", 2f);
             Cantake = true;
@@ -97,6 +94,7 @@ public class Pharmacyblending : MonoBehaviour
         }
         else if (other.gameObject.name == "紅色" && colors == ColorS.colorYellow)
         {
+            gameManager.medicineisright=true;
             colors = ColorS.colorOrage;
             Invoke("canMove", 2f);
             Cantake = true;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class mainCode : MonoBehaviour
 {
+    GameManager gameManager;
     public Transform[] code;
     public code1 code1;
     public code2 code2;
@@ -28,7 +29,8 @@ public class mainCode : MonoBehaviour
             code2.Cantchange();
             code3.Cantchange();
             code4.Cantchange();
-            Destroy(cipher);
+            // Destroy(cipher);
+            gameManager.cipherisopen=true;
             Invoke("Closecipher",2f);
         }else
         {
@@ -76,6 +78,7 @@ public class mainCode : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         opendoor = opendoor.GetComponent<L_opendoor>();
         ciphermachine = ciphermachine.GetComponent<Ciphermachine>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame

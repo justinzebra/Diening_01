@@ -96,6 +96,10 @@ public class switchscenes : MonoBehaviour
         {
             gameManager.currents=currentS.AtoS;
         }
+        else if(goToTheScene=="gallery_firstfloor")
+        {
+            gameManager.currents=currentS.LtoeG;
+        }
     }
     void A_changecurrentS()
     {

@@ -2992,7 +2992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346574200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.006731, y: 0.45738602, z: -11.1}
+  m_LocalPosition: {x: 29.006151, y: 0.4573841, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1836919207}
@@ -4033,7 +4033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &518612652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4176,13 +4176,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518612651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.93, y: 1.4, z: -1}
+  m_LocalPosition: {x: -1.93, y: 18, z: -1}
   m_LocalScale: {x: 0.4424389, y: 0.4424389, z: 0.4424389}
   m_Children:
   - {fileID: 296832562}
   - {fileID: 291300774}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &520427164
 GameObject:
@@ -4880,11 +4880,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d12b34e253fc945a69ebbecfcd49d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currents: 0
+  currents: 1
   doorisopen: 0
   bodyisnokey: 0
   dogisgoout: 0
   rollingdoor: 0
+  medicineisright: 0
+  cipherisopen: 0
 --- !u!4 &664884623
 Transform:
   m_ObjectHideFlags: 0
@@ -4897,7 +4899,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &687035161
 GameObject:
@@ -4962,7 +4964,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &687035165
 AudioSource:
@@ -6548,7 +6550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &921887499
 MonoBehaviour:
@@ -11065,6 +11067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AA: {fileID: 467779824}
   cipher: {fileID: 1836919206}
+  fdoor: {fileID: 2139604847}
 --- !u!61 &1517634540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11352,7 +11355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539144234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.006504, y: 1.3899999, z: -11.1}
+  m_LocalPosition: {x: 29.005922, y: 1.3899999, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1359961399}
@@ -12955,7 +12958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1836919207
 Transform:
   m_ObjectHideFlags: 0
@@ -14133,7 +14136,7 @@ GameObject:
   - component: {fileID: 2139604849}
   - component: {fileID: 2139604848}
   m_Layer: 0
-  m_Name: s_door (1)
+  m_Name: f_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14193,5 +14196,5 @@ Transform:
   m_Children:
   - {fileID: 325993410}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

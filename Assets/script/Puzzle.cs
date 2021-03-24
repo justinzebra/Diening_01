@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Puzzle : MonoBehaviour
 {
+    GameManager gameManager;
     public Player AA;
     public GameObject puzzle;
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         AA = AA.GetComponent<Player>();
         puzzle.SetActive(false);
     }

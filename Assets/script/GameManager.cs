@@ -16,7 +16,8 @@ using UnityEngine;
         eGtob1G,
         b1GtoeG,
         b1GtoI,
-        Itob1G
+        Itob1G,
+        LtoeG
     }
 
 public class GameManager : MonoBehaviour
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     public bool dogisgoout=false;
     public bool rollingdoor=false;
     public bool medicineisright=false;
+    public bool cipherisopen=false;
     void Awake () 
     {
         if (instance==null)

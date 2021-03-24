@@ -93,10 +93,10 @@ public class Controller : MonoBehaviour
             {
                 player.gameObject.transform.position = new Vector3(9.67f,8.81f,-1f);
             }
-            // else if(gameManager.currents==currentS.StoA)
-            // {
-            //     player.gameObject.transform.position = new Vector3(-11.14f,8.07f,-1.1f);
-            // }
+            else if(gameManager.currents==currentS.LtoeG)
+            {
+                player.gameObject.transform.position = new Vector3(-92.3f,8.81f,-1f);
+            }
         }
     }
     void gallery_B1()
