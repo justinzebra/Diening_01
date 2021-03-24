@@ -11,7 +11,12 @@ using UnityEngine;
         StoA,
         AtoS,
         EtoB,
-        eGtoP
+        eGtoP,
+        PtoeG,
+        eGtob1G,
+        b1GtoeG,
+        b1GtoI,
+        Itob1G
     }
 
 public class GameManager : MonoBehaviour
@@ -22,6 +27,7 @@ public class GameManager : MonoBehaviour
     public bool bodyisnokey=false;
     public bool dogisgoout=false;
     public bool rollingdoor=false;
+    public bool medicineisright=false;
     void Awake () 
     {
         if (instance==null)

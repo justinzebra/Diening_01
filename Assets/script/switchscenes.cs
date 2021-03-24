@@ -52,6 +52,22 @@ public class switchscenes : MonoBehaviour
             {
                 A_changecurrentS();
             }
+            else if(sceneName=="gallery_firstfloor")
+            {
+                g_E_changecurrentS();
+            }
+            else if(sceneName=="Pharmacyroom")
+            {
+                g_E_changecurrentS();
+            }
+            else if(sceneName=="gallery_B1")
+            {
+                g_B1_changecurrentS();
+            }
+            else if(sceneName=="incineration")
+            {
+                g_B1_changecurrentS();
+            }
         }
     }
 
@@ -86,6 +102,36 @@ public class switchscenes : MonoBehaviour
         if(goToTheScene=="gallery_after"&&gameManager.currents==currentS.AtoS)
         {
             gameManager.currents=currentS.StoA;
+        }
+    }
+    void g_E_changecurrentS()
+    {
+        if(goToTheScene=="Pharmacyroom")
+        {
+            gameManager.currents=currentS.eGtoP;
+        }
+        else if(goToTheScene=="gallery_B1")
+        {
+            gameManager.currents=currentS.eGtob1G;
+        }
+        else if(goToTheScene=="gallery_firstfloor")
+        {
+            gameManager.currents=currentS.PtoeG;
+        }
+    }
+    void g_B1_changecurrentS()
+    {
+        if(goToTheScene=="gallery_firstfloor")
+        {
+            gameManager.currents=currentS.b1GtoeG;
+        }
+        else if(goToTheScene=="incineration")
+        {
+            gameManager.currents=currentS.b1GtoI;
+        }
+        else if(goToTheScene=="gallery_B1")
+        {
+            gameManager.currents=currentS.Itob1G;
         }
     }
 

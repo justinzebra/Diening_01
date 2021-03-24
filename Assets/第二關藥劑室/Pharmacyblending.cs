@@ -21,6 +21,7 @@ public enum ColorS
 
 public class Pharmacyblending : MonoBehaviour
 {
+    GameManager gameManager;
     public ColorS colors;
     SpriteRenderer spriteRenderer;
     public medicinereturn medicinereturn;
@@ -192,6 +193,7 @@ public class Pharmacyblending : MonoBehaviour
         medicinereturn = medicinereturn.GetComponent<medicinereturn>();
         colors = ColorS.colorLess;
         returnbutton.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame

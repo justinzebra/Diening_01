@@ -81,6 +81,48 @@ public class Controller : MonoBehaviour
         }
         }
     }
+    void gallery_firstfloor()
+    {
+        if(sceneName=="gallery_firstfloor")
+        {
+            if(gameManager.currents==currentS.PtoeG)
+            {
+                player.gameObject.transform.position = new Vector3(-50.31f,8.81f,-1f);
+            }
+            else if(gameManager.currents==currentS.b1GtoeG)
+            {
+                player.gameObject.transform.position = new Vector3(9.67f,8.81f,-1f);
+            }
+            // else if(gameManager.currents==currentS.StoA)
+            // {
+            //     player.gameObject.transform.position = new Vector3(-11.14f,8.07f,-1.1f);
+            // }
+        }
+    }
+    void gallery_B1()
+    {
+        if(sceneName=="gallery_B1")
+        {
+            if(gameManager.currents==currentS.eGtob1G)
+            {
+                player.gameObject.transform.position = new Vector3(-6.16f,8.05f,-1.1f);
+            }
+            else if(gameManager.currents==currentS.Itob1G)
+            {
+                player.gameObject.transform.position = new Vector3(-22.1f,8.05f,-1.1f);
+            }
+        }
+    }
+    void incineration()
+    {
+        if(sceneName=="incineration")
+        {
+        if(gameManager.currents==currentS.b1GtoI)
+        {
+            player.gameObject.transform.position = new Vector3(7.4f,8.05f,-0.4f);
+        }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -92,6 +134,8 @@ public class Controller : MonoBehaviour
         surgery();
         gallery_before();
         Pharmacyroom();
+        gallery_firstfloor();
+        gallery_B1();
     }
 
     // Update is called once per frame
