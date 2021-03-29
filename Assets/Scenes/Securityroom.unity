@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3560991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.411937, y: -0.63443995, z: -11.1}
+  m_LocalPosition: {x: 9.413112, y: -0.63443995, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1081082411}
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 308.4
+    x: 307.1342
     y: 194.79149
     width: 120
     height: 40
@@ -1106,9 +1106,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 230553132}
-  selectedCommands:
-  - {fileID: 230553131}
+  - {fileID: 230553119}
+  selectedCommands: []
   variables:
   - {fileID: 230553133}
   description: 
@@ -1375,7 +1374,7 @@ MonoBehaviour:
   - {fileID: 230553131}
 --- !u!114 &230553133
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2397,7 +2396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415384081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.412078, y: -0.25895357, z: -11.1}
+  m_LocalPosition: {x: 9.413252, y: -0.25895834, z: -11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 198520392}
@@ -4728,10 +4727,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currents: 2
+  elevatoR: 0
   doorisopen: 0
   bodyisnokey: 0
   dogisgoout: 0
   rollingdoor: 0
+  medicineisright: 0
+  cipherisopen: 0
 --- !u!4 &844091629
 Transform:
   m_ObjectHideFlags: 0
