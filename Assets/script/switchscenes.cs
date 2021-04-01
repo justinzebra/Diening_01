@@ -68,6 +68,10 @@ public class switchscenes : MonoBehaviour
             {
                 g_B1_changecurrentS();
             }
+            else if(sceneName=="Elevator")
+            {
+                E_changecurrentS();
+            }
         }
     }
 
@@ -136,6 +140,13 @@ public class switchscenes : MonoBehaviour
         else if(goToTheScene=="gallery_B1")
         {
             gameManager.currents=currentS.Itob1G;
+        }
+    }
+    void E_changecurrentS()
+    {
+        if(goToTheScene=="gallery_firstfloor")
+        {
+            gameManager.currents=currentS.inEtoeG;
         }
     }
 
