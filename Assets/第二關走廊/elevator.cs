@@ -13,15 +13,18 @@ public class elevator : MonoBehaviour
     public AudioClip p3;
     AudioSource audiosource;
     public elevatorbutton elevatorbutton;
+    public elevatorScreen elevatorScreen;
     public void elevatorfloor()
     {
         if(sceneName=="gallery_firstfloor"&&gameManager.elevatoR==Elevator.firstfloor)
         {
             elevatorarrival();
+            elevatorScreen.firstflooron();
         }
         else if(sceneName=="gallery_firstfloor"&&gameManager.elevatoR==Elevator.secondfloor)
         {
             Invoke("elevatorarrival",3f);
+            elevatorScreen.secondfloorTofistfloor();
             gameManager.elevatoR=Elevator.firstfloor;
         }
         else if(sceneName=="2"&&gameManager.elevatoR==Elevator.firstfloor)
@@ -51,6 +54,7 @@ public class elevator : MonoBehaviour
     {
         door_animator.SetBool("elevatorOpen",false);
         door_animator.SetBool("elevatorClose",true);
+        elevatorScreen.firstflooroff();
         elevatorbutton.elevatoriswork=false;
         audiosource.PlayOneShot(p3,1f);
         Edoor.SetActive(false);
@@ -63,6 +67,7 @@ public class elevator : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         sceneName = SceneManager.GetActiveScene().name;
         elevatorbutton = elevatorbutton.GetComponent<elevatorbutton>();
+        elevatorScreen = elevatorScreen.GetComponent<elevatorScreen>();
         Edoor.SetActive(false);
     }
 
