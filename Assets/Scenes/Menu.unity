@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c4d998bda21054da54e2b630b7517b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimage: {fileID: 21300000, guid: 9bc7cf4da7629a44584b070368e42ff0, type: 3}
-  hoverimage: {fileID: 21300000, guid: c7d7c4e95e25b2346a6d7b7fa88290f2, type: 3}
+  inimage: {fileID: 21300000, guid: c875811c08cdadc4da549d151a34b003, type: 3}
+  hoverimage: {fileID: 21300000, guid: 445a782618c65a54989a4ec759d6de88, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &2338649
 MonoBehaviour:
@@ -1425,7 +1425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &154386197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1866,7 +1866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimage: {fileID: 21300000, guid: 0f865c547a809b843ab61a38be03f810, type: 3}
-  hoverimage: {fileID: 21300000, guid: 45ea77742c8978e46b571b68fba07b94, type: 3}
+  hoverimage: {fileID: 21300000, guid: dada53f6a96ecce41b843d8f9bef27fc, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &216728989
 MonoBehaviour:
@@ -2563,7 +2563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimage: {fileID: 21300000, guid: b41ed21f45242b340a5c6a97330ab56c, type: 3}
-  hoverimage: {fileID: 21300000, guid: 39b0e9906c940a04cac3dc224813d551, type: 3}
+  hoverimage: {fileID: 21300000, guid: fbceb77bfb74d704bb3c4055f5a609e7, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &276631645
 MonoBehaviour:
@@ -4189,8 +4189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c4d998bda21054da54e2b630b7517b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimage: {fileID: 21300000, guid: 21081ae9b1ff91847a4584339d4764e2, type: 3}
-  hoverimage: {fileID: 21300000, guid: 3a95c5ad52fe97b4296a291d2a8f1bbc, type: 3}
+  inimage: {fileID: 21300000, guid: 132816f2de895254d928113d807e3534, type: 3}
+  hoverimage: {fileID: 21300000, guid: 2c7a1d7e5dee8344abcbbe0906d71a31, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &474100057
 MonoBehaviour:
@@ -4481,7 +4481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimage: {fileID: 21300000, guid: 9d6bbe374d87b1e4bb3141d4579629c1, type: 3}
-  hoverimage: {fileID: 21300000, guid: bafbc624ff43548409f06957b0b0e27a, type: 3}
+  hoverimage: {fileID: 21300000, guid: 9763a0a353f526a43a36cc3d47fe8af8, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &482609311
 MonoBehaviour:
@@ -4747,10 +4747,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currents: 0
+  elevatoR: 0
   doorisopen: 0
   bodyisnokey: 0
   dogisgoout: 0
   rollingdoor: 0
+  medicineisright: 0
+  cipherisopen: 0
 --- !u!4 &488825541
 Transform:
   m_ObjectHideFlags: 0
@@ -6620,8 +6623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c4d998bda21054da54e2b630b7517b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimage: {fileID: 21300000, guid: a5868a65e3f24894f822157e4a988957, type: 3}
-  hoverimage: {fileID: 21300000, guid: 4cc745a3da84f534d8ec652332adbc85, type: 3}
+  inimage: {fileID: 21300000, guid: 357eada7f0a6f52429a38715d39a96ae, type: 3}
+  hoverimage: {fileID: 21300000, guid: 8aa574b3912c3894882f3375cfe41504, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &793400398
 MonoBehaviour:
@@ -10952,7 +10955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1529102827
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11374,7 +11377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimage: {fileID: 21300000, guid: b37ad673eac6b6144b3b382ffc64ab06, type: 3}
-  hoverimage: {fileID: 21300000, guid: 0eda6cd0ecc57fd41a7a8ecaa7186a58, type: 3}
+  hoverimage: {fileID: 21300000, guid: 8ca14bcb674d90a4db91469b742efe57, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &1603829421
 MonoBehaviour:
@@ -22463,7 +22466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad6313205b5d4e5438e07f99fd654112, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41d2810b345da2143905d4d8de92a289, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22584,7 +22587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1976873804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23283,7 +23286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimage: {fileID: 21300000, guid: 637412a9d3441f04a87d55c5dfca16be, type: 3}
-  hoverimage: {fileID: 21300000, guid: 16c4c8f8ed0fd7d48b67fb59e6e49c5e, type: 3}
+  hoverimage: {fileID: 21300000, guid: 478de515aeae1844aacb08133489552f, type: 3}
   p: {fileID: 8300000, guid: 2bd4451f10d37c34b9f404d8f2b98f94, type: 3}
 --- !u!114 &2101034918
 MonoBehaviour:
