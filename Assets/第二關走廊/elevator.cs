@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 public class elevator : MonoBehaviour
 {
     GameManager gameManager;
@@ -14,6 +15,21 @@ public class elevator : MonoBehaviour
     AudioSource audiosource;
     public elevatorbutton elevatorbutton;
     public elevatorScreen elevatorScreen;
+
+
+      public Flowchart flowchart2;
+    string FirstopName = "第一次開";
+    public bool Firstop
+    {
+        get
+        {
+            return flowchart2.GetBooleanVariable(FirstopName);
+        }
+        set
+        {
+            flowchart2.SetBooleanVariable(FirstopName, value);
+        }
+    }
     public void elevatorfloor()
     {
         if(sceneName=="gallery_firstfloor"&&gameManager.elevatoR==Elevator.firstfloor)
@@ -49,6 +65,8 @@ public class elevator : MonoBehaviour
         Invoke("elevatorClose",7f);
         audiosource.PlayOneShot(p1,1f);
         Edoor.SetActive(true);
+         Flowchart.BroadcastFungusMessage("電梯門開");
+         Firstop=true;
     }
     void elevatorClose()
     {
