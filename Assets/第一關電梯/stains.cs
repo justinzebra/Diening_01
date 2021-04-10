@@ -10,7 +10,7 @@ public class stains : MonoBehaviour
     AudioSource audiosource;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "player")
+        if (other.name == "背包磁卡")
         {
             audiosource.PlayOneShot(p,1f);
             w.enabled=false;
