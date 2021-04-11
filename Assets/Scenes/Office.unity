@@ -13545,7 +13545,6 @@ GameObject:
   - component: {fileID: 971468315}
   - component: {fileID: 971468313}
   - component: {fileID: 971468314}
-  - component: {fileID: 971468316}
   m_Layer: 0
   m_Name: "\u4EFB\u4F55\u7269\u4EF6\u7684\u63A7\u5236"
   m_TagString: Untagged
@@ -13578,8 +13577,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 971468276}
-  selectedCommands: []
+  - {fileID: 971468335}
+  selectedCommands:
+  - {fileID: 971468337}
   variables:
   - {fileID: 971468152}
   - {fileID: 971468163}
@@ -18260,23 +18260,6 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
---- !u!114 &971468316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971468124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 388
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 53c7e8093aec3a14ab022cdbe263f75d, type: 3}
-  volume: 1
-  waitUntilFinished: 0
 --- !u!114 &971468319
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18649,7 +18632,6 @@ MonoBehaviour:
   eventHandler: {fileID: 971468339}
   commandList:
   - {fileID: 971468338}
-  - {fileID: 971468316}
   - {fileID: 971468337}
   - {fileID: 971468336}
 --- !u!114 &971468336

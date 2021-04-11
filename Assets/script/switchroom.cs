@@ -34,7 +34,7 @@ public class switchroom : MonoBehaviour
     {
         if (opendoor == true)
         {
-            Flowchart.BroadcastFungusMessage("other");
+            Flowchart.BroadcastFungusMessage("0857");
             yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
          
