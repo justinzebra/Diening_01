@@ -31,14 +31,13 @@ public class switchscenes : MonoBehaviour
     {
         if (opendoor == true)
         {
-            Flowchart.BroadcastFungusMessage("other");
+            Flowchart.BroadcastFungusMessage("0857");
             yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
            
             if(sceneName=="Securityroom")
             {
                 S_changecurrentS();
-
             }
             else if(sceneName=="Lobby")
             {
@@ -77,69 +76,82 @@ public class switchscenes : MonoBehaviour
 
     void S_changecurrentS()
     {
-        if(goToTheScene=="Lobby")
+        if(goToTheScene=="Lobby")//0857
         {
             gameManager.currents=currentS.SRtoL;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
     }
     void L_changecurrentS()
     {
-        if(goToTheScene=="gallery_after")
+        if(goToTheScene=="gallery_after")//s
         {
             gameManager.currents=currentS.LtoA;
+            Flowchart.BroadcastFungusMessage("樓梯轉場");
         }
-        else if(goToTheScene=="Lobby")
+        else if(goToTheScene=="Lobby")//s
         {
             gameManager.currents=currentS.AtoL;
+            Flowchart.BroadcastFungusMessage("樓梯轉場");
         }
-        else if(goToTheScene=="Securityroom")
+        else if(goToTheScene=="Securityroom")//0857
         {
             gameManager.currents=currentS.LtoSR;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
-        else if(goToTheScene=="surgery")
+        else if(goToTheScene=="surgery")//0857
         {
             gameManager.currents=currentS.AtoS;
+            Flowchart.BroadcastFungusMessage("自動門轉場");
         }
-        else if(goToTheScene=="gallery_firstfloor")
+        else if(goToTheScene=="gallery_firstfloor")//0857
         {
             gameManager.currents=currentS.LtoeG;
+            Flowchart.BroadcastFungusMessage("自動門轉場");
         }
     }
     void A_changecurrentS()
     {
-        if(goToTheScene=="gallery_after"&&gameManager.currents==currentS.AtoS)
+        if(goToTheScene=="gallery_after"&&gameManager.currents==currentS.AtoS)//0857
         {
             gameManager.currents=currentS.StoA;
+            Flowchart.BroadcastFungusMessage("自動門轉場");
         }
     }
     void g_E_changecurrentS()
     {
-        if(goToTheScene=="Pharmacyroom")
+        if(goToTheScene=="Pharmacyroom")//0857
         {
             gameManager.currents=currentS.eGtoP;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
-        else if(goToTheScene=="gallery_B1")
+        else if(goToTheScene=="gallery_B1")//s
         {
             gameManager.currents=currentS.eGtob1G;
+            Flowchart.BroadcastFungusMessage("樓梯轉場");
         }
-        else if(goToTheScene=="gallery_firstfloor")
+        else if(goToTheScene=="gallery_firstfloor")//s
         {
             gameManager.currents=currentS.PtoeG;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
     }
     void g_B1_changecurrentS()
     {
-        if(goToTheScene=="gallery_firstfloor")
+        if(goToTheScene=="gallery_firstfloor")//s
         {
             gameManager.currents=currentS.b1GtoeG;
+            Flowchart.BroadcastFungusMessage("樓梯轉場");
         }
-        else if(goToTheScene=="incineration")
+        else if(goToTheScene=="incineration")//0857
         {
             gameManager.currents=currentS.b1GtoI;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
-        else if(goToTheScene=="gallery_B1")
+        else if(goToTheScene=="gallery_B1")//0857
         {
             gameManager.currents=currentS.Itob1G;
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
     }
     void E_changecurrentS()
