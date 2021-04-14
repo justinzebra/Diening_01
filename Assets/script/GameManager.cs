@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public bool rollingdoor=false;
     public bool medicineisright=false;
     public bool cipherisopen=false;
+    public bool stainsisclean=false;
     void Awake () 
     {
         if (instance==null)

@@ -2,22 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stains : MonoBehaviour
+public class sensor : MonoBehaviour
 {
     GameManager gameManager;
-    SpriteRenderer w;
     BoxCollider2D bw;
     public AudioClip p;
     AudioSource audiosource;
     public GameObject s;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "背包藥水")
+        if (other.name == "背包磁卡")
         {
             audiosource.PlayOneShot(p,1f);
-            w.enabled=false;
             bw.enabled=false;
-            gameManager.stainsisclean=true;
+        }
+    }
+    void Controlappear()
+    {
+        if(gameManager.stainsisclean==false)
+        {
+            bw.enabled=false;
+            s.SetActive(true);
+        }
+        else if(gameManager.stainsisclean==true)
+        {
+            bw.enabled=true;
             s.SetActive(false);
         }
     }
@@ -26,13 +35,12 @@ public class stains : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         audiosource = GetComponent<AudioSource>();
-        w = GetComponent<SpriteRenderer>();
         bw = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Controlappear();
     }
 }
