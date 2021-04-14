@@ -55,6 +55,11 @@ public class maindog : MonoBehaviour
       {
           Destroy(this.gameObject);
       }
+      if(other.gameObject.name=="s_door")
+      {
+          gameManager.dogisgoout=true;
+          Destroy(this.gameObject);
+      }
     }
     // Start is called before the first frame update
     void Start()
