@@ -12580,7 +12580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361247247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.481958, y: 0.48857683, z: -7.5299997}
+  m_LocalPosition: {x: 16.482502, y: 0.48857683, z: -7.5299997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 842063584}
@@ -28854,7 +28854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655246167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.031681, y: 0.8281819, z: -7.5299997}
+  m_LocalPosition: {x: 11.037107, y: 0.8281819, z: -7.5299997}
   m_LocalScale: {x: 0.68600005, y: 0.68600005, z: 0.68600005}
   m_Children:
   - {fileID: 821767277}
@@ -46281,19 +46281,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 522.1634, y: 197.43942}
+  scrollPos: {x: 257.20575, y: 119.24521}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7000003
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1110298629}
+  selectedCommands:
+  - {fileID: 1110298642}
   variables:
   - {fileID: 1110298635}
   - {fileID: 1110298631}
@@ -47296,7 +47298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 1
-  storyText: "\u5B89\u5FB7\u9B6F\u5148\u751F"
+  storyText: "\u6F22\u65AF\u5148\u751F"
   description: 
   character: {fileID: 962208262}
   portrait: {fileID: 0}
@@ -49533,7 +49535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: "\u5B89\u5FB7\u9B6F"
+  nameText: "\u6F22\u65AF"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
