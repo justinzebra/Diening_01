@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class stains : MonoBehaviour
 {
@@ -14,11 +15,12 @@ public class stains : MonoBehaviour
     {
         if (other.name == "背包藥水")
         {
-            audiosource.PlayOneShot(p,1f);
-            w.enabled=false;
-            bw.enabled=false;
-            gameManager.stainsisclean=true;
-            s.SetActive(false);
+            audiosource.PlayOneShot(p, 1f);
+           // w.enabled = false;
+            bw.enabled = false;
+            gameManager.stainsisclean = true;
+           // s.SetActive(false);
+            Flowchart.BroadcastFungusMessage("潑灑反應");
         }
     }
     // Start is called before the first frame update
@@ -33,6 +35,6 @@ public class stains : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

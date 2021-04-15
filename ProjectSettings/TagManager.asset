@@ -24,6 +24,7 @@ TagManager:
   - book
   - Knifegone
   - Puzzle
+  - staingone
   layers:
   - Default
   - TransparentFX
