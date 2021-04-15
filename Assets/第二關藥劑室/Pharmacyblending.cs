@@ -63,7 +63,7 @@ public class Pharmacyblending : MonoBehaviour
         }
         else if (other.gameObject.name == "黃色" && colors == ColorS.colorRed)
         {
-            gameManager.medicineisright=true;
+            gameManager.medicineisright = true;
             colors = ColorS.colorOrage;
             Invoke("canMove", 2f);
             Cantake = true;
@@ -94,7 +94,7 @@ public class Pharmacyblending : MonoBehaviour
         }
         else if (other.gameObject.name == "紅色" && colors == ColorS.colorYellow)
         {
-            gameManager.medicineisright=true;
+            gameManager.medicineisright = true;
             colors = ColorS.colorOrage;
             Invoke("canMove", 2f);
             Cantake = true;
@@ -180,10 +180,12 @@ public class Pharmacyblending : MonoBehaviour
     void OnMouseDown()
     {
         if (Cantake == true)
+        {
+            Flowchart.BroadcastFungusMessage("藥水後續");
             Flowchart.BroadcastFungusMessage("得到藥水");
-            Destroy(this.gameObject);
-        Debug.Log("0000");
 
+            Debug.Log("0000");
+        }
     }
     void Start()
     {

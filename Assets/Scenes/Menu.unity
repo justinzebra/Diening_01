@@ -4476,6 +4476,7 @@ MonoBehaviour:
   rollingdoor: 0
   medicineisright: 0
   cipherisopen: 0
+  stainsisclean: 0
 --- !u!4 &488825541
 Transform:
   m_ObjectHideFlags: 0
@@ -12019,10 +12020,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1735193486}
-  selectedCommands:
-  - {fileID: 1735193483}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1735193171}
   - {fileID: 1735193170}
