@@ -25,6 +25,7 @@ TagManager:
   - Knifegone
   - Puzzle
   - staingone
+  - cardgone
   layers:
   - Default
   - TransparentFX
