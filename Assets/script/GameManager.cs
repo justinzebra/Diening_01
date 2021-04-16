@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
 
    
     public bool elevatorghost=false;
+    public bool med=false;
+    public bool recordelevator=false;
     
     void Awake()
     {

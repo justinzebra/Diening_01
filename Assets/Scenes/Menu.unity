@@ -4477,6 +4477,8 @@ MonoBehaviour:
   medicineisright: 0
   cipherisopen: 0
   stainsisclean: 0
+  elevatorghost: 0
+  med: 0
 --- !u!4 &488825541
 Transform:
   m_ObjectHideFlags: 0
