@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Elevator.unity
     guid: 9fe45a0c7f6c41d4da988bffda0e79cb
+  - enabled: 1
+    path: Assets/Scenes/Ed_Anime.unity
+    guid: f86db19a1a444fe46bf4c82fde2408cd
   m_configObjects: {}

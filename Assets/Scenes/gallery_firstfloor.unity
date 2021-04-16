@@ -17972,6 +17972,8 @@ MonoBehaviour:
   stainsisclean: 0
   elevatorghost: 0
   med: 0
+  staingone: 0
+  burnbody: 0
 --- !u!4 &1046546254
 Transform:
   m_ObjectHideFlags: 0
@@ -24197,7 +24199,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 75.41182
-    y: 72.73973
+    y: 74.005554
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}

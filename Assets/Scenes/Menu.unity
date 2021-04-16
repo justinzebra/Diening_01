@@ -4480,6 +4480,7 @@ MonoBehaviour:
   elevatorghost: 0
   med: 0
   staingone: 0
+  burnbody: 0
 --- !u!4 &488825541
 Transform:
   m_ObjectHideFlags: 0
