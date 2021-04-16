@@ -33,7 +33,7 @@ public class mainMenu : MonoBehaviour
     public void OroomChange()
     {
         opendoor = true;
-        goToTheScene="Office";
+        goToTheScene="Op_anime";
         audiosource.PlayOneShot(p,0.5f);
     }
     public void EroomChange()

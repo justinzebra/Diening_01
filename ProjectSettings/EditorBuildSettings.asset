@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ed_Anime.unity
     guid: f86db19a1a444fe46bf4c82fde2408cd
+  - enabled: 1
+    path: Assets/Scenes/Op_anime.unity
+    guid: 182e8e3bfbe701d4e9d832fd7794bd0e
   m_configObjects: {}
