@@ -734,7 +734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61685680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.072968, y: 8.534178, z: -11}
+  m_LocalPosition: {x: -41.07287, y: 8.534178, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1927291442}
@@ -4721,7 +4721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497665055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.07297, y: 9.09, z: -11}
+  m_LocalPosition: {x: -41.072884, y: 9.09, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1081186671}
@@ -6097,7 +6097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611192840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.072968, y: 8.534178, z: -11}
+  m_LocalPosition: {x: -41.07287, y: 8.534178, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 878837949}
@@ -8323,7 +8323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1885665863}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &965980296
 Transform:
   m_ObjectHideFlags: 1
@@ -8567,6 +8567,7 @@ MonoBehaviour:
   medicineisright: 0
   cipherisopen: 0
   stainsisclean: 0
+  elevatorghost: 0
 --- !u!4 &1046546254
 Transform:
   m_ObjectHideFlags: 0
@@ -22496,6 +22497,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1673013192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673013193}
+  - component: {fileID: 1673013194}
+  m_Layer: 0
+  m_Name: "\u63A7\u5236\u5973\u9B3C"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673013193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673013192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.85, y: 9.67, z: 7.29}
+  m_LocalScale: {x: 0.9963863, y: 0.9963863, z: 0.9963863}
+  m_Children:
+  - {fileID: 1730763695}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673013194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673013192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cffba7500a91e499efdc78b6e07947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 1885665863}
+  test: 0
 --- !u!1 &1691757105
 GameObject:
   m_ObjectHideFlags: 0
@@ -23123,7 +23170,7 @@ GameObject:
   - component: {fileID: 1730763694}
   - component: {fileID: 1730763696}
   m_Layer: 0
-  m_Name: 9999
+  m_Name: "\u5973\u9B3C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23188,11 +23235,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730763693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.85, y: 9.67, z: 7.29}
-  m_LocalScale: {x: 0.9963863, y: 0.9963863, z: 0.9963863}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1673013193}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1730763696
 Animator:
@@ -23666,7 +23713,6 @@ GameObject:
   - component: {fileID: 1885665861}
   - component: {fileID: 1885665865}
   - component: {fileID: 1885665867}
-  - component: {fileID: 1885665866}
   - component: {fileID: 1885665870}
   - component: {fileID: 1885665869}
   - component: {fileID: 1885665868}
@@ -23675,6 +23721,10 @@ GameObject:
   - component: {fileID: 1885665872}
   - component: {fileID: 1885665871}
   - component: {fileID: 1885665875}
+  - component: {fileID: 1885665881}
+  - component: {fileID: 1885665880}
+  - component: {fileID: 1885665866}
+  - component: {fileID: 1885665877}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -23725,8 +23775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.5625
-    y: 70
+    x: 75.41182
+    y: 72.73973
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -23746,6 +23796,7 @@ MonoBehaviour:
   - {fileID: 1885665872}
   - {fileID: 1885665871}
   - {fileID: 1885665868}
+  - {fileID: 1885665880}
 --- !u!114 &1885665863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23759,11 +23810,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 559.2971, y: 230.15749}
+  scrollPos: {x: 476.48148, y: 118.11749}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7300002
+  zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -23776,6 +23827,7 @@ MonoBehaviour:
   variables:
   - {fileID: 1885665860}
   - {fileID: 1885665870}
+  - {fileID: 1885665881}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -23833,7 +23885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 16
   indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
@@ -24203,6 +24255,99 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 3
   durationOLD: 0
+--- !u!114 &1885665877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885665859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cffba7500a91e499efdc78b6e07947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 1885665863}
+  test: 0
+--- !u!114 &1885665880
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885665859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 1
+  variable: {fileID: 1885665881}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1885665881
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885665859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: "\u96FB\u68AF\u9B3C\u958B\u95DC"
+  value: 1
 --- !u!1 &1888280120
 GameObject:
   m_ObjectHideFlags: 0
