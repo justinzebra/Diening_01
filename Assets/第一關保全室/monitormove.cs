@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 public enum monitoR
     {
         m1,
@@ -85,6 +86,22 @@ public class monitormove : MonoBehaviour
             m_pos=-1440;
             Rect.anchoredPosition=new Vector2(m_pos,0);
         }
+    }
+    public void vediosouce1()
+    {
+        Flowchart.BroadcastFungusMessage("guard1");
+    }
+    public void vediosouce2()
+    {
+        Flowchart.BroadcastFungusMessage("guard2");
+    }
+    public void vediosouce3()
+    {
+        Flowchart.BroadcastFungusMessage("guard3");
+    }
+    public void vediosouce4()
+    {
+        Flowchart.BroadcastFungusMessage("guard4");
     }
     // Start is called before the first frame update
     void Start()
