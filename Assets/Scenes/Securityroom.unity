@@ -1549,8 +1549,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 230553235}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 230553133}
@@ -3989,7 +3988,7 @@ MonoBehaviour:
   itemId: 98
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553196
 MonoBehaviour:
@@ -4164,7 +4163,7 @@ MonoBehaviour:
   itemId: 111
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553203
 MonoBehaviour:
@@ -4465,7 +4464,7 @@ MonoBehaviour:
   itemId: 136
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553210
 MonoBehaviour:
@@ -4628,7 +4627,7 @@ MonoBehaviour:
   itemId: 132
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553214
 MonoBehaviour:
@@ -4834,7 +4833,7 @@ MonoBehaviour:
   itemId: 127
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553220
 MonoBehaviour:
@@ -4997,7 +4996,7 @@ MonoBehaviour:
   itemId: 123
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553224
 MonoBehaviour:
@@ -5203,7 +5202,7 @@ MonoBehaviour:
   itemId: 118
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553230
 MonoBehaviour:
@@ -5366,7 +5365,7 @@ MonoBehaviour:
   itemId: 114
   indentLevel: 1
   soundClip: {fileID: 8300000, guid: 744fce52f90bef94cb3190a00f993b68, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &230553234
 MonoBehaviour:
