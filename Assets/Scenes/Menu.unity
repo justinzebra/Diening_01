@@ -12026,7 +12026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -524.1297, y: -689.72015}
+  scrollPos: {x: -550.959, y: -712.89087}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -12037,10 +12037,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1735193257}
-  selectedCommands:
-  - {fileID: 1735193256}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1735193171}
   - {fileID: 1735193170}
@@ -12265,11 +12263,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 387
   indentLevel: 0
-  variable: {fileID: 0}
+  variable: {fileID: 1735193473}
   setOperator: 0
   booleanData:
     booleanRef: {fileID: 0}
-    booleanVal: 0
+    booleanVal: 1
   integerData:
     integerRef: {fileID: 0}
     integerVal: 0
@@ -12592,11 +12590,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 386
   indentLevel: 0
-  variable: {fileID: 0}
+  variable: {fileID: 1735193473}
   setOperator: 0
   booleanData:
     booleanRef: {fileID: 0}
-    booleanVal: 1
+    booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
     integerVal: 0
@@ -12715,8 +12713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 992.5281
-    y: 878.9298
+    x: 1001.06464
+    y: 917.95404
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -12741,7 +12739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 418
   indentLevel: 0
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 7012b3046d041064ba58d47ce0ff7ed5, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1735193192
@@ -15079,7 +15077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 422
   indentLevel: 0
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 14c2ec09f5e5e52478d3819dd55658eb, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1735193257
@@ -15096,8 +15094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 997.08435
-    y: 948.6947
+    x: 1005.62085
+    y: 1012.10913
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
