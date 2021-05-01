@@ -37,7 +37,7 @@ public class switchroom : MonoBehaviour
             Flowchart.BroadcastFungusMessage("0857");
             yield return new WaitForSeconds(1);
             SceneManager.LoadScene(goToTheScene);
-         
+            Flowchart.BroadcastFungusMessage("普通門轉場");
         }
     }
     void OnTriggerExit2D(Collider2D other)
