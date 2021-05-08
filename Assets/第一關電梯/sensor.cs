@@ -6,14 +6,15 @@ public class sensor : MonoBehaviour
 {
     GameManager gameManager;
     BoxCollider2D bw;
-    public AudioClip p;
-    AudioSource audiosource;
+    // public AudioClip p;
+    // AudioSource audiosource;
     public GameObject s;
+    public GameObject Es;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "背包磁卡")
         {
-            audiosource.PlayOneShot(p,1f);
+            // audiosource.PlayOneShot(p,1f);
             bw.enabled=false;
         }
     }
@@ -23,18 +24,20 @@ public class sensor : MonoBehaviour
         {
             bw.enabled=false;
             s.SetActive(true);
+            Es.SetActive(false);
         }
         else if(gameManager.stainsisclean==true)
         {
             bw.enabled=true;
             s.SetActive(false);
+            Es.SetActive(true);
         }
     }
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-        audiosource = GetComponent<AudioSource>();
+        // audiosource = GetComponent<AudioSource>();
         bw = GetComponent<BoxCollider2D>();
     }
 

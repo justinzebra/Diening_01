@@ -19,7 +19,7 @@ public class stains : MonoBehaviour
            // w.enabled = false;
             bw.enabled = false;
             gameManager.stainsisclean = true;
-           // s.SetActive(false);
+            // s.SetActive(true);
             Flowchart.BroadcastFungusMessage("潑灑反應");
         }
     }

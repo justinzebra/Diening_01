@@ -3346,7 +3346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769964792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: 2.34, z: -1.46}
+  m_LocalPosition: {x: 0.2, y: 2.34, z: -1.46}
   m_LocalScale: {x: 0.31243896, y: 0.31243896, z: 0.31243896}
   m_Children: []
   m_Father: {fileID: 1586814813}
@@ -6778,7 +6778,7 @@ MonoBehaviour:
   itemId: 49
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 66d11b2eb5b277f4799fca0320d063dd, type: 3}
-  volume: 1
+  volume: 0.5
   waitUntilFinished: 0
 --- !u!114 &1454328282
 MonoBehaviour:
@@ -7340,8 +7340,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1454328321}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1454328307}
@@ -8099,7 +8098,7 @@ MonoBehaviour:
   toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1454328337
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9626,6 +9625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: {fileID: 8300000, guid: 66d11b2eb5b277f4799fca0320d063dd, type: 3}
   s: {fileID: 62365572}
+  Es: {fileID: 2127293690}
 --- !u!114 &1724148086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13163,7 +13163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81fec542ff826f34d9008b4e2bf7b5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s: {fileID: 2100593785}
+  s: {fileID: 2127293690}
 --- !u!82 &2100593791
 AudioSource:
   m_ObjectHideFlags: 0
